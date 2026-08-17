@@ -667,12 +667,40 @@ const LISA = {"W":420,"H":470,"paths":["M279.2,328.3 278.1,325.7 275.6,325.0 275
   const list=()=>document.getElementById('lisa-list');
   const W=LISA.W,H=LISA.H,paths=LISA.paths,names=LISA.names,cores=LISA.cores,rc=LISA.rotulos_cat;
 
+  function stockIndex(){
+    if(window.__lisaStockIdx) return window.__lisaStockIdx;
+    const subIdx={};
+    DB.subclasses.forEach((n,i)=>{ subIdx[n]=i; });
+    const byKey={};
+    DB.rows.forEach(r=>{
+      const key=r[COL.SUB]+'_'+r[COL.MUN];
+      const cur=byKey[key];
+      if(!cur||r[COL.ANO]>cur.ano){
+        byKey[key]={est:r[COL.EST],ano:r[COL.ANO],uni:r[COL.UNI]};
+      }
+    });
+    window.__lisaStockIdx={subIdx:subIdx,byKey:byKey};
+    return window.__lisaStockIdx;
+  }
+  function varPrincipal(rotulo){ return rotulo.split(' × ')[0]; }
+  function escXml(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
   function drawMap(m){
     const legendKeys=[...new Set(m.cats)].filter(c=>c!==4).sort();
     if(!legendKeys.includes(4))legendKeys.push(4);
+    const {subIdx,byKey}=stockIndex();
+    const si=subIdx[varPrincipal(m.rotulo)];
     let sv='<svg viewBox="0 0 '+W+' '+H+'" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;max-height:74vh">';
     for(let i=0;i<paths.length;i++){
-      sv+='<path d="'+paths[i]+'" fill="'+cores[m.cats[i]]+'" stroke="#fff" stroke-width="0.4"><title>'+names[i]+'</title></path>';
+      let tip=names[i];
+      if(si!==undefined){
+        const rec=byKey[si+'_'+i];
+        if(rec){
+          const uniLabel=DB.unidades[rec.uni];
+          tip+=' — Estoque (ano final): '+rec.est.toLocaleString('pt-BR')+(uniLabel?' '+uniLabel:'');
+        }
+      }
+      sv+='<path d="'+paths[i]+'" fill="'+cores[m.cats[i]]+'" stroke="#fff" stroke-width="0.4"><title>'+escXml(tip)+'</title></path>';
     }
     const lx=W-122; let ly=H-20-legendKeys.length*19;
     sv+='<rect x="'+(lx-8)+'" y="'+(ly-8)+'" width="126" height="'+(legendKeys.length*19+14)+'" fill="#ffffff" opacity="0.85" rx="4"/>';
