@@ -71,7 +71,7 @@ h1 span{color:var(--accent)}
   margin-top:0;
 }
 .filters-inner{max-width:1320px;margin:0 auto;padding:14px 22px;
-  display:grid;grid-template-columns:150px 150px 1fr 1.3fr auto;gap:12px;align-items:end}
+  display:grid;grid-template-columns:150px 150px 190px 1fr 1.3fr auto;gap:12px;align-items:end}
 .field{display:flex;flex-direction:column;gap:6px;min-width:0;position:relative}
 .field label{
   font-size:10.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;
@@ -284,6 +284,14 @@ footer{margin-top:30px;text-align:center;color:var(--faint);font-size:11.5px;
       <label for="f-cls">Classificação</label>
       <select id="f-cls"><option value="all">Todas</option></select>
     </div>
+    <div class="field">
+      <label for="f-periodo">Período</label>
+      <select id="f-periodo">
+        <option value="maior" selected>Período de maior destaque</option>
+        <option value="menor">Período de menor destaque</option>
+        <option value="all">Todos os períodos</option>
+      </select>
+    </div>
     <div class="field combo" id="combo">
       <label for="f-mun">Município</label>
       <input type="text" id="f-mun" autocomplete="off" placeholder="Todos os municípios">
@@ -385,7 +393,7 @@ footer{margin-top:30px;text-align:center;color:var(--faint);font-size:11.5px;
       <aside class="lisa-side">
         <h3>Mapas disponíveis</h3>
         <p class="hint">Ordenados pela força da autocorrelação (I de Moran). Selecione um setor para ver seus clusters.</p>
-        <div class="seg"> <button class="on" data-esc="tm1">Emergentes (T-1)</button> <button data-esc="t1t2">T1+T2 · Estoques</button> <button data-esc="cerie">T1+T2 · CE+RIE</button> </div>
+        <div class="seg"> <button data-esc="tm1">Emergentes (T-1)</button> <button class="on" data-esc="t1t2">T1+T2 · Estoques</button> <button data-esc="cerie">T1+T2 · CE+RIE</button> </div>
 <div class="seg">
           <button class="on" data-seg="uni">Univariado</button>
           <button data-seg="biv">Bivariado</button>
@@ -418,6 +426,8 @@ const TINFO = {
   'T-1':{c:'var(--tm1)',s:'n/d',d:'Sem comparação: surgiu apenas no ano final (estoque inicial zero).'}
 };
 const CLS_ORDER = ['T1','T2','T3','T4','T5','T6','T7','T8','T-1'];
+// rank of each class index (0=T1..best, 8=T-1..last), same hierarchy used to sort the Classif. column
+const CLS_RANK = DB.classes.map(name=>CLS_ORDER.indexOf(name));
 const RAIS_IDX = DB.fontes.indexOf('RAIS');
 const subLower = DB.subclasses.map(s=>s.toLowerCase());
 
@@ -426,8 +436,26 @@ const COL={SUB:0,CLS:1,MUN:2,EST:3,FON:4,UNI:5,ANO:6};
 const anoFinal = r => DB.fontes[r[COL.FON]]==='RAIS' ? 2025 : 2024;
 
 // ---- state ----
-let state={ano:'all',cls:'all',mun:'all',sub:'',sortKey:'EST',sortDir:-1,page:1,pageSize:50};
+let state={ano:'all',cls:'all',mun:'all',sub:'',periodo:'maior',sortKey:'EST',sortDir:-1,page:1,pageSize:50};
 let filtered=DB.rows;
+
+// ---- período de destaque: 1 linha por (subclasse, município), pelo melhor/pior CLS_RANK ----
+// empate -> ano_inicial mais antigo (menor índice em DB.anos)
+let _destaqueMaior=null, _destaqueMenor=null;
+function computeDestaque(){
+  if(_destaqueMaior)return;
+  const bestMap=new Map(), worstMap=new Map();
+  for(const r of DB.rows){
+    const key=r[COL.SUB]+'_'+r[COL.MUN];
+    const rank=CLS_RANK[r[COL.CLS]], ano=r[COL.ANO];
+    const b=bestMap.get(key);
+    if(!b||rank<b.rank||(rank===b.rank&&ano<b.ano))bestMap.set(key,{row:r,rank,ano});
+    const w=worstMap.get(key);
+    if(!w||rank>w.rank||(rank===w.rank&&ano<w.ano))worstMap.set(key,{row:r,rank,ano});
+  }
+  _destaqueMaior=[...bestMap.values()].map(v=>v.row);
+  _destaqueMenor=[...worstMap.values()].map(v=>v.row);
+}
 
 // ---- helpers ----
 const fmt=n=>n.toLocaleString('pt-BR');
@@ -509,7 +537,9 @@ function apply(){
   if(q!==''){subMatch=new Uint8Array(DB.subclasses.length);
     for(let i=0;i<subLower.length;i++)if(subLower[i].includes(q))subMatch[i]=1;}
   const out=[];
-  const rows=DB.rows;
+  let rows=DB.rows;
+  if(state.periodo==='maior'){computeDestaque();rows=_destaqueMaior;}
+  else if(state.periodo==='menor'){computeDestaque();rows=_destaqueMenor;}
   for(let i=0;i<rows.length;i++){
     const r=rows[i];
     if(ano!=='all'&&r[COL.ANO]!==ano)continue;
@@ -627,12 +657,13 @@ function renderTable(){
 // ---- events ----
 $('f-ano').addEventListener('change',e=>{state.ano=e.target.value==='all'?'all':+e.target.value;state.page=1;apply();});
 $('f-cls').addEventListener('change',e=>{state.cls=e.target.value==='all'?'all':+e.target.value;state.page=1;apply();});
+$('f-periodo').addEventListener('change',e=>{state.periodo=e.target.value;state.page=1;apply();});
 let subTimer;
 $('f-sub').addEventListener('input',e=>{clearTimeout(subTimer);subTimer=setTimeout(()=>{state.sub=e.target.value;state.page=1;apply();},170);});
 $('page-size').addEventListener('change',e=>{state.pageSize=+e.target.value;state.page=1;renderTable();});
 $('btn-clear').addEventListener('click',()=>{
-  state={ano:'all',cls:'all',mun:'all',sub:'',sortKey:'EST',sortDir:-1,page:1,pageSize:state.pageSize};
-  $('f-ano').value='all';$('f-cls').value='all';$('f-sub').value='';
+  state={ano:'all',cls:'all',mun:'all',sub:'',periodo:'maior',sortKey:'EST',sortDir:-1,page:1,pageSize:state.pageSize};
+  $('f-ano').value='all';$('f-cls').value='all';$('f-sub').value='';$('f-periodo').value='maior';
   $('f-mun').value='';$('combo').classList.remove('has-val');$('f-mun').placeholder='Todos os municípios';
   apply();
 });
@@ -663,7 +694,7 @@ const LISA = {"W":420,"H":470,"paths":["M279.2,328.3 278.1,325.7 275.6,325.0 275
     if(t.dataset.view==='clusters'&&!window.__lisaInit){window.__lisaInit=1;initLisa();}
   }));
 
-  let seg='uni', esc='tm1', sel=null;
+  let seg='uni', esc='t1t2', sel=null;
   const list=()=>document.getElementById('lisa-list');
   const W=LISA.W,H=LISA.H,paths=LISA.paths,names=LISA.names,cores=LISA.cores,rc=LISA.rotulos_cat;
 
