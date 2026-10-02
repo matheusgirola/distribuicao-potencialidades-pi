@@ -1,0 +1,938 @@
+﻿subclasse_focal;subclasse_parceira;moran_bv_I;p_pseudo
+Caprino;Mel de abelha;0,4309;0,0001
+Mel de abelha;Caprino;0,3952;0,0001
+Babaçu amêndoa;Arroz em casca;0,3605;0,0001
+Arroz em casca;Babaçu amêndoa;0,3571;0,0001
+Soja em grão;Cultivo de milho;0,3317;0,0001
+Babaçu amêndoa;Oleaginosos;0,3263;0,0001
+Cultivo de arroz;Soja em grão;0,3226;0,0001
+Soja em grão;Cultivo de arroz;0,3123;0,0001
+Oleaginosos;Babaçu amêndoa;0,3069;0,0001
+Cultivo de soja;Soja em grão;0,3036;0,0001
+Ovino;Mel de abelha;0,2903;0,0001
+Tambacu tambatinga;Babaçu amêndoa;0,2899;0,0001
+Tambacu tambatinga;Arroz em casca;0,2872;0,0001
+Babaçu amêndoa;Tambacu tambatinga;0,2855;0,0001
+Mel de abelha;Ovino;0,2812;0,0001
+Arroz em casca;Oleaginosos;0,2805;0,0001
+Oleaginosos;Arroz em casca;0,2755;0,0001
+Criação de bovinos para corte;Soja em grão;0,2752;0,0001
+Arroz em casca;Tambacu tambatinga;0,2642;0,0001
+Soja em grão;Criação de bovinos para corte;0,2558;0,0001
+Caprino;Ovino;0,2517;0,0001
+Tambacu tambatinga;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,25;0,0001
+Ovino;Caprino;0,246;0,0001
+Leite;Mel de abelha;0,2369;0,0001
+Mel de abelha;Leite;0,2329;0,0001
+Tambacu tambatinga;Comércio varejista de gás liqüefeito de petróleo (GLP);0,2328;0,0001
+Criação de bovinos para corte;Cultivo de milho;0,231;0,0001
+Arroz em casca;Tucum amêndoa;0,2302;0,0001
+Tambacu tambatinga;Padaria e confeitaria com predominância de revenda;0,2291;0,0001
+Tucum amêndoa;Arroz em casca;0,2277;0,0001
+Carnaúba pó;Equino;0,225;0,0001
+Ceras;Equino;0,225;0,0001
+Oleaginosos;Tambacu tambatinga;0,223;0,0001
+Carnaúba pó;Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo;0,2187;0,0001
+Ceras;Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo;0,2187;0,0001
+Manga;Comércio varejista de artigos do vestuário e acessórios;0,2153;0,0001
+Equino;Carnaúba pó;0,2098;0,0001
+Equino;Ceras;0,2098;0,0001
+Atividades de apoio à agricultura não especificadas anteriormente;Soja em grão;0,209;0,0001
+Arroz em casca;Casas lotéricas;0,1971;0,0001
+Mandioca;Bares e outros estabelecimentos especializados em servir bebidas, sem entretenimento;0,1946;0,0001
+Castanha de caju;Mandioca;0,1938;0,0001
+Manga;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - supermercados;0,1927;0,0001
+Tambacu tambatinga;Galináceos total;0,1918;0,0001
+Obras de urbanização - ruas, praças e calçadas;Tambacu tambatinga;0,1912;0,0001
+Cana de açúcar;Serviços de engenharia;0,188;0,0001
+Cana de açúcar;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,1857;0,0001
+Galináceos total;Arroz em casca;0,1843;0,0001
+Casas lotéricas;Arroz em casca;0,1785;0,0001
+Galináceos total;Comércio varejista de gás liqüefeito de petróleo (GLP);0,1761;0,0001
+Milho em grão;Cultivo de milho;0,1744;0,0001
+Babaçu amêndoa;Galináceos total;0,1737;0,0001
+Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo;Carnaúba pó;0,1734;0,0001
+Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo;Ceras;0,1734;0,0001
+Criação de bovinos para corte;Arroz em casca;0,1712;0,0001
+Mandioca;Castanha de caju;0,1689;0,0001
+Casas lotéricas;Babaçu amêndoa;0,1658;0,0001
+Criação de frangos para corte;Comércio varejista de gás liqüefeito de petróleo (GLP);0,1652;0,0001
+Lojas de departamentos ou magazines, exceto lojas francas (Duty free);Tambacu tambatinga;0,1642;0,0001
+Comercio varejista de artigos de cama, mesa e banho;Tucum amêndoa;0,1627;0,0001
+Comércio varejista de gás liqüefeito de petróleo (GLP);Comércio varejista de madeira e artefatos;0,1625;0,0001
+Milho em grão;Serviço de preparação de terreno, cultivo e colheita;0,1616;0,0001
+Comércio varejista de bebidas;Promoção de vendas;0,1591;0,0001
+Galináceos total;Tambacu tambatinga;0,1587;0,0001
+Padaria e confeitaria com predominância de revenda;Tambacu tambatinga;0,158;0,0001
+Construção de edifícios;Construção de rodovias e ferrovias;0,1568;0,0001
+Criação de frangos para corte;Comércio varejista de bebidas;0,1555;0,0001
+Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;Tambacu tambatinga;0,1546;0,0001
+Educação infantil - pré-escola;Tucum amêndoa;0,153;0,0001
+Comércio varejista de gás liqüefeito de petróleo (GLP);Tambacu tambatinga;0,1525;0,0001
+Galináceos total;Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;0,1512;0,0001
+Galináceos total;Babaçu amêndoa;0,1491;0,0001
+Casas lotéricas;Tucum amêndoa;0,1484;0,0001
+Tucum amêndoa;Galináceos total;0,1483;0,0001
+Comércio varejista de artigos do vestuário e acessórios;Arroz em casca;0,148;0,0001
+Comércio varejista de gás liqüefeito de petróleo (GLP);Galináceos total;0,1467;0,0001
+Obras de urbanização - ruas, praças e calçadas;Galináceos total;0,1465;0,0001
+Construção de edifícios;Atividades de associações de defesa de direitos sociais;0,1464;0,0001
+Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;Babaçu amêndoa;0,146;0,0001
+Lenha;Arroz em casca;0,1459;0,0001
+Galináceos total;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,1449;0,0001
+Galináceos total;Criação de frangos para corte;0,1434;0,0001
+Ovos de galinha;Arroz em casca;0,1432;0,0001
+Cana de açúcar;Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas;0,1416;0,0001
+Comércio varejista de materiais de construção em geral;Galináceos total;0,1415;0,0001
+Comércio varejista de bebidas;Tambacu tambatinga;0,1414;0,0001
+Galináceos total;Obras de urbanização - ruas, praças e calçadas;0,1386;0,0001
+Galináceos total;Tucum amêndoa;0,1385;0,0001
+Galináceos total;Educação infantil - pré-escola;0,1367;0,0001
+Galináceos total;Construção de rodovias e ferrovias;0,1364;0,0001
+Comércio varejista de artigos do vestuário e acessórios;Tambacu tambatinga;0,1355;0,0001
+Cana de açúcar;Galináceos total;0,1351;0,0001
+Educação infantil - pré-escola;Tambacu tambatinga;0,1348;0,0001
+Alimentícios;Mel de abelha;0,1339;0,0001
+Comércio varejista de hortifrutigranjeiros;Tambacu tambatinga;0,1332;0,0001
+Comércio varejista de combustíveis para veículos automotores;Tucum amêndoa;0,1325;0,0001
+Comércio varejista de gás liqüefeito de petróleo (GLP);Arroz em casca;0,1322;0,0001
+Melancia;Arroz em casca;0,1303;0,0001
+Lanchonetes, casas de chá, de sucos e similares;Tambacu tambatinga;0,1298;0,0001
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - supermercados;Manga;0,1289;0,0001
+Bancos múltiplos, com carteira comercial;Babaçu amêndoa;0,128;0,0001
+Galináceos total;Comércio varejista de artigos de papelaria;0,1256;0,0001
+Educação infantil - pré-escola;Galináceos total;0,1251;0,0001
+Criação de frangos para corte;Galináceos total;0,1247;0,0001
+Construção de rodovias e ferrovias;Comércio varejista de artigos do vestuário e acessórios;0,1209;0,0001
+Tambaqui;Arroz em casca;0,12;0,0001
+Bancos múltiplos, com carteira comercial;Arroz em casca;0,1178;0,0001
+Atividades do Correio Nacional;Babaçu amêndoa;0,1176;0,0001
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - hipermercados;Tambacu tambatinga;0,1174;0,0001
+Construção de rodovias e ferrovias;Galináceos total;0,1172;0,0001
+Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;Galináceos total;0,1158;0,0001
+Atividades de organizações religiosas;Equino;0,1154;0,0001
+Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;Tambacu tambatinga;0,114;0,0001
+Caixas econômicas;Arroz em casca;0,113;0,0001
+Comércio varejista de medicamentos veterinários;Soja em grão;0,1124;0,0001
+Comércio varejista de ferragens e ferramentas;Arroz em casca;0,1102;0,0001
+Comércio varejista de hortifrutigranjeiros;Comércio varejista de gás liqüefeito de petróleo (GLP);0,0987;0,0001
+Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;Galináceos total;0,0914;0,0001
+Tambacu tambatinga;Obras de urbanização - ruas, praças e calçadas;0,2436;0,0002
+Tambacu tambatinga;Tucum amêndoa;0,2318;0,0002
+Tambacu tambatinga;Oleaginosos;0,2201;0,0002
+Babaçu amêndoa;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,2186;0,0002
+Arroz em casca;Galináceos total;0,1889;0,0002
+Cana de açúcar;Comércio varejista de artigos de papelaria;0,181;0,0002
+Bovino;Carnaúba pó;0,1748;0,0002
+Bovino;Ceras;0,1748;0,0002
+Comércio varejista de gás liqüefeito de petróleo (GLP);Comércio varejista de produtos farmacêuticos, com manipulação de fórmulas;0,1688;0,0002
+Carnaúba pó;Ceras;0,1674;0,0002
+Ceras;Carnaúba pó;0,1674;0,0002
+Carnaúba pó;Comércio varejista de artigos do vestuário e acessórios;0,1613;0,0002
+Ceras;Comércio varejista de artigos do vestuário e acessórios;0,1613;0,0002
+Comércio varejista de gás liqüefeito de petróleo (GLP);Criação de frangos para corte;0,1545;0,0002
+Comércio varejista de gás liqüefeito de petróleo (GLP);Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,149;0,0002
+Comércio varejista de gás liqüefeito de petróleo (GLP);Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - hipermercados;0,1476;0,0002
+Bovino;Leite;0,1466;0,0002
+Comércio varejista de gás liqüefeito de petróleo (GLP);Padaria e confeitaria com predominância de revenda;0,144;0,0002
+Oleaginosos;Galináceos total;0,137;0,0002
+Carnaúba pó;Galináceos total;0,134;0,0002
+Ceras;Galináceos total;0,134;0,0002
+Comércio varejista de artigos de papelaria;Tambacu tambatinga;0,1301;0,0002
+Casas lotéricas;Tambacu tambatinga;0,1283;0,0002
+Casas lotéricas;Comércio varejista de madeira e artefatos;0,1283;0,0002
+Comércio varejista de materiais de construção em geral;Comércio varejista de gás liqüefeito de petróleo (GLP);0,1277;0,0002
+Criação de frangos para corte;Tambacu tambatinga;0,1253;0,0002
+Comércio varejista de artigos do vestuário e acessórios;Galináceos total;0,1247;0,0002
+Casas lotéricas;Educação infantil - pré-escola;0,1245;0,0002
+Educação infantil - pré-escola;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,124;0,0002
+Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal;Arroz em casca;0,1229;0,0002
+Casas lotéricas;Melancia;0,1224;0,0002
+Lenha;Lanchonetes, casas de chá, de sucos e similares;0,1208;0,0002
+Comércio varejista de medicamentos veterinários;Atividades de apoio à agricultura não especificadas anteriormente;0,1193;0,0002
+Comércio varejista especializado de equipamentos de telefonia e comunicação;Tucum amêndoa;0,1183;0,0002
+Banana cacho;Criação de bovinos para corte;0,118;0,0002
+Casas lotéricas;Galináceos total;0,1145;0,0002
+Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;Oleaginosos;0,1136;0,0002
+Cana de açúcar;Ovos de galinha;0,1119;0,0002
+Comércio varejista de hortifrutigranjeiros;Cana de açúcar;0,1107;0,0002
+Comércio varejista de produtos farmacêuticos, com manipulação de fórmulas;Comércio varejista de gás liqüefeito de petróleo (GLP);0,1003;0,0002
+Serviços de manutenção e reparação mecânica de veículos automotores;Babaçu amêndoa;0,0945;0,0002
+Comércio varejista de artigos de papelaria;Galináceos total;0,0923;0,0002
+Cultivo de arroz;Criação de bovinos para corte;0,211;0,0003
+Tambacu tambatinga;Comércio varejista de bebidas;0,2044;0,0003
+Criação de bovinos para corte;Cultivo de arroz;0,2026;0,0003
+Fabricação de artefatos de cerâmica e barro cozido para uso na construção, exceto azulejos e pisos;Restaurantes e similares;0,196;0,0003
+Tucum amêndoa;Babaçu amêndoa;0,1764;0,0003
+Cana de açúcar;Educação infantil - pré-escola;0,1608;0,0003
+Obras de urbanização - ruas, praças e calçadas;Comércio varejista de bebidas;0,1607;0,0003
+Carnaúba pó;Babaçu amêndoa;0,1535;0,0003
+Ceras;Babaçu amêndoa;0,1535;0,0003
+Leite;Bovino;0,1419;0,0003
+Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo;Tambacu tambatinga;0,1406;0,0003
+Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;Tucum amêndoa;0,1381;0,0003
+Comércio varejista de gás liqüefeito de petróleo (GLP);Comércio varejista de bebidas;0,1361;0,0003
+Comércio varejista de bebidas;Criação de frangos para corte;0,1348;0,0003
+Melancia;Tucum amêndoa;0,1327;0,0003
+Galináceos total;Comércio varejista de mercadorias em lojas de conveniência;0,1308;0,0003
+Galináceos total;Comércio varejista de bebidas;0,1303;0,0003
+Melancia;Casas lotéricas;0,1249;0,0003
+Cana de açúcar;Arroz em casca;0,1234;0,0003
+Casas lotéricas;Oleaginosos;0,1225;0,0003
+Feijão em grão;Criação de bovinos para corte;0,1183;0,0003
+Galináceos total;Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas;0,1181;0,0003
+Ovos de galinha;Castanha de caju;0,1169;0,0003
+Lenha;Criação de bovinos para corte;0,1169;0,0003
+Lojas de departamentos ou magazines, exceto lojas francas (Duty free);Arroz em casca;0,1165;0,0003
+Comércio varejista de materiais de construção em geral;Arroz em casca;0,1144;0,0003
+Comércio varejista de artigos de papelaria;Construção de rodovias e ferrovias;0,114;0,0003
+Comércio varejista especializado de equipamentos e suprimentos de informática;Feijão em grão;0,1136;0,0003
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - supermercados;Tucum amêndoa;0,1136;0,0003
+Construção de rodovias e ferrovias;Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;0,1104;0,0003
+Comércio varejista de gás liqüefeito de petróleo (GLP);Melancia;0,1095;0,0003
+Melancia;Galináceos total;0,1094;0,0003
+Construção de rodovias e ferrovias;Criação de bovinos para corte;0,1093;0,0003
+Comércio varejista especializado de equipamentos de telefonia e comunicação;Tambacu tambatinga;0,1051;0,0003
+Fabricação de alimentos para animais;Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;0,0963;0,0003
+Ovos de galinha;Tucum amêndoa;0,096;0,0003
+Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;Arroz em casca;0,0913;0,0003
+Atividade odontológica com recursos para realização de procedimentos cirúrgicos;Tambacu tambatinga;0,0909;0,0003
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - hipermercados;Galináceos total;0,0864;0,0003
+Tambacu tambatinga;Educação infantil - pré-escola;0,185;0,0004
+Cana de açúcar;Lanchonetes, casas de chá, de sucos e similares;0,1678;0,0004
+Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo;Tucum amêndoa;0,1582;0,0004
+Obras de urbanização - ruas, praças e calçadas;Educação infantil - pré-escola;0,1552;0,0004
+Obras de urbanização - ruas, praças e calçadas;Tucum amêndoa;0,1542;0,0004
+Comércio varejista de artigos do vestuário e acessórios;Construção de rodovias e ferrovias;0,1523;0,0004
+Cana de açúcar;Comércio varejista especializado de equipamentos de telefonia e comunicação;0,1505;0,0004
+Comércio varejista de gás liqüefeito de petróleo (GLP);Lanchonetes, casas de chá, de sucos e similares;0,1488;0,0004
+Comércio varejista de bebidas;Comércio varejista de gás liqüefeito de petróleo (GLP);0,1437;0,0004
+Galináceos total;Atividades de apoio à pecuária não especificadas anteriormente;0,1434;0,0004
+Mandioca;Condomínios prediais;0,1421;0,0004
+Galináceos total;Seleção e agenciamento de mão-de-obra;0,1409;0,0004
+Lanchonetes, casas de chá, de sucos e similares;Comércio varejista de gás liqüefeito de petróleo (GLP);0,1406;0,0004
+Comércio varejista de gás liqüefeito de petróleo (GLP);Serviços de engenharia;0,1382;0,0004
+Cana de açúcar;Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo;0,1374;0,0004
+Leite;Caprino;0,1357;0,0004
+Casas lotéricas;Agências de viagens;0,1346;0,0004
+Fava em grão;Babaçu amêndoa;0,1328;0,0004
+Educação infantil - pré-escola;Promoção de vendas;0,1317;0,0004
+Comércio varejista de gás liqüefeito de petróleo (GLP);Comércio varejista especializado de equipamentos de telefonia e comunicação;0,1313;0,0004
+Educação infantil - pré-escola;Obras de urbanização - ruas, praças e calçadas;0,1286;0,0004
+Comércio varejista de gás liqüefeito de petróleo (GLP);Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;0,1264;0,0004
+Lenha;Comércio varejista de hortifrutigranjeiros;0,1234;0,0004
+Construção de edifícios;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,1217;0,0004
+Melancia;Carnaúba pó;0,1213;0,0004
+Melancia;Ceras;0,1213;0,0004
+Comércio varejista de bebidas;Construção de rodovias e ferrovias;0,1199;0,0004
+Comércio varejista de gás liqüefeito de petróleo (GLP);Babaçu amêndoa;0,1188;0,0004
+Comércio varejista de madeira e artefatos;Comércio varejista de gás liqüefeito de petróleo (GLP);0,1067;0,0004
+Comércio varejista de materiais de construção em geral;Educação infantil - pré-escola;0,1057;0,0004
+Serviços de engenharia;Cana de açúcar;0,1056;0,0004
+Padaria e confeitaria com predominância de revenda;Babaçu amêndoa;0,1041;0,0004
+Ovos de galinha;Babaçu amêndoa;0,1015;0,0004
+Construção de rodovias e ferrovias;Tambacu tambatinga;0,0984;0,0004
+Comércio varejista de carnes - açougues;Babaçu amêndoa;0,0912;0,0004
+Comércio varejista de artigos de óptica;Arroz em casca;0,0903;0,0004
+Soja em grão;Cultivo de soja;0,2033;0,0005
+Tambacu tambatinga;Lanchonetes, casas de chá, de sucos e similares;0,1871;0,0005
+Tucum amêndoa;Tambacu tambatinga;0,1858;0,0005
+Fabricação de artefatos de cerâmica e barro cozido para uso na construção, exceto azulejos e pisos;Atividade odontológica com recursos para realização de procedimentos cirúrgicos;0,183;0,0005
+Serviços combinados de escritório e apoio administrativo;Formação de condutores;0,1812;0,0005
+Criação de bovinos para corte;Cultivo de soja;0,176;0,0005
+Arroz em casca;Criação de bovinos para corte;0,1752;0,0005
+Obras de urbanização - ruas, praças e calçadas;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,1699;0,0005
+Carnaúba pó;Bovino;0,1615;0,0005
+Ceras;Bovino;0,1615;0,0005
+Galináceos total;Atividades de organizações sindicais;0,1585;0,0005
+Tucum amêndoa;Comércio varejista de combustíveis para veículos automotores;0,1537;0,0005
+Obras de urbanização - ruas, praças e calçadas;Padaria e confeitaria com predominância de revenda;0,152;0,0005
+Criação de bovinos para corte;Atividades de contabilidade;0,1482;0,0005
+Cana de açúcar;Comércio varejista de gás liqüefeito de petróleo (GLP);0,1463;0,0005
+Alimentícios;Umbu fruto;0,139;0,0005
+Construção de edifícios;Ensino fundamental;0,1385;0,0005
+Criação de frangos para corte;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,1367;0,0005
+Comércio varejista de gás liqüefeito de petróleo (GLP);Transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional;0,1332;0,0005
+Comércio varejista de artigos do vestuário e acessórios;Carnaúba pó;0,1281;0,0005
+Comércio varejista de artigos do vestuário e acessórios;Ceras;0,1281;0,0005
+Milho em grão;Cultivo de arroz;0,1271;0,0005
+Padaria e confeitaria com predominância de revenda;Comércio varejista de gás liqüefeito de petróleo (GLP);0,1262;0,0005
+Comércio varejista de gás liqüefeito de petróleo (GLP);Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica;0,126;0,0005
+Construção de rodovias e ferrovias;Comércio varejista de artigos de papelaria;0,1252;0,0005
+Comércio varejista de gás liqüefeito de petróleo (GLP);Educação infantil - pré-escola;0,1243;0,0005
+Comércio varejista de gás liqüefeito de petróleo (GLP);Construção de rodovias e ferrovias;0,1212;0,0005
+Galináceos total;Oleaginosos;0,1211;0,0005
+Galináceos total;Criação de bovinos para leite;0,1174;0,0005
+Padaria e confeitaria com predominância de revenda;Tucum amêndoa;0,1143;0,0005
+Comércio varejista de materiais de construção em geral;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,1129;0,0005
+Padaria e confeitaria com predominância de revenda;Obras de urbanização - ruas, praças e calçadas;0,1123;0,0005
+Comércio varejista de artigos de papelaria;Comércio varejista de bebidas;0,109;0,0005
+Construção de rodovias e ferrovias;Comércio varejista de bebidas;0,1071;0,0005
+Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;Comércio varejista de gás liqüefeito de petróleo (GLP);0,1071;0,0005
+Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente;Tambacu tambatinga;0,1063;0,0005
+Atividades de associações de defesa de direitos sociais;Babaçu amêndoa;0,103;0,0005
+Construção de rodovias e ferrovias;Cana de açúcar;0,1026;0,0005
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - supermercados;Tambacu tambatinga;0,1024;0,0005
+Fabricação de móveis com predominância de madeira;Mandioca;0,0985;0,0005
+Atividade odontológica com recursos para realização de procedimentos cirúrgicos;Tucum amêndoa;0,097;0,0005
+Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;Babaçu amêndoa;0,0937;0,0005
+Tambacu tambatinga;Comércio varejista de artigos de papelaria;0,2082;0,0006
+Criação de bovinos para corte;Atividades de associações de defesa de direitos sociais;0,1699;0,0006
+Fabricação de artefatos de cerâmica e barro cozido para uso na construção, exceto azulejos e pisos;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - supermercados;0,1684;0,0006
+Bovino;Equino;0,1655;0,0006
+Serviços combinados de escritório e apoio administrativo;Comércio varejista de artigos do vestuário e acessórios;0,1516;0,0006
+Galináceos total;Transporte rodoviário de carga, exceto produtos perigosos e mudanças, municipal;0,1378;0,0006
+Criação de frangos para corte;Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;0,1316;0,0006
+Construção de edifícios;Obras de alvenaria;0,1271;0,0006
+Comércio varejista de bebidas;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,126;0,0006
+Cana de açúcar;Tambacu tambatinga;0,1243;0,0006
+Comercio varejista de artigos de cama, mesa e banho;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,121;0,0006
+Atividades de apoio à agricultura não especificadas anteriormente;Arroz em casca;0,1201;0,0006
+Construção de edifícios;Comércio varejista de gás liqüefeito de petróleo (GLP);0,1167;0,0006
+Educação infantil - pré-escola;Construção de rodovias e ferrovias;0,1092;0,0006
+Comércio varejista de materiais de construção em geral;Comércio varejista de madeira e artefatos;0,1089;0,0006
+Comércio varejista de materiais de construção em geral;Tambacu tambatinga;0,1063;0,0006
+Comércio varejista de gás liqüefeito de petróleo (GLP);Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas;0,1035;0,0006
+Construção de rodovias e ferrovias;Educação infantil - pré-escola;0,1027;0,0006
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns;Arroz em casca;0,0994;0,0006
+Atividades de contabilidade;Tucum amêndoa;0,0958;0,0006
+Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas;Cana de açúcar;0,0943;0,0006
+Comércio varejista de artigos de óptica;Carnaúba pó;0,0931;0,0006
+Comércio varejista de artigos de óptica;Ceras;0,0931;0,0006
+Fabricação de alimentos para animais;Arroz em casca;0,0914;0,0006
+Comércio varejista de bebidas;Galináceos total;0,0907;0,0006
+Atividades de atendimento hospitalar, exceto pronto-socorro e unidades para atendimento a urgências;Castanha de caju;0,0897;0,0006
+Babaçu amêndoa;Tucum amêndoa;0,2193;0,0007
+Serviços combinados de escritório e apoio administrativo;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,1773;0,0007
+Tambacu tambatinga;Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;0,1723;0,0007
+Cultivo de soja;Criação de bovinos para corte;0,1697;0,0007
+Caprino;Leite;0,1637;0,0007
+Criação de bovinos para corte;Banana cacho;0,1414;0,0007
+Construção de edifícios;Promoção de vendas;0,1398;0,0007
+Cana de açúcar;Padaria e confeitaria com predominância de revenda;0,1396;0,0007
+Construção de edifícios;Criação de frangos para corte;0,133;0,0007
+Galináceos total;Comércio varejista de laticínios e frios;0,1329;0,0007
+Carnaúba pó;Arroz em casca;0,1324;0,0007
+Ceras;Arroz em casca;0,1324;0,0007
+Milho em grão;Soja em grão;0,1295;0,0007
+Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;Promoção de vendas;0,1232;0,0007
+Serviços combinados de escritório e apoio administrativo;Comércio varejista de materiais de construção em geral;0,1178;0,0007
+Galináceos total;Carnaúba pó;0,1169;0,0007
+Galináceos total;Ceras;0,1169;0,0007
+Comércio varejista de gás liqüefeito de petróleo (GLP);Oleaginosos;0,1151;0,0007
+Melancia;Tambacu tambatinga;0,1139;0,0007
+Atividades do Correio Nacional;Tambacu tambatinga;0,1058;0,0007
+Comércio varejista de artigos de papelaria;Cana de açúcar;0,1056;0,0007
+Comercio varejista de artigos de cama, mesa e banho;Comércio varejista de gás liqüefeito de petróleo (GLP);0,099;0,0007
+Transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional;Comércio varejista de gás liqüefeito de petróleo (GLP);0,098;0,0007
+Atividades de contabilidade;Criação de bovinos para corte;0,095;0,0007
+Fabricação de alimentos para animais;Tambacu tambatinga;0,0895;0,0007
+Comércio varejista de madeira e artefatos;Galináceos total;0,0759;0,0007
+Comércio varejista de mercadorias em lojas de conveniência;Galináceos total;0,0754;0,0007
+Fabricação de alimentos para animais;Galináceos total;0,0719;0,0007
+Equino;Babaçu amêndoa;0,162;0,0008
+Criação de bovinos para corte;Construção de rodovias e ferrovias;0,1565;0,0008
+Galináceos total;Manutenção e reparação de motocicletas e motonetas;0,1421;0,0008
+Criação de frangos para corte;Lanchonetes, casas de chá, de sucos e similares;0,1322;0,0008
+Padaria e confeitaria com predominância de revenda;Promoção de vendas;0,1196;0,0008
+Casas lotéricas;Atividades de fisioterapia;0,1191;0,0008
+Cana de açúcar;Melancia;0,1133;0,0008
+Lenha;Transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional;0,1122;0,0008
+Galináceos total;Casas lotéricas;0,1117;0,0008
+Comércio varejista de materiais de construção em geral;Criação de frangos para corte;0,1108;0,0008
+Comércio varejista de materiais de construção em geral;Construção de rodovias e ferrovias;0,1064;0,0008
+Atividades de organizações religiosas;Babaçu amêndoa;0,0998;0,0008
+Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;Tucum amêndoa;0,0988;0,0008
+Ovos de galinha;Cana de açúcar;0,0952;0,0008
+Comércio varejista de móveis;Milho em grão;0,0923;0,0008
+Caixas econômicas;Tambacu tambatinga;0,084;0,0008
+Mel de abelha;Umbu fruto;0,1826;0,0009
+Tambacu tambatinga;Comércio varejista de hortifrutigranjeiros;0,1776;0,0009
+Criação de bovinos para corte;Comércio varejista especializado de equipamentos e suprimentos de informática;0,1574;0,0009
+Criação de bovinos para corte;Transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional;0,1488;0,0009
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - hipermercados;Comércio varejista de gás liqüefeito de petróleo (GLP);0,1137;0,0009
+Mandioca;Galináceos total;0,1084;0,0009
+Banana cacho;Comércio varejista especializado de equipamentos e suprimentos de informática;0,1051;0,0009
+Lanchonetes, casas de chá, de sucos e similares;Galináceos total;0,0968;0,0009
+Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;Cana de açúcar;0,094;0,0009
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns;Soja em grão;0,0918;0,0009
+Tucum amêndoa;Educação infantil - pré-escola;0,1749;0,001
+Tucum amêndoa;Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo;0,1732;0,001
+Equino;Bovino;0,1718;0,001
+Oleaginosos;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,1667;0,001
+Arroz em casca;Atividades de apoio à agricultura não especificadas anteriormente;0,1631;0,001
+Arroz em casca;Ovos de galinha;0,1464;0,001
+Cana de açúcar;Transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional;0,1431;0,001
+Mandioca;Fabricação de móveis com predominância de madeira;0,1335;0,001
+Construção de edifícios;Comércio varejista de produtos farmacêuticos, com manipulação de fórmulas;0,1265;0,001
+Melancia;Bovino;0,1225;0,001
+Ovino;Umbu fruto;0,1197;0,001
+Casas lotéricas;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,1143;0,001
+Comércio atacadista de mercadorias em geral, com predominância de produtos alimentícios;Comércio varejista de bebidas;0,1128;0,001
+Comercio varejista de artigos de cama, mesa e banho;Tambacu tambatinga;0,1043;0,001
+Educação infantil - pré-escola;Comércio varejista de gás liqüefeito de petróleo (GLP);0,1013;0,001
+Educação infantil - pré-escola;Melancia;0,0973;0,001
+Comércio varejista de materiais de construção em geral;Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas;0,0915;0,001
+Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica;Tambacu tambatinga;0,0853;0,001
+Comércio varejista especializado de equipamentos de telefonia e comunicação;Galináceos total;0,0738;0,001
+Comércio varejista de artigos do vestuário e acessórios;Manga;0,1373;0,0011
+Lanchonetes, casas de chá, de sucos e similares;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,1259;0,0011
+Comércio varejista de gás liqüefeito de petróleo (GLP);Fabricação de produtos de panificação industrial;0,1234;0,0011
+Galináceos total;Promoção de vendas;0,1217;0,0011
+Casas lotéricas;Comércio varejista de mercadorias em lojas de conveniência;0,1194;0,0011
+Melancia;Comércio atacadista de alimentos para animais;0,1193;0,0011
+Melancia;Educação infantil - pré-escola;0,1128;0,0011
+Tilápia;Tambacu tambatinga;0,1126;0,0011
+Comércio varejista de gás liqüefeito de petróleo (GLP);Restaurantes e similares;0,1059;0,0011
+Comércio varejista de materiais de construção em geral;Comércio varejista de mercadorias em lojas de conveniência;0,1015;0,0011
+Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;Criação de frangos para corte;0,1008;0,0011
+Construção de rodovias e ferrovias;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,1006;0,0011
+Comércio varejista de artigos de óptica;Tucum amêndoa;0,0977;0,0011
+Comércio varejista de madeira e artefatos;Babaçu amêndoa;0,0859;0,0011
+Soja em grão;Atividades de apoio à agricultura não especificadas anteriormente;0,1827;0,0012
+Tambacu tambatinga;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - supermercados;0,1562;0,0012
+Carnaúba pó;Melancia;0,1317;0,0012
+Ceras;Melancia;0,1317;0,0012
+Manga;Comércio varejista de materiais de construção em geral;0,1293;0,0012
+Construção de edifícios;Comércio varejista de mercadorias em lojas de conveniência;0,1208;0,0012
+Comércio varejista de bebidas;Comércio varejista de artigos de papelaria;0,1207;0,0012
+Manga;Galináceos total;0,1178;0,0012
+Educação infantil - pré-escola;Comércio atacadista de produtos de higiene, limpeza e conservação domiciliar;0,1154;0,0012
+Comércio varejista de bebidas;Padaria e confeitaria com predominância de revenda;0,1118;0,0012
+Galináceos total;Comércio varejista de hortifrutigranjeiros;0,1058;0,0012
+Comércio varejista de materiais de construção em geral;Ensino fundamental;0,1056;0,0012
+Construção de edifícios;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - supermercados;0,0952;0,0012
+Comércio varejista de combustíveis para veículos automotores;Tambacu tambatinga;0,0861;0,0012
+Atividades de condicionamento físico;Babaçu amêndoa;0,084;0,0012
+Hotéis;Condomínios prediais;0,2307;0,0013
+Babaçu amêndoa;Casas lotéricas;0,18;0,0013
+Caprino;Umbu fruto;0,1616;0,0013
+Criação de bovinos para corte;Serviços advocatícios;0,1479;0,0013
+Serviços combinados de escritório e apoio administrativo;Restaurantes e similares;0,144;0,0013
+Comércio varejista de artigos do vestuário e acessórios;Tucum amêndoa;0,1393;0,0013
+Galináceos total;Obras de alvenaria;0,1177;0,0013
+Comércio varejista de artigos de papelaria;Promoção de vendas;0,1141;0,0013
+Comércio varejista de artigos do vestuário e acessórios;Feijão em grão;0,1108;0,0013
+Construção de edifícios;Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;0,1066;0,0013
+Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;Educação infantil - pré-escola;0,1036;0,0013
+Comércio varejista de bebidas;Cana de açúcar;0,1024;0,0013
+Educação infantil - pré-escola;Cana de açúcar;0,0989;0,0013
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns;Criação de frangos para corte;0,0985;0,0013
+Caixas econômicas;Padaria e confeitaria com predominância de revenda;0,0857;0,0013
+Tambacu tambatinga;Criação de frangos para corte;0,1905;0,0014
+Tucum amêndoa;Comercio varejista de artigos de cama, mesa e banho;0,1661;0,0014
+Oleaginosos;Comércio varejista de gás liqüefeito de petróleo (GLP);0,1573;0,0014
+Cana de açúcar;Construção de rodovias e ferrovias;0,1383;0,0014
+Cana de açúcar;Comércio varejista de hortifrutigranjeiros;0,1318;0,0014
+Fabricação de artefatos de cerâmica e barro cozido para uso na construção, exceto azulejos e pisos;Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas;0,1306;0,0014
+Lanchonetes, casas de chá, de sucos e similares;Construção de rodovias e ferrovias;0,1213;0,0014
+Comércio varejista de artigos de papelaria;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,1001;0,0014
+Atividades de associações de defesa de direitos sociais;Equino;0,0899;0,0014
+Comércio varejista especializado de equipamentos de telefonia e comunicação;Comércio varejista de gás liqüefeito de petróleo (GLP);0,0894;0,0014
+Comércio a varejo de pneumáticos e câmaras-de-ar;Soja em grão;0,0832;0,0014
+Comercio varejista de artigos de cama, mesa e banho;Galináceos total;0,0786;0,0014
+Serviços combinados de escritório e apoio administrativo;Hotéis;0,1476;0,0015
+Castanha de caju;Ovos de galinha;0,128;0,0015
+Educação infantil - pré-escola;Seleção e agenciamento de mão-de-obra;0,1109;0,0015
+Tilápia;Babaçu amêndoa;0,109;0,0015
+Milho em grão;Comércio varejista de ferragens e ferramentas;0,1081;0,0015
+Criação de bovinos para corte;Galináceos total;0,1072;0,0015
+Criação de frangos para corte;Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas;0,0992;0,0015
+Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica;Comércio varejista de gás liqüefeito de petróleo (GLP);0,0945;0,0015
+Construção de rodovias e ferrovias;Restaurantes e similares;0,0933;0,0015
+Atividades de organizações religiosas;Carnaúba pó;0,0892;0,0015
+Atividades de organizações religiosas;Ceras;0,0892;0,0015
+Cartórios;Cultivo de milho;0,0888;0,0015
+Construção de rodovias e ferrovias;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns;0,0798;0,0015
+Bovino;Melancia;0,1375;0,0016
+Galináceos total;Comércio atacadista de produtos de higiene, limpeza e conservação domiciliar;0,1357;0,0016
+Galináceos total;Imunização e controle de pragas urbanas;0,1288;0,0016
+Galináceos total;Agências de viagens;0,1207;0,0016
+Criação de bovinos para corte;Feijão em grão;0,1182;0,0016
+Milho em grão;Cultivo de outros cereais não especificados anteriormente;0,1171;0,0016
+Comércio varejista de gás liqüefeito de petróleo (GLP);Aparelhamento de placas e execução de trabalhos em mármore, granito, ardósia e outras pedras;0,1168;0,0016
+Comércio varejista de gás liqüefeito de petróleo (GLP);Comércio varejista de hortifrutigranjeiros;0,1144;0,0016
+Casas lotéricas;Obras de urbanização - ruas, praças e calçadas;0,107;0,0016
+Educação infantil - pré-escola;Criação de frangos para corte;0,1021;0,0016
+Construção de edifícios;Padaria e confeitaria com predominância de revenda;0,0993;0,0016
+Comércio varejista de materiais de construção em geral;Comércio varejista de bebidas;0,0948;0,0016
+Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal;Tucum amêndoa;0,0927;0,0016
+Educação infantil - pré-escola;Casas lotéricas;0,0926;0,0016
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns;Comércio varejista de suvenires, bijuterias e artesanatos;0,092;0,0016
+Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;Construção de rodovias e ferrovias;0,0877;0,0016
+Atividades de organizações religiosas;Arroz em casca;0,0874;0,0016
+Fabricação de alimentos para animais;Comércio varejista de bebidas;0,0873;0,0016
+Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal;Tambacu tambatinga;0,0843;0,0016
+Comércio varejista de hortifrutigranjeiros;Lenha;0,0796;0,0016
+Obras de urbanização - ruas, praças e calçadas;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - hipermercados;0,151;0,0017
+Arroz em casca;Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal;0,1445;0,0017
+Cultivo de arroz;Milho em grão;0,1122;0,0017
+Galináceos total;Feijão em grão;0,1109;0,0017
+Mandioca;Comércio varejista de artigos de óptica;0,1099;0,0017
+Comercio varejista de artigos de cama, mesa e banho;Educação infantil - pré-escola;0,0966;0,0017
+Padaria e confeitaria com predominância de revenda;Oleaginosos;0,0938;0,0017
+Construção de edifícios;Galináceos total;0,0814;0,0017
+Criação de bovinos para corte;Agências de viagens;0,1512;0,0018
+Obras de urbanização - ruas, praças e calçadas;Comércio varejista de artigos de papelaria;0,1463;0,0018
+Galináceos total;Captação, tratamento e distribuição de água;0,1329;0,0018
+Galináceos total;Atividade médica ambulatorial com recursos para realização de procedimentos cirúrgicos;0,1235;0,0018
+Comércio varejista de gás liqüefeito de petróleo (GLP);Atividades de associações de defesa de direitos sociais;0,1155;0,0018
+Comércio varejista de bebidas;Obras de urbanização - ruas, praças e calçadas;0,1071;0,0018
+Padaria e confeitaria com predominância de revenda;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,1001;0,0018
+Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;Arroz em casca;0,0886;0,0018
+Caixas econômicas;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,0832;0,0018
+Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas;Galináceos total;0,0805;0,0018
+Caixas econômicas;Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas;0,0771;0,0018
+Comercio varejista de artigos de armarinho;Tambacu tambatinga;0,0733;0,0018
+Babaçu amêndoa;Fava em grão;0,1574;0,0019
+Restaurantes e similares;Construção de rodovias e ferrovias;0,1458;0,0019
+Galináceos total;Clubes sociais, esportivos e similares;0,1158;0,0019
+Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;Obras de urbanização - ruas, praças e calçadas;0,1089;0,0019
+Manga;Ovos de galinha;0,1024;0,0019
+Comércio varejista de hortifrutigranjeiros;Melancia;0,0797;0,0019
+Comércio varejista de calçados;Babaçu amêndoa;0,0767;0,0019
+Tambacu tambatinga;Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente;0,1892;0,002
+Arroz em casca;Comércio varejista de artigos do vestuário e acessórios;0,1509;0,002
+Criação de bovinos para corte;Comércio varejista de artigos de papelaria;0,1381;0,002
+Fabricação de artefatos de cerâmica e barro cozido para uso na construção, exceto azulejos e pisos;Serviços de comunicação multimídia - SCM;0,1376;0,002
+Galináceos total;Ensino fundamental;0,1145;0,002
+Comércio varejista de gás liqüefeito de petróleo (GLP);Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente;0,1111;0,002
+Comércio varejista de gás liqüefeito de petróleo (GLP);Serviços advocatícios;0,1111;0,002
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns;Criação de bovinos para corte;0,0881;0,002
+Tucum amêndoa;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - supermercados;0,1444;0,0021
+Galináceos total;Corretores e agentes de seguros, de planos de previdência complementar e de saúde;0,1384;0,0021
+Tambacu tambatinga;Comércio varejista de combustíveis para veículos automotores;0,1329;0,0021
+Carnaúba pó;Tambacu tambatinga;0,1281;0,0021
+Ceras;Tambacu tambatinga;0,1281;0,0021
+Galináceos total;Serviços de alimentação para eventos e recepções - bufê;0,1213;0,0021
+Cana de açúcar;Restaurantes e similares;0,1183;0,0021
+Feijão em grão;Comércio varejista de artigos do vestuário e acessórios;0,1087;0,0021
+Criação de frangos para corte;Educação infantil - pré-escola;0,1086;0,0021
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - hipermercados;Comércio varejista de bebidas;0,1081;0,0021
+Educação infantil - pré-escola;Comércio varejista de mercadorias em lojas de conveniência;0,1073;0,0021
+Comércio varejista de bebidas;Tucum amêndoa;0,1059;0,0021
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - supermercados;Fabricação de artefatos de cerâmica e barro cozido para uso na construção, exceto azulejos e pisos;0,09;0,0021
+Atividades de contabilidade;Galináceos total;0,0703;0,0021
+Obras de urbanização - ruas, praças e calçadas;Comércio varejista de suvenires, bijuterias e artesanatos;0,1543;0,0022
+Galináceos total;Fabricação de esquadrias de metal;0,1091;0,0022
+Feijão em grão;Comércio varejista especializado de equipamentos e suprimentos de informática;0,1082;0,0022
+Galináceos total;Comércio varejista de madeira e artefatos;0,1074;0,0022
+Fava em grão;Arroz em casca;0,1073;0,0022
+Mandioca;Equino;0,1068;0,0022
+Formação de condutores;Arroz em casca;0,0898;0,0022
+Transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional;Cana de açúcar;0,0879;0,0022
+Comércio varejista de artigos de óptica;Babaçu amêndoa;0,0843;0,0022
+Criação de bovinos para corte;Atividades de apoio à agricultura não especificadas anteriormente;0,1448;0,0023
+Serviços combinados de escritório e apoio administrativo;Educação infantil - pré-escola;0,133;0,0023
+Oleaginosos;Fava em grão;0,1306;0,0023
+Construção de edifícios;Agências de viagens;0,1229;0,0023
+Cana de açúcar;Atividade odontológica com recursos para realização de procedimentos cirúrgicos;0,1175;0,0023
+Manga;Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas;0,1168;0,0023
+Cana de açúcar;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - supermercados;0,1089;0,0023
+Melancia;Comércio varejista de hortifrutigranjeiros;0,1056;0,0023
+Padaria e confeitaria com predominância de revenda;Coleta de resíduos não-perigosos;0,1026;0,0023
+Comércio varejista de materiais de construção em geral;Fabricação de esquadrias de metal;0,1013;0,0023
+Comércio varejista de materiais de construção em geral;Tucum amêndoa;0,0918;0,0023
+Construção de rodovias e ferrovias;Comércio varejista de gás liqüefeito de petróleo (GLP);0,0893;0,0023
+Lojas de departamentos ou magazines, exceto lojas francas (Duty free);Carnaúba pó;0,0827;0,0023
+Lojas de departamentos ou magazines, exceto lojas francas (Duty free);Ceras;0,0827;0,0023
+Bancos múltiplos, com carteira comercial;Galináceos total;0,068;0,0023
+Galináceos total;Confecção, sob medida, de peças do vestuário, exceto roupas íntimas;0,1225;0,0024
+Comércio varejista de materiais de construção em geral;Transporte rodoviário de carga, exceto produtos perigosos e mudanças, municipal;0,109;0,0024
+Galináceos total;Atividades de associações de defesa de direitos sociais;0,1056;0,0024
+Educação infantil - pré-escola;Confecção, sob medida, de peças do vestuário, exceto roupas íntimas;0,1048;0,0024
+Tambaqui;Babaçu amêndoa;0,1038;0,0024
+Galináceos total;Cana de açúcar;0,1036;0,0024
+Educação infantil - pré-escola;Comércio varejista de artigos de papelaria;0,1011;0,0024
+Educação infantil - pré-escola;Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;0,0944;0,0024
+Comércio varejista de materiais de construção em geral;Manga;0,093;0,0024
+Fabricação de alimentos para animais;Comércio varejista de artigos de papelaria;0,0891;0,0024
+Comércio atacadista de mercadorias em geral, com predominância de produtos alimentícios;Galináceos total;0,0741;0,0024
+Transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional;Galináceos total;0,0701;0,0024
+Comércio varejista de materiais de construção em geral;Fabricação de conservas de frutas;0,104;0,0025
+Lenha;Comércio varejista especializado de equipamentos de telefonia e comunicação;0,0943;0,0025
+Tucum amêndoa;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,1594;0,0026
+Tambacu tambatinga;Carnaúba pó;0,1397;0,0026
+Tambacu tambatinga;Ceras;0,1397;0,0026
+Galináceos total;Comércio por atacado de peças e acessórios para motocicletas e motonetas;0,1281;0,0026
+Oleaginosos;Casas lotéricas;0,1278;0,0026
+Comércio varejista especializado de equipamentos e suprimentos de informática;Criação de bovinos para corte;0,117;0,0026
+Construção de edifícios;Comércio varejista de bebidas;0,102;0,0026
+Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica;Promoção de vendas;0,0935;0,0026
+Atividades de organizações religiosas;Tucum amêndoa;0,0906;0,0026
+Comércio varejista de bebidas;Melancia;0,0873;0,0026
+Caixas econômicas;Comércio varejista de artigos de papelaria;0,0815;0,0026
+Caixas econômicas;Galináceos total;0,0623;0,0026
+Tambacu tambatinga;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - hipermercados;0,1848;0,0027
+Restaurantes e similares;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,1461;0,0027
+Melancia;Comércio varejista de gás liqüefeito de petróleo (GLP);0,1052;0,0027
+Educação infantil - pré-escola;Comércio varejista especializado de peças e acessórios para aparelhos eletroeletrônicos para uso doméstico, exceto informática e comunicação;0,105;0,0027
+Melancia;Comércio varejista de bebidas;0,1032;0,0027
+Comércio varejista de materiais de construção em geral;Serviços de alimentação para eventos e recepções - bufê;0,1026;0,0027
+Fabricação de artefatos de cerâmica e barro cozido para uso na construção, exceto azulejos e pisos;Galináceos total;0,0987;0,0027
+Lenha;Melancia;0,0905;0,0027
+Atividades de organizações religiosas;Tambacu tambatinga;0,0847;0,0027
+Comércio varejista de combustíveis para veículos automotores;Galináceos total;0,0756;0,0027
+Criação de bovinos para corte;Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;0,1267;0,0028
+Comércio varejista de artigos do vestuário e acessórios;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,1185;0,0028
+Melancia;Lanchonetes, casas de chá, de sucos e similares;0,1047;0,0028
+Comércio varejista de materiais de construção em geral;Seleção e agenciamento de mão-de-obra;0,0989;0,0028
+Comércio varejista de materiais de construção em geral;Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;0,0931;0,0028
+Comércio varejista de bebidas;Restaurantes e similares;0,0931;0,0028
+Fabricação de alimentos para animais;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,0849;0,0028
+Transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional;Criação de bovinos para corte;0,0836;0,0028
+Construção de edifícios;Serviços de engenharia;0,1104;0,0029
+Educação infantil - pré-escola;Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente;0,0997;0,0029
+Comércio varejista de materiais de construção em geral;Obras de alvenaria;0,0979;0,0029
+Padaria e confeitaria com predominância de revenda;Comércio varejista de bebidas;0,0968;0,0029
+Comércio varejista de materiais de construção em geral;Promoção de vendas;0,0961;0,0029
+Lenha;Galináceos total;0,0863;0,0029
+Construção de rodovias e ferrovias;Lanchonetes, casas de chá, de sucos e similares;0,0857;0,0029
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns;Cana de açúcar;0,083;0,0029
+Fabricação de alimentos para animais;Educação infantil - pré-escola;0,0795;0,0029
+Comércio varejista de medicamentos veterinários;Babaçu amêndoa;0,0774;0,0029
+Comércio varejista de hortifrutigranjeiros;Arroz em casca;0,0744;0,0029
+Babaçu amêndoa;Carnaúba pó;0,1467;0,003
+Babaçu amêndoa;Ceras;0,1467;0,003
+Cana de açúcar;Serviços advocatícios;0,1305;0,003
+Obras de urbanização - ruas, praças e calçadas;Lanchonetes, casas de chá, de sucos e similares;0,1215;0,003
+Cana de açúcar;Comércio varejista de bebidas;0,1193;0,003
+Comércio varejista de bebidas;Comércio atacadista de mercadorias em geral, com predominância de produtos alimentícios;0,105;0,003
+Feijão em grão;Galináceos total;0,1002;0,003
+Comércio varejista de gás liqüefeito de petróleo (GLP);Atividades de condicionamento físico;0,0987;0,003
+Galináceos total;Comércio atacadista de cereais e leguminosas beneficiados;0,0983;0,003
+Comércio varejista de bebidas;Educação infantil - pré-escola;0,0933;0,003
+Lanchonetes, casas de chá, de sucos e similares;Melancia;0,0915;0,003
+Criação de frangos para corte;Arroz em casca;0,0868;0,003
+Comércio varejista especializado de equipamentos de telefonia e comunicação;Cana de açúcar;0,0799;0,003
+Cana de açúcar;Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;0,1176;0,0031
+Criação de frangos para corte;Comércio varejista especializado de equipamentos de telefonia e comunicação;0,1133;0,0031
+Criação de bovinos para corte;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns;0,1097;0,0031
+Feijão em grão;Comércio varejista de bicicletas e triciclos, peças e acessórios;0,1028;0,0031
+Casas lotéricas;Comércio varejista de artigos de papelaria;0,0953;0,0031
+Casas lotéricas;Ovos de galinha;0,0883;0,0031
+Padaria e confeitaria com predominância de revenda;Galináceos total;0,0737;0,0031
+Tucum amêndoa;Casas lotéricas;0,1315;0,0032
+Galináceos total;Comércio varejista especializado de peças e acessórios para aparelhos eletroeletrônicos para uso doméstico, exceto informática e comunicação;0,1112;0,0032
+Comércio varejista de artigos do vestuário e acessórios;Comércio varejista de gás liqüefeito de petróleo (GLP);0,1111;0,0032
+Educação infantil - pré-escola;Agências de viagens;0,1063;0,0032
+Padaria e confeitaria com predominância de revenda;Serviços de engenharia;0,0994;0,0032
+Galináceos total;Padaria e confeitaria com predominância de revenda;0,0969;0,0032
+Comercio varejista de artigos de cama, mesa e banho;Comércio varejista de bebidas;0,0928;0,0032
+Educação infantil - pré-escola;Babaçu amêndoa;0,0861;0,0032
+Comércio varejista de artigos de papelaria;Educação infantil - pré-escola;0,0859;0,0032
+Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica;Padaria e confeitaria com predominância de revenda;0,0807;0,0032
+Tambacu tambatinga;Comércio varejista especializado de equipamentos de telefonia e comunicação;0,16;0,0033
+Tambacu tambatinga;Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas;0,1271;0,0033
+Comércio varejista de artigos do vestuário e acessórios;Atividades de associações de defesa de direitos sociais;0,1195;0,0033
+Obras de urbanização - ruas, praças e calçadas;Comércio varejista de hortifrutigranjeiros;0,1189;0,0033
+Cana de açúcar;Atividades de contabilidade;0,1114;0,0033
+Padaria e confeitaria com predominância de revenda;Comércio varejista de suvenires, bijuterias e artesanatos;0,1051;0,0033
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - hipermercados;Obras de urbanização - ruas, praças e calçadas;0,1042;0,0033
+Educação infantil - pré-escola;Comércio varejista de laticínios e frios;0,1023;0,0033
+Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;Comércio varejista de gás liqüefeito de petróleo (GLP);0,0981;0,0033
+Comércio varejista de materiais de construção em geral;Obras de urbanização - ruas, praças e calçadas;0,091;0,0033
+Atividades do Correio Nacional;Padaria e confeitaria com predominância de revenda;0,0882;0,0033
+Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,0824;0,0033
+Administração pública em geral;Criação de bovinos para corte;0,0796;0,0033
+Atividades de contabilidade;Tambacu tambatinga;0,0761;0,0033
+Serviços de engenharia;Galináceos total;0,0655;0,0033
+Carnaúba pó;Comércio varejista de artigos de óptica;0,1233;0,0034
+Ceras;Comércio varejista de artigos de óptica;0,1233;0,0034
+Lanchonetes, casas de chá, de sucos e similares;Criação de frangos para corte;0,1168;0,0034
+Castanha de caju;Galináceos total;0,1134;0,0034
+Obras de urbanização - ruas, praças e calçadas;Restaurantes e similares;0,1121;0,0034
+Comércio varejista de materiais de construção em geral;Comércio atacadista de produtos de higiene, limpeza e conservação domiciliar;0,1073;0,0034
+Melancia;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,1063;0,0034
+Milho em grão;Comércio varejista de móveis;0,1062;0,0034
+Restaurantes e similares;Galináceos total;0,089;0,0034
+Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente;Bares e outros estabelecimentos especializados em servir bebidas, sem entretenimento;0,1159;0,0035
+Leite;Castanha de caju;0,1095;0,0035
+Cana de açúcar;Oleaginosos;0,1095;0,0035
+Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo;Equino;0,1076;0,0035
+Construção de edifícios;Comércio atacadista de máquinas, aparelhos e equipamentos para uso agropecuário, partes e peças;0,1066;0,0035
+Melancia;Oleaginosos;0,1014;0,0035
+Criação de frangos para corte;Babaçu amêndoa;0,0991;0,0035
+Padaria e confeitaria com predominância de revenda;Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica;0,0947;0,0035
+Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas;Caixas econômicas;0,0799;0,0035
+Comércio atacadista de mercadorias em geral, com predominância de produtos alimentícios;Feijão em grão;0,0773;0,0035
+Tucum amêndoa;Obras de urbanização - ruas, praças e calçadas;0,1549;0,0036
+Manga;Cartórios;0,1117;0,0036
+Galináceos total;Comércio atacadista de mercadorias em geral, com predominância de insumos agropecuários;0,1038;0,0036
+Comércio varejista de gás liqüefeito de petróleo (GLP);Cana de açúcar;0,0956;0,0036
+Atividades de organizações religiosas;Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo;0,0827;0,0036
+Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal;Galináceos total;0,0661;0,0036
+Comércio varejista de produtos farmacêuticos, com manipulação de fórmulas;Galináceos total;0,0606;0,0036
+Tambacu tambatinga;Atividade odontológica com recursos para realização de procedimentos cirúrgicos;0,1418;0,0037
+Tambacu tambatinga;Melancia;0,1287;0,0037
+Restaurantes e similares;Comércio varejista de gás liqüefeito de petróleo (GLP);0,1241;0,0037
+Comércio varejista de materiais de construção em geral;Atividade médica ambulatorial com recursos para realização de procedimentos cirúrgicos;0,1008;0,0037
+Melancia;Babaçu amêndoa;0,0988;0,0037
+Lanchonetes, casas de chá, de sucos e similares;Babaçu amêndoa;0,0917;0,0037
+Ovos de galinha;Casas lotéricas;0,0892;0,0037
+Lojas de departamentos ou magazines, exceto lojas francas (Duty free);Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,0836;0,0037
+Construção de edifícios;Atividade médica ambulatorial com recursos para realização de procedimentos cirúrgicos;0,1217;0,0038
+Construção de edifícios;Fabricação de esquadrias de metal;0,108;0,0038
+Educação infantil - pré-escola;Serviços de alimentação para eventos e recepções - bufê;0,1058;0,0038
+Galináceos total;Comércio varejista de doces, balas, bombons e semelhantes;0,1006;0,0038
+Galináceos total;Coleta de resíduos não-perigosos;0,0988;0,0038
+Lanchonetes, casas de chá, de sucos e similares;Cana de açúcar;0,0908;0,0038
+Educação infantil - pré-escola;Padaria e confeitaria com predominância de revenda;0,089;0,0038
+Comércio varejista de ferragens e ferramentas;Cana de açúcar;0,0793;0,0038
+Comércio varejista de artigos de óptica;Mandioca;0,0719;0,0038
+Tambacu tambatinga;Construção de rodovias e ferrovias;0,1566;0,0039
+Tucum amêndoa;Comércio varejista de artigos do vestuário e acessórios;0,1361;0,0039
+Equino;Oleaginosos;0,1341;0,0039
+Tucum amêndoa;Melancia;0,1218;0,0039
+Galináceos total;Serviços de manutenção e reparação mecânica de veículos automotores;0,1028;0,0039
+Criação de bovinos para corte;Milho em grão;0,0995;0,0039
+Casas lotéricas;Comércio varejista de hortifrutigranjeiros;0,0939;0,0039
+Construção de rodovias e ferrovias;Comércio varejista especializado de equipamentos de telefonia e comunicação;0,0846;0,0039
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns;Padaria e confeitaria com predominância de revenda;0,0825;0,0039
+Carnaúba pó;Casas lotéricas;0,1144;0,004
+Ceras;Casas lotéricas;0,1144;0,004
+Lanchonetes, casas de chá, de sucos e similares;Tucum amêndoa;0,1057;0,004
+Cana de açúcar;Comércio varejista de artigos do vestuário e acessórios;0,0997;0,004
+Comercio varejista de artigos de cama, mesa e banho;Obras de urbanização - ruas, praças e calçadas;0,0935;0,004
+Educação infantil - pré-escola;Comércio varejista de bebidas;0,0888;0,004
+Atividade odontológica com recursos para realização de procedimentos cirúrgicos;Fabricação de artefatos de cerâmica e barro cozido para uso na construção, exceto azulejos e pisos;0,0764;0,004
+Comércio a varejo de peças e acessórios novos para veículos automotores;Fabricação de artefatos de cerâmica e barro cozido para uso na construção, exceto azulejos e pisos;0,0739;0,004
+Comércio varejista de madeira e artefatos;Melancia;0,0717;0,004
+Serviços de manutenção e reparação mecânica de veículos automotores;Galináceos total;0,0593;0,004
+Tambacu tambatinga;Lojas de departamentos ou magazines, exceto lojas francas (Duty free);0,13;0,0041
+Construção de edifícios;Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente;0,1038;0,0041
+Educação infantil - pré-escola;Educação profissional de nível técnico;0,0993;0,0041
+Lanchonetes, casas de chá, de sucos e similares;Educação infantil - pré-escola;0,0947;0,0041
+Padaria e confeitaria com predominância de revenda;Comércio varejista de artigos de papelaria;0,0934;0,0041
+Padaria e confeitaria com predominância de revenda;Lanchonetes, casas de chá, de sucos e similares;0,0882;0,0041
+Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;Melancia;0,0869;0,0041
+Transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional;Construção de rodovias e ferrovias;0,0795;0,0041
+Comércio varejista de hortifrutigranjeiros;Galináceos total;0,0635;0,0041
+Equino;Arroz em casca;0,1169;0,0042
+Educação infantil - pré-escola;Comércio varejista de doces, balas, bombons e semelhantes;0,1004;0,0042
+Padaria e confeitaria com predominância de revenda;Comércio varejista de produtos farmacêuticos, com manipulação de fórmulas;0,099;0,0042
+Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;Criação de frangos para corte;0,098;0,0042
+Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente;Comércio varejista de artigos do vestuário e acessórios;0,09;0,0042
+Atividades de associações de defesa de direitos sociais;Criação de bovinos para corte;0,0805;0,0042
+Serviços advocatícios;Criação de bovinos para corte;0,0685;0,0042
+Galináceos total;Comércio atacadista de instrumentos e materiais para uso médico, cirúrgico, hospitalar e de laboratórios;0,1153;0,0043
+Construção de edifícios;Comércio varejista de doces, balas, bombons e semelhantes;0,1079;0,0043
+Comércio varejista de materiais de construção em geral;Agências de viagens;0,0933;0,0043
+Galináceos total;Transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional;0,0923;0,0043
+Galináceos total;Comércio varejista de artigos do vestuário e acessórios;0,0914;0,0043
+Padaria e confeitaria com predominância de revenda;Educação infantil - pré-escola;0,0838;0,0043
+Comércio varejista especializado de equipamentos de telefonia e comunicação;Construção de rodovias e ferrovias;0,0779;0,0043
+Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente;Mandioca;0,0728;0,0043
+Criação de bovinos para corte;Obras de alvenaria;0,1331;0,0044
+Lanchonetes, casas de chá, de sucos e similares;Promoção de vendas;0,1134;0,0044
+Melancia;Comércio varejista de mercadorias em lojas de conveniência;0,1049;0,0044
+Galináceos total;Serviços de usinagem, tornearia e solda;0,1044;0,0044
+Construção de edifícios;Obras de urbanização - ruas, praças e calçadas;0,0962;0,0044
+Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente;Educação infantil - pré-escola;0,0913;0,0044
+Comércio varejista de gás liqüefeito de petróleo (GLP);Atividades de contabilidade;0,0905;0,0044
+Lenha;Comércio varejista de gás liqüefeito de petróleo (GLP);0,0888;0,0044
+Lojas de departamentos ou magazines, exceto lojas francas (Duty free);Babaçu amêndoa;0,0849;0,0044
+Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas;Tambacu tambatinga;0,0781;0,0044
+Padaria e confeitaria com predominância de revenda;Melancia;0,0775;0,0044
+Comércio varejista de hortifrutigranjeiros;Casas lotéricas;0,074;0,0044
+Babaçu amêndoa;Padaria e confeitaria com predominância de revenda;0,1518;0,0045
+Equino;Atividades de organizações religiosas;0,139;0,0045
+Serviços combinados de escritório e apoio administrativo;Fabricação de móveis com predominância de madeira;0,136;0,0045
+Arroz em casca;Fava em grão;0,1309;0,0045
+Cana de açúcar;Comercio varejista de artigos de cama, mesa e banho;0,1095;0,0045
+Ovos de galinha;Galináceos total;0,1077;0,0045
+Fabricação de artefatos de cerâmica e barro cozido para uso na construção, exceto azulejos e pisos;Arroz em casca;0,1071;0,0045
+Criação de frangos para corte;Atividades de contabilidade;0,0983;0,0045
+Galináceos total;Atividades associativas não especificadas anteriormente;0,0982;0,0045
+Comércio varejista de artigos de papelaria;Obras de urbanização - ruas, praças e calçadas;0,0894;0,0045
+Comércio varejista de materiais de construção em geral;Clubes sociais, esportivos e similares;0,0894;0,0045
+Atividades de organizações religiosas;Fabricação de móveis com predominância de madeira;0,0813;0,0045
+Ovos de galinha;Manga;0,0777;0,0045
+Castanha de caju;Carnaúba pó;0,1239;0,0046
+Castanha de caju;Ceras;0,1239;0,0046
+Oleaginosos;Melancia;0,1227;0,0046
+Atividades de apoio à agricultura não especificadas anteriormente;Criação de bovinos para corte;0,1151;0,0046
+Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente;Condomínios prediais;0,1107;0,0046
+Construção de edifícios;Outras atividades de ensino não especificadas anteriormente;0,1088;0,0046
+Melancia;Comércio varejista de madeira e artefatos;0,1025;0,0046
+Galináceos total;Fornecimento de alimentos preparados preponderantemente para empresas;0,1;0,0046
+Galináceos total;Comércio atacadista de máquinas, aparelhos e equipamentos para uso agropecuário, partes e peças;0,0947;0,0046
+Comércio varejista de materiais de construção em geral;Comércio varejista de hortifrutigranjeiros;0,0866;0,0046
+Comércio varejista de materiais de construção em geral;Serviços combinados de escritório e apoio administrativo;0,0855;0,0046
+Criação de frangos para corte;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns;0,0824;0,0046
+Educação infantil - pré-escola;Mandioca;0,0773;0,0046
+Comércio varejista de bebidas;Lanchonetes, casas de chá, de sucos e similares;0,0937;0,0047
+Casas lotéricas;Lanchonetes, casas de chá, de sucos e similares;0,093;0,0047
+Comércio varejista especializado de equipamentos de telefonia e comunicação;Educação infantil - pré-escola;0,0741;0,0047
+Comércio varejista de artigos de óptica;Galináceos total;0,0659;0,0047
+Suíno total;Soja em grão;0,1009;0,0048
+Construção de edifícios;Comércio varejista de artigos de papelaria;0,0977;0,0048
+Galináceos total;Comércio atacadista de soja;0,0943;0,0048
+Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;Criação de bovinos para corte;0,0745;0,0048
+Mandioca;Educação infantil - pré-escola;0,1036;0,0049
+Melancia;Agências de viagens;0,1032;0,0049
+Obras de urbanização - ruas, praças e calçadas;Comércio varejista de madeira e artefatos;0,1239;0,005
+Restaurantes e similares;Educação infantil - pré-escola;0,1092;0,005
+Lanchonetes, casas de chá, de sucos e similares;Comércio varejista de bebidas;0,0952;0,005
+Casas lotéricas;Comércio varejista especializado de equipamentos de telefonia e comunicação;0,0932;0,005
+Cana de açúcar;Comércio varejista de materiais de construção em geral;0,0916;0,005
+Galináceos total;Melancia;0,0914;0,005
+Banana cacho;Coco da baía;0,0904;0,005
+Criação de bovinos para corte;Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas;0,1048;0,0051
+Galináceos total;Ovos de galinha;0,1009;0,0051
+Construção de edifícios;Cultivo de milho;0,0932;0,0051
+Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;Promoção de vendas;0,0833;0,0051
+Construção de rodovias e ferrovias;Construção de edifícios;0,0731;0,0051
+Tucum amêndoa;Comércio varejista especializado de equipamentos de telefonia e comunicação;0,1438;0,0052
+Comércio varejista de artigos do vestuário e acessórios;Ensino fundamental;0,1125;0,0052
+Comércio varejista de materiais de construção em geral;Limpeza em prédios e em domicílios;0,1074;0,0052
+Galináceos total;Fabricação de painéis e letreiros luminosos;0,1032;0,0052
+Padaria e confeitaria com predominância de revenda;Casas de festas e eventos;0,0987;0,0052
+Galináceos total;Criação de bovinos para corte;0,0911;0,0052
+Construção de edifícios;Atividades de apoio à agricultura não especificadas anteriormente;0,0903;0,0052
+Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;Cana de açúcar;0,0869;0,0052
+Educação infantil - pré-escola;Comércio varejista especializado de equipamentos de telefonia e comunicação;0,0866;0,0052
+Comércio varejista de móveis;Soja em grão;0,0811;0,0052
+Comércio varejista especializado de equipamentos de telefonia e comunicação;Criação de frangos para corte;0,0806;0,0052
+Cartórios;Construção de rodovias e ferrovias;0,076;0,0052
+Padaria e confeitaria com predominância de revenda;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns;0,075;0,0052
+Fabricação de alimentos para animais;Criação de bovinos para corte;0,0729;0,0052
+Criação de bovinos para corte;Comércio varejista de gás liqüefeito de petróleo (GLP);0,1201;0,0053
+Construção de edifícios;Instalação e manutenção elétrica;0,1078;0,0053
+Fava em grão;Soja em grão;0,1049;0,0053
+Construção de edifícios;Arroz em casca;0,0784;0,0053
+Comércio varejista de combustíveis para veículos automotores;Criação de frangos para corte;0,0726;0,0053
+Babaçu amêndoa;Bancos múltiplos, com carteira comercial;0,1669;0,0054
+Tambacu tambatinga;Comércio varejista de medicamentos veterinários;0,1377;0,0054
+Tambacu tambatinga;Atividades de contabilidade;0,1343;0,0054
+Comercio varejista de artigos de cama, mesa e banho;Padaria e confeitaria com predominância de revenda;0,0876;0,0054
+Construção de rodovias e ferrovias;Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas;0,0749;0,0054
+Comércio varejista de madeira e artefatos;Casas lotéricas;0,0692;0,0054
+Restaurantes e similares;Limpeza em prédios e em domicílios;0,1216;0,0055
+Construção de edifícios;Comércio varejista de material elétrico;0,1041;0,0055
+Melancia;Equino;0,0949;0,0055
+Lenha;Comércio varejista de bebidas;0,0857;0,0055
+Comércio varejista de gás liqüefeito de petróleo (GLP);Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - supermercados;0,0847;0,0055
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns;Construção de rodovias e ferrovias;0,0789;0,0055
+Tambacu tambatinga;Casas lotéricas;0,1258;0,0056
+Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo;Ensino fundamental;0,11;0,0056
+Galináceos total;Fabricação de conservas de frutas;0,101;0,0056
+Banana cacho;Soja em grão;0,0844;0,0056
+Serviços de engenharia;Comércio varejista de gás liqüefeito de petróleo (GLP);0,0789;0,0056
+Atividades de associações de defesa de direitos sociais;Comércio varejista de artigos do vestuário e acessórios;0,0762;0,0056
+Comércio varejista de carnes - açougues;Cana de açúcar;0,0593;0,0056
+Arroz em casca;Comércio varejista de ferragens e ferramentas;0,1301;0,0057
+Oleaginosos;Padaria e confeitaria com predominância de revenda;0,1269;0,0057
+Mandioca;Formação de condutores;0,0991;0,0057
+Galináceos total;Comércio varejista de carnes - açougues;0,0933;0,0057
+Galináceos total;Comércio varejista de materiais de construção em geral;0,0896;0,0057
+Obras de urbanização - ruas, praças e calçadas;Comércio varejista especializado de equipamentos de telefonia e comunicação;0,1108;0,0058
+Galináceos total;Limpeza em prédios e em domicílios;0,1105;0,0058
+Galináceos total;Lanchonetes, casas de chá, de sucos e similares;0,0905;0,0058
+Lanchonetes, casas de chá, de sucos e similares;Atividades do Correio Nacional;0,0874;0,0058
+Comércio varejista de materiais de construção em geral;Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente;0,0841;0,0058
+Construção de rodovias e ferrovias;Padaria e confeitaria com predominância de revenda;0,0785;0,0058
+Restaurantes e similares;Condomínios prediais;0,1395;0,0059
+Melancia;Ovos de galinha;0,084;0,0059
+Comércio varejista de materiais de construção em geral;Comércio varejista de artigos de papelaria;0,0817;0,0059
+Atividades de associações de defesa de direitos sociais;Soja em grão;0,077;0,0059
+Obras de urbanização - ruas, praças e calçadas;Comércio varejista especializado de peças e acessórios para aparelhos eletroeletrônicos para uso doméstico, exceto informática e comunicação;0,1378;0,006
+Arroz em casca;Soja em grão;0,1259;0,006
+Educação infantil - pré-escola;Restaurantes e similares;0,0825;0,006
+Comércio varejista de móveis;Carvão vegetal;0,0811;0,006
+Construção de edifícios;Educação infantil - pré-escola;0,0865;0,0061
+Comércio varejista de materiais de construção em geral;Comércio varejista especializado de peças e acessórios para aparelhos eletroeletrônicos para uso doméstico, exceto informática e comunicação;0,0865;0,0061
+Lenha;Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;0,0855;0,0061
+Tambaqui;Casas lotéricas;0,0843;0,0061
+Padaria e confeitaria com predominância de revenda;Construção de rodovias e ferrovias;0,0837;0,0061
+Atividade odontológica com recursos para realização de procedimentos cirúrgicos;Babaçu amêndoa;0,0664;0,0061
+Educação infantil - pré-escola;Obras de alvenaria;0,0907;0,0062
+Comércio atacadista de mercadorias em geral, com predominância de produtos alimentícios;Padaria e confeitaria com predominância de revenda;0,0854;0,0062
+Comercio varejista de artigos de cama, mesa e banho;Cana de açúcar;0,0811;0,0062
+Comércio varejista especializado de equipamentos de telefonia e comunicação;Promoção de vendas;0,0793;0,0062
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns;Comércio varejista de produtos farmacêuticos, com manipulação de fórmulas;0,0778;0,0062
+Comércio varejista de combustíveis para veículos automotores;Comércio varejista de gás liqüefeito de petróleo (GLP);0,0713;0,0062
+Tambacu tambatinga;Cana de açúcar;0,1334;0,0063
+Restaurantes e similares;Comércio varejista de bebidas;0,1092;0,0063
+Galináceos total;Comércio varejista de artigos esportivos;0,1016;0,0063
+Educação infantil - pré-escola;Clubes sociais, esportivos e similares;0,0904;0,0063
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns;Comércio varejista de artigos de papelaria;0,0753;0,0063
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - supermercados;Soja em grão;0,0696;0,0063
+Atividades de cobrança e informações cadastrais;Casas lotéricas;0,0626;0,0063
+Arroz em casca;Lenha;0,1256;0,0064
+Manga;Comércio a varejo de peças e acessórios novos para veículos automotores;0,1255;0,0064
+Equino;Castanha de caju;0,1162;0,0064
+Babaçu amêndoa;Ovos de galinha;0,1157;0,0064
+Construção de edifícios;Clubes sociais, esportivos e similares;0,1011;0,0064
+Casas lotéricas;Atividades de cobrança e informações cadastrais;0,0914;0,0064
+Construção de edifícios;Comércio varejista especializado de peças e acessórios para aparelhos eletroeletrônicos para uso doméstico, exceto informática e comunicação;0,1046;0,0065
+Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;Construção de rodovias e ferrovias;0,0879;0,0065
+Casas lotéricas;Carnaúba pó;0,0808;0,0065
+Casas lotéricas;Ceras;0,0808;0,0065
+Caixas econômicas;Comércio varejista de produtos farmacêuticos, com manipulação de fórmulas;0,0791;0,0065
+Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente;Galináceos total;0,0674;0,0065
+Manga;Comércio varejista especializado de equipamentos de telefonia e comunicação;0,1428;0,0066
+Tucum amêndoa;Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;0,1314;0,0066
+Obras de urbanização - ruas, praças e calçadas;Comércio varejista de produtos farmacêuticos, com manipulação de fórmulas;0,1306;0,0066
+Mandioca;Comércio varejista de material elétrico;0,1046;0,0066
+Comércio varejista de artigos do vestuário e acessórios;Comércio varejista de bebidas;0,0998;0,0066
+Bovino;Mandioca;0,0988;0,0066
+Comércio varejista de artigos de papelaria;Padaria e confeitaria com predominância de revenda;0,0818;0,0066
+Comércio varejista de ferragens e ferramentas;Criação de bovinos para corte;0,0738;0,0066
+Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal;Construção de rodovias e ferrovias;0,0727;0,0066
+Babaçu amêndoa;Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;0,1506;0,0067
+Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;Comércio varejista de artigos de papelaria;0,0924;0,0067
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns;Comércio atacadista de defensivos agrícolas, adubos, fertilizantes e corretivos do solo;0,0771;0,0067
+Comércio varejista de suvenires, bijuterias e artesanatos;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,0711;0,0067
+Serviços combinados de escritório e apoio administrativo;Construção de rodovias e ferrovias;0,1243;0,0068
+Criação de bovinos para corte;Serviços de engenharia;0,1173;0,0068
+Obras de urbanização - ruas, praças e calçadas;Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica;0,1135;0,0068
+Coleta de resíduos não-perigosos;Padaria e confeitaria com predominância de revenda;0,0711;0,0068
+Comércio varejista especializado de equipamentos de telefonia e comunicação;Casas lotéricas;0,0687;0,0068
+Atividade odontológica com recursos para realização de procedimentos cirúrgicos;Galináceos total;0,0582;0,0068
+Obras de urbanização - ruas, praças e calçadas;Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente;0,119;0,0069
+Comércio varejista de artigos do vestuário e acessórios;Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente;0,1066;0,0069
+Padaria e confeitaria com predominância de revenda;Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;0,0813;0,0069
+Lojas de departamentos ou magazines, exceto lojas francas (Duty free);Comércio varejista de gás liqüefeito de petróleo (GLP);0,0785;0,0069
+Construção de rodovias e ferrovias;Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo;0,0775;0,0069
+Cartórios;Arroz em casca;0,0705;0,0069
+Babaçu amêndoa;Comércio varejista de gás liqüefeito de petróleo (GLP);0,1524;0,007
+Fava em grão;Tambacu tambatinga;0,0973;0,007
+Construção de edifícios;Educação profissional de nível técnico;0,0966;0,007
+Mandioca;Comércio varejista de artigos do vestuário e acessórios;0,0946;0,007
+Lanchonetes, casas de chá, de sucos e similares;Padaria e confeitaria com predominância de revenda;0,0898;0,007
+Comercio varejista de artigos de cama, mesa e banho;Comércio varejista de artigos de papelaria;0,0868;0,007
+Educação infantil - pré-escola;Serviços de engenharia;0,0843;0,007
+Comércio varejista de mercadorias em lojas de conveniência;Melancia;0,0683;0,007
+Castanha de caju;Equino;0,115;0,0071
+Construção de edifícios;Transporte rodoviário de carga, exceto produtos perigosos e mudanças, municipal;0,1048;0,0071
+Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;Comércio varejista de bebidas;0,0872;0,0071
+Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;Educação infantil - pré-escola;0,068;0,0071
+Criação de bovinos para corte;Comércio varejista de artigos do vestuário e acessórios;0,1063;0,0072
+Construção de edifícios;Atividades associativas não especificadas anteriormente;0,0973;0,0072
+Melancia;Comércio atacadista de cereais e leguminosas beneficiados;0,0955;0,0072
+Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;Restaurantes e similares;0,0835;0,0072
+Lojas de departamentos ou magazines, exceto lojas francas (Duty free);Tucum amêndoa;0,0784;0,0072
+Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo;Galináceos total;0,0781;0,0072
+Ovos de galinha;Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal;0,0756;0,0072
+Comercio varejista de artigos de armarinho;Arroz em casca;0,061;0,0072
+Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente;Casas lotéricas;0,0774;0,0073
+Comércio varejista de artigos de papelaria;Casas lotéricas;0,0698;0,0073
+Comércio varejista de produtos farmacêuticos, com manipulação de fórmulas;Construção de rodovias e ferrovias;0,0648;0,0073
+Oleaginosos;Tucum amêndoa;0,1334;0,0074
+Mandioca;Ensino fundamental;0,1007;0,0074
+Mandioca;Atividades de associações de defesa de direitos sociais;0,0948;0,0074
+Criação de frangos para corte;Comércio varejista de medicamentos veterinários;0,092;0,0074
+Educação infantil - pré-escola;Lanchonetes, casas de chá, de sucos e similares;0,0799;0,0074
+Casas lotéricas;Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas;0,0792;0,0074
+Fabricação de alimentos para animais;Agências de viagens;0,0779;0,0074
+Comercio varejista de artigos de cama, mesa e banho;Melancia;0,0759;0,0074
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns;Carvão vegetal;0,074;0,0074
+Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;Soja em grão;0,0659;0,0074
+Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;Comércio varejista de mercadorias em lojas de conveniência;0,0931;0,0075
+Construção de edifícios;Fornecimento de alimentos preparados preponderantemente para empresas;0,1001;0,0076
+Comércio varejista de artigos do vestuário e acessórios;Educação infantil - pré-escola;0,0978;0,0076
+Galináceos total;Comércio a varejo de automóveis, camionetas e utilitários usados;0,0904;0,0076
+Galináceos total;Atividades de apoio à agricultura não especificadas anteriormente;0,088;0,0076
+Lenha;Tambaqui;0,0826;0,0076
+Comércio varejista especializado de equipamentos de telefonia e comunicação;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;0,0719;0,0076

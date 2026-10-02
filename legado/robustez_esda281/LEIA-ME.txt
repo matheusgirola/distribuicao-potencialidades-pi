@@ -1,0 +1,1 @@
+Gerados em 11/ago/2026 com conda (esda 2.8.1). Divergem nas permutacoes do painel v6 (esda 2.10). Substituidos pela execucao do 12 no ambiente uv em 29/set/2026.

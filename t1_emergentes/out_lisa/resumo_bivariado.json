@@ -1,0 +1,12 @@
+{
+ "n_pares_significativos": 100,
+ "por_ancora": {
+  "SCM": 39,
+  "Tambacu": 35,
+  "Tilápia": 14,
+  "Milho": 5,
+  "Cerâmica": 4,
+  "Soja": 3
+ },
+ "total_clusters_AA_bivariados": 577
+}

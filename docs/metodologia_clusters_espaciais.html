@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>metodologia_clusters_espaciais</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="metodologia_clusters_espaciais_files/libs/clipboard/clipboard.min.js"></script>
+<script src="metodologia_clusters_espaciais_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="metodologia_clusters_espaciais_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="metodologia_clusters_espaciais_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="metodologia_clusters_espaciais_files/libs/quarto-html/popper.min.js"></script>
+<script src="metodologia_clusters_espaciais_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="metodologia_clusters_espaciais_files/libs/quarto-html/anchor.min.js"></script>
+<link href="metodologia_clusters_espaciais_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="metodologia_clusters_espaciais_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="metodologia_clusters_espaciais_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="metodologia_clusters_espaciais_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="metodologia_clusters_espaciais_files/libs/bootstrap/bootstrap-9e3ffae467580fdb927a41352e75a2e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+
+<section id="mapa-de-potencialidades-econômicas-do-piauí" class="level1">
+<h1>MAPA DE POTENCIALIDADES ECONÔMICAS DO PIAUÍ</h1>
+<p><strong>Nota metodológica: identificação de aglomerações (<em>clusters</em>) espaciais de potencialidades e análises de robustez</strong></p>
+<hr>
+<section id="resumo" class="level2">
+<h2 class="anchored" data-anchor-id="resumo">Resumo</h2>
+<p>Esta nota descreve o arcabouço teórico, as definições operacionais e as formulações matemáticas empregadas na identificação de aglomerações (<em>clusters</em>) espaciais de potencialidades econômicas nos 224 municípios do Piauí. A intensidade da potencialidade de cada par município–subclasse é mensurada por componentes da decomposição estrutural-diferencial (<em>shift-share</em>), no recorte tipológico T1+T2 de Montanía <em>et al.</em> (2024). A dimensão espacial é tratada por Análise Exploratória de Dados Espaciais (AEDE): I de Moran global, Indicadores Locais de Associação Espacial (LISA) e sua extensão bivariada, com inferência por permutações condicionais. Esta versão amplia a nota anterior com (i) a especificação da transformação sinalizada da variável CE + RIE; (ii) a validação da rotina vetorizada do Moran bivariado contra a implementação de referência; (iii) uma análise de robustez do padrão espacial a cinco especificações da matriz de vizinhança — contiguidade <em>Queen</em>, k vizinhos mais próximos, distância inversa, rede rodoviária real (Dijkstra) e tempo de viagem (OpenRouteService); e (iv) o controle de comparações múltiplas pela Taxa de Falsas Descobertas (FDR) de Benjamini–Hochberg.</p>
+<p><strong>Palavras-chave:</strong> Autocorrelação espacial. LISA. I de Moran. Matriz de pesos espaciais. Taxa de falsas descobertas. Piauí.</p>
+<hr>
+</section>
+<section id="introdução" class="level2">
+<h2 class="anchored" data-anchor-id="introdução">1 INTRODUÇÃO</h2>
+<p>A identificação de potencialidades econômicas regionais raramente pode prescindir da dimensão espacial. Atividades produtivas não se distribuem aleatoriamente no território: cadeias produtivas, dotações de recursos naturais, infraestrutura logística e transbordamentos de conhecimento (<em>spillovers</em>) produzem padrões de concentração geográfica. Dessa constatação decorre a necessidade de instrumentos capazes de distinguir, estatisticamente, um agrupamento espacial genuíno de um arranjo compatível com a aleatoriedade.</p>
+<p>O presente documento detalha os procedimentos adotados para a construção dos mapas de <em>clusters</em> espaciais que integram o painel de potencialidades e, adicionalmente, as análises de robustez conduzidas para qualificar a leitura desses resultados. O objetivo não é descrever o <em>software</em>, mas explicitar as decisões teóricas e formais que sustentam os achados, de modo a permitir sua replicação e crítica. Em relação à versão anterior desta nota, acrescentam-se três blocos metodológicos: o tratamento formal de variáveis com valores negativos (seção 3.4), a bateria de robustez à especificação da matriz de vizinhança (seção 8) e o controle de multiplicidade por FDR (seção 9).</p>
+<hr>
+</section>
+<section id="fundamentação-teórica" class="level2">
+<h2 class="anchored" data-anchor-id="fundamentação-teórica">2 FUNDAMENTAÇÃO TEÓRICA</h2>
+<section id="dependência-espacial-e-a-primeira-lei-da-geografia" class="level3">
+<h3 class="anchored" data-anchor-id="dependência-espacial-e-a-primeira-lei-da-geografia">2.1 Dependência espacial e a Primeira Lei da Geografia</h3>
+<p>O ponto de partida é a formulação de Tobler (1970, p.&nbsp;236), segundo a qual tudo está relacionado a tudo o mais, mas coisas próximas estão mais relacionadas do que coisas distantes. Essa proposição tem consequências estatísticas severas: viola o pressuposto de independência das observações que sustenta grande parte da inferência clássica. Anselin (1988) distingue dois efeitos espaciais:</p>
+<ol type="a">
+<li><p><strong>dependência espacial</strong> (ou autocorrelação espacial): o valor de uma variável em uma unidade <em>i</em> é sistematicamente associado ao valor da mesma variável nas unidades vizinhas de <em>i</em>;</p></li>
+<li><p><strong>heterogeneidade espacial</strong>: instabilidade dos parâmetros e das formas funcionais ao longo do espaço, de modo que relações estimadas globalmente não valem uniformemente em todas as sub-regiões.</p></li>
+</ol>
+<p>A análise de <em>clusters</em> aqui empregada explora o primeiro efeito, tratando o segundo como motivação para o uso de estatísticas <em>locais</em> em vez de exclusivamente globais.</p>
+</section>
+<section id="do-global-ao-local" class="level3">
+<h3 class="anchored" data-anchor-id="do-global-ao-local">2.2 Do global ao local</h3>
+<p>Estatísticas globais, como o I de Moran (MORAN, 1950; CLIFF; ORD, 1973), respondem a uma única pergunta: <em>existe</em> autocorrelação espacial no conjunto do território? Elas não informam <em>onde</em> ela ocorre. Como a média global pode mascarar padrões locais divergentes — inclusive compensações entre aglomerações positivas e negativas —, Anselin (1995) propôs a classe dos Indicadores Locais de Associação Espacial (LISA), que decompõem a estatística global em contribuições municipais individuais e permitem inferência específica para cada unidade. É essa decomposição que fundamenta os mapas de <em>clusters</em> do painel.</p>
+<hr>
+</section>
+</section>
+<section id="base-de-dados-e-variáveis" class="level2">
+<h2 class="anchored" data-anchor-id="base-de-dados-e-variáveis">3 BASE DE DADOS E VARIÁVEIS</h2>
+<section id="unidades-de-análise-e-malha-territorial" class="level3">
+<h3 class="anchored" data-anchor-id="unidades-de-análise-e-malha-territorial">3.1 Unidades de análise e malha territorial</h3>
+<p>A unidade de análise é o município. Adotou-se a Malha Municipal Digital do Brasil — recorte 2025 (IBGE, 2025), restrita ao Piauí, contemplando os 224 municípios do estado, com sistema de referência SIRGAS 2000 (EPSG:4674), padrão oficial do IBGE. Registra-se, por sua relevância operacional, que espelhos não oficiais da malha apresentaram-se incompletos, omitindo o município de Nazária; o uso da malha oficial é, portanto, condição necessária à integridade do conjunto de vizinhanças. O pareamento entre a base econômica e a malha foi realizado pelo código IBGE do município, com normalização de nomes apenas como verificação secundária.</p>
+</section>
+<section id="a-variável-de-intensidade-componentes-da-decomposição-shift-share" class="level3">
+<h3 class="anchored" data-anchor-id="a-variável-de-intensidade-componentes-da-decomposição-shift-share">3.2 A variável de intensidade: componentes da decomposição <em>shift-share</em></h3>
+<p>O painel opera dois <em>pipelines</em> paralelos. No <em>pipeline</em> de estoques, a intensidade é o estoque produtivo consolidado do par município–subclasse (variável <code>Estoque_mun_ano_final</code>), oriundo das pesquisas PAM, PPM e PEVS do IBGE e da RAIS do MTE. No <em>pipeline</em> <em>shift-share</em>, a intensidade deriva da decomposição estrutural-diferencial, cuja formulação clássica remonta a Dunn (1960), com a reinterpretação de Esteban-Marquillas (1972) e a sistematização brasileira de Haddad (1989). Seguindo a tipologia de Montanía <em>et al.</em> (2024), o crescimento do estoque de uma atividade <em>k</em> no município <em>i</em> é decomposto em efeitos intrínsecos, dos quais interessam aqui o efeito competitivo (<strong>CE</strong>), que mede a vantagem do município na atividade <em>k</em> frente ao desempenho nacional dessa atividade, e o efeito de reestruturação intraeconômica (<strong>RIE</strong>), que mede o peso e a dinâmica da atividade <em>k</em> dentro da economia do próprio município. A variável de intensidade do <em>pipeline</em> <em>shift-share</em> é a soma dos dois:</p>
+<p><span class="math display">\[x_i^{k} \;=\; CE_i^{k} + RIE_i^{k} \tag{1}\]</span></p>
+<p>A soma expressa uma <strong>potencialidade efetiva</strong> — competitividade da atividade combinada à sua relevância estrutural no município —, e não uma vantagem relativa descolada de massa econômica. Exclui-se deliberadamente o efeito de reestruturação sistêmica (RSE), que descreve a economia municipal como um todo, e não a atividade específica. Todo o mapa físico de potencialidades restringe-se ao recorte tipológico T1+T2 (setores com vantagem competitiva).</p>
+</section>
+<section id="deduplicação" class="level3">
+<h3 class="anchored" data-anchor-id="deduplicação">3.3 Deduplicação</h3>
+<p>Como um mesmo par município–subclasse pode aparecer em mais de uma janela temporal de comparação (comparações com anos iniciais de 2013, 2018 e 2022), adotou-se a regra: preserva-se a observação com o <strong>maior valor da variável de intensidade</strong> (Estoque no <em>pipeline</em> de estoques; CE + RIE no <em>shift-share</em>), e não a observação mais recente. A opção é coerente com o objetivo do estudo — mapear <em>potencialidades</em>, isto é, o melhor desempenho demonstrado pela atividade ao longo do período, e não sua situação conjuntural mais recente.</p>
+</section>
+<section id="transformações-das-variáveis-de-intensidade" class="level3">
+<h3 class="anchored" data-anchor-id="transformações-das-variáveis-de-intensidade">3.4 Transformações das variáveis de intensidade</h3>
+<p>Distribuições de estoque e de componentes de <em>shift-share</em> são fortemente assimétricas à direita. Como o I de Moran é baseado em produtos cruzados de desvios padronizados, é sensível a <em>outliers</em> extremos, que podem dominar o somatório. As transformações diferem conforme o suporte da variável.</p>
+<p>Para o estoque, variável estritamente não negativa, aplica-se a transformação <em>log1p</em>, que preserva o zero (municípios sem a atividade permanecem em zero), comprime a cauda superior e dispensa o deslocamento arbitrário exigido pelo logaritmo simples:</p>
+<p><span class="math display">\[y_i \;=\; \ln(1 + x_i) \tag{2}\]</span></p>
+<p>A variável CE + RIE, por sua vez, assume valores negativos em cerca de 62% das observações — o que inviabiliza o <em>log1p</em> direto. Emprega-se, então, a <strong>transformação logarítmica sinalizada</strong>, que preserva o sinal econômico da variação (crescimento <em>vs.</em> retração) e comprime magnitudes de forma simétrica em torno de zero:</p>
+<p><span class="math display">\[y_i \;=\; \operatorname{sinal}(x_i)\cdot \ln(1 + |x_i|) \tag{3}\]</span></p>
+<p>A função é ímpar, contínua e monótona: mantém a ordenação econômica das observações, atenua as caudas em ambos os lados e fixa o zero em zero. Toda a análise subsequente opera sobre a variável padronizada (escore-z):</p>
+<p><span class="math display">\[z_i \;=\; \frac{y_i - \bar{y}}{s_y} \tag{4}\]</span></p>
+<hr>
+</section>
+</section>
+<section id="as-matrizes-de-pesos-espaciais" class="level2">
+<h2 class="anchored" data-anchor-id="as-matrizes-de-pesos-espaciais">4 AS MATRIZES DE PESOS ESPACIAIS</h2>
+<section id="definição" class="level3">
+<h3 class="anchored" data-anchor-id="definição">4.1 Definição</h3>
+<p>Toda estatística de autocorrelação espacial exige uma definição prévia e explícita de vizinhança, formalizada na matriz <strong>W</strong>, de dimensão <em>n</em> × <em>n</em> (<em>n</em> = 224), cujo elemento genérico <span class="math inline">\(w_{ij}\)</span> expressa a intensidade da conexão entre as unidades <em>i</em> e <em>j</em>, com <span class="math inline">\(w_{ii} = 0\)</span> por convenção. O defasado espacial (<em>spatial lag</em>) de uma variável <em>z</em> na unidade <em>i</em> é a combinação ponderada dos valores dos vizinhos:</p>
+<p><span class="math display">\[(\mathbf{W}\mathbf{z})_i \;=\; \sum_j w_{ij}\, z_j \tag{5}\]</span></p>
+<p>Todas as matrizes descritas a seguir são padronizadas por linha, de modo que <span class="math inline">\(\sum_j w_{ij} = 1\)</span> para todo <em>i</em>; o defasado espacial passa a ser interpretável como a média (ponderada) dos valores dos vizinhos, conferindo comparabilidade entre municípios com números distintos de vizinhos — atributo essencial em um estado de forte heterogeneidade no formato e na área dos polígonos.</p>
+</section>
+<section id="contiguidade-queen-especificação-de-referência" class="level3">
+<h3 class="anchored" data-anchor-id="contiguidade-queen-especificação-de-referência">4.2 Contiguidade <em>Queen</em> (especificação de referência)</h3>
+<p>A especificação de referência é a contiguidade <em>Queen</em> (rainha), pela qual dois municípios são vizinhos se compartilham <strong>qualquer</strong> ponto de fronteira — um segmento de aresta ou um único vértice:</p>
+<p><span class="math display">\[w_{ij}^{*} = \begin{cases} 1, &amp; \text{se } \partial A_i \cap \partial A_j \neq \varnothing \text{ e } i \neq j\\ 0, &amp; \text{caso contrário} \end{cases} \tag{6}\]</span></p>
+<p>A escolha da contiguidade <em>Queen</em> (em detrimento da <em>Rook</em>, que exige aresta comum) é a convenção usual em malhas municipais irregulares, nas quais imprecisões de digitalização podem transformar arestas curtas em vértices, gerando exclusões arbitrárias de vizinhança (ANSELIN; SYABRI; KHO, 2006). A vizinhança média sob <em>Queen</em> é de 5,4 municípios.</p>
+</section>
+<section id="padronização-por-linha" class="level3">
+<h3 class="anchored" data-anchor-id="padronização-por-linha">4.3 Padronização por linha</h3>
+<p>A matriz binária (ou de pesos brutos) é normalizada por linha:</p>
+<p><span class="math display">\[w_{ij} \;=\; \frac{w_{ij}^{*}}{\sum_j w_{ij}^{*}} \tag{7}\]</span></p>
+</section>
+<section id="especificações-geométricas-alternativas-knn-e-distância-inversa" class="level3">
+<h3 class="anchored" data-anchor-id="especificações-geométricas-alternativas-knn-e-distância-inversa">4.4 Especificações geométricas alternativas (KNN e distância inversa)</h3>
+<p>A definição de vizinhança não é neutra. Para dimensionar essa sensibilidade, construíram-se duas matrizes geométricas alternativas, mantidos inalterados os demais parâmetros. A primeira é a de <strong>k vizinhos mais próximos</strong> (k = 5), calculada sobre os centroides municipais em projeção métrica (SIRGAS 2000 / Brazil Polyconic, EPSG:5880), na qual <span class="math inline">\(w_{ij}^{*} = 1\)</span> se <em>j</em> está entre os cinco municípios mais próximos de <em>i</em>, e 0 caso contrário. Por construção, a relação de vizinhança KNN não é simétrica antes da padronização. A segunda é a de <strong>distância inversa</strong>, com peso proporcional ao inverso da distância euclidiana entre centroides:</p>
+<p><span class="math display">\[w_{ij}^{*} = \begin{cases} 1/d(i,j), &amp; \text{se } d(i,j) \leq b\\ 0, &amp; \text{caso contrário} \end{cases} \tag{8}\]</span></p>
+<p>A banda <em>b</em> foi fixada em 76,5 km, o menor limiar que assegura ao menos um vizinho a cada município (grafo conexo, sem municípios-ilha), resultando em vizinhança média de 17,3 municípios — mais de três vezes a da contiguidade <em>Queen</em>. Vizinhanças mais densas suavizam o defasado espacial e diluem aglomerados pequenos, o que antecipa uma concordância menor com a linha de base.</p>
+</section>
+<section id="matriz-de-vizinhança-rodoviária-rede-real-dijkstra" class="level3">
+<h3 class="anchored" data-anchor-id="matriz-de-vizinhança-rodoviária-rede-real-dijkstra">4.5 Matriz de vizinhança rodoviária (rede real, Dijkstra)</h3>
+<p>As três matrizes anteriores são geométricas: pressupõem que a interação econômica se dá por adjacência ou por proximidade em linha reta. Para converter essa hipótese em medida empírica de acessibilidade, construiu-se uma matriz de vizinhança sobre a malha rodoviária real do estado. A malha foi montada a partir dos arquivos de rodovias estaduais e federais do Piauí, excluídos os trechos federais com situação “Planejada” (não construídos) e mantidos os pavimentados e em leito natural — 733 trechos e 13,9 mil km. A rede foi nodada nas interseções, densificada a cada 2 km e convertida em grafo ponderado (54.605 nós; 62.560 arestas, ponderadas pelo comprimento do segmento); 99,8% dos nós pertencem ao componente conexo gigante, adotado como rede de referência. Cada sede municipal foi conectada ao nó mais próximo por uma “perna de acesso” euclidiana (média de 5,4 km), registrando-se que onze sedes distam mais de 20 km de rodovia mapeada — informação relevante para a agenda de conectividade.</p>
+<p>A distância rodoviária entre duas sedes <em>i</em> e <em>j</em> é o caminho de custo mínimo no grafo, calculado pelo algoritmo de Dijkstra (DIJKSTRA, 1959):</p>
+<p><span class="math display">\[d_{\text{rede}}(i,j) \;=\; \min_{\pi \in \Pi(i,j)} \sum_{(u,v)\in\pi} \ell(u,v) \tag{9}\]</span></p>
+<p>em que <span class="math inline">\(\Pi(i,j)\)</span> é o conjunto de caminhos entre <em>i</em> e <em>j</em> e <span class="math inline">\(\ell(u,v)\)</span> é o comprimento da aresta <span class="math inline">\((u,v)\)</span>. A matriz W-rede usa pesos <span class="math inline">\(1/d_{\text{rede}}\)</span> sobre a banda mínima que garante ao menos um vizinho a cada município (107,9 km de distância rodoviária), com padronização por linha (vizinhança média de 12,8). A razão mediana entre distância rodoviária e euclidiana (circuidade) é de 1,40, com correlação de 0,972 entre as duas métricas: no Piauí, a topologia viária acompanha em larga medida a geografia. As divergências localizadas — municípios de alta circuidade ou acesso precário — são justamente os casos em que <em>Queen</em> e a distância euclidiana superestimam a vizinhança efetiva.</p>
+</section>
+<section id="matriz-de-tempo-de-viagem-openrouteservice" class="level3">
+<h3 class="anchored" data-anchor-id="matriz-de-tempo-de-viagem-openrouteservice">4.6 Matriz de tempo de viagem (OpenRouteService)</h3>
+<p>Como quinta especificação, construiu-se uma matriz de tempos de viagem entre as sedes a partir da <em>Matrix API</em> do OpenRouteService (perfil <em>driving-car</em>, base OpenStreetMap), extraída localmente pelo pesquisador. A matriz retornou tempos válidos para 24.090 dos 24.976 pares. Quatro municípios (Dom Inocêncio, Socorro do Piauí, Valença do Piauí e Passagem Franca do Piauí) tiveram as sedes ancoradas em trechos não roteáveis do OSM e foram imputados pela relação tempo–distância ajustada nos pares válidos sobre a malha rodoviária oficial:</p>
+<p><span class="math display">\[t(i,j) \;=\; 2{.}193 + 46{,}4 \cdot d_{\text{rede}}(i,j) \qquad (\text{segundos};\; d \text{ em km};\; R^2 = 0{,}933) \tag{10}\]</span></p>
+<p>A regressão implica velocidade de percurso de aproximadamente 78 km/h. Diagnósticos de validação cruzada: correlação de 0,968 entre as distâncias ORS/OSM e as distâncias da malha oficial DNIT/DER (validação mútua das fontes), circuidade mediana de 1,38 e assimetria direcional desprezível (0,1%), o que permitiu simetrizar a matriz. A W-tempo usa pesos <span class="math inline">\(1/t\)</span> sobre a banda mínima conexa de 133 minutos (vizinhança média de 21,2), padronizada por linha. Ressalva: os tempos do OSM são modelados a partir de atributos viários, não de tráfego observado.</p>
+<p><strong>Quadro 1 — Síntese das cinco especificações da matriz de pesos espaciais</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 31%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Especificação</th>
+<th>Critério de vizinhança</th>
+<th style="text-align: center;">Peso <span class="math inline">\(w_{ij}^{*}\)</span></th>
+<th style="text-align: center;">Vizinhos (média)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><em>Queen</em> (referência)</td>
+<td>Fronteira compartilhada (aresta ou vértice)</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">5,4</td>
+</tr>
+<tr class="even">
+<td>KNN-5</td>
+<td>5 centroides mais próximos (EPSG:5880)</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">5,0</td>
+</tr>
+<tr class="odd">
+<td>Distância inversa</td>
+<td>Euclidiana ≤ 76,5 km</td>
+<td style="text-align: center;">1/d</td>
+<td style="text-align: center;">17,3</td>
+</tr>
+<tr class="even">
+<td>Rede rodoviária</td>
+<td>Dijkstra na malha real ≤ 107,9 km</td>
+<td style="text-align: center;">1/d</td>
+<td style="text-align: center;">12,8</td>
+</tr>
+<tr class="odd">
+<td>Tempo de viagem</td>
+<td>ORS/OSM ≤ 133 min</td>
+<td style="text-align: center;">1/t</td>
+<td style="text-align: center;">21,2</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: elaboração própria. Todas as matrizes são padronizadas por linha; nenhuma produz municípios-ilha.</p>
+<hr>
+</section>
+</section>
+<section id="autocorrelação-espacial-global" class="level2">
+<h2 class="anchored" data-anchor-id="autocorrelação-espacial-global">5 AUTOCORRELAÇÃO ESPACIAL GLOBAL</h2>
+<section id="o-i-de-moran" class="level3">
+<h3 class="anchored" data-anchor-id="o-i-de-moran">5.1 O I de Moran</h3>
+<p>Para cada subclasse produtiva, calcula-se o I de Moran global:</p>
+<p><span class="math display">\[I \;=\; \frac{n}{S_0} \cdot \frac{\sum_i \sum_j w_{ij}\,(y_i - \bar{y})(y_j - \bar{y})}{\sum_i (y_i - \bar{y})^2}, \qquad S_0 = \sum_i\sum_j w_{ij} \tag{11}\]</span></p>
+<p>Com <strong>W</strong> padronizada por linha, <span class="math inline">\(S_0 = n\)</span> e a expressão reduz-se à forma matricial compacta <span class="math inline">\(I = \dfrac{\mathbf{z}^\top \mathbf{W}\mathbf{z}}{\mathbf{z}^\top\mathbf{z}}\)</span>. Sob a hipótese nula de aleatoriedade espacial, o valor esperado é <span class="math inline">\(E[I] = -\dfrac{1}{n-1} \approx -0{,}0045\)</span> para <em>n</em> = 224. Valores de <em>I</em> significativamente <strong>superiores</strong> a <span class="math inline">\(E[I]\)</span> indicam autocorrelação <strong>positiva</strong> (agrupamento); valores <strong>inferiores</strong> indicam autocorrelação <strong>negativa</strong> (padrão de xadrez, dispersão).</p>
+</section>
+<section id="o-diagrama-de-dispersão-de-moran" class="level3">
+<h3 class="anchored" data-anchor-id="o-diagrama-de-dispersão-de-moran">5.2 O diagrama de dispersão de Moran</h3>
+<p>Sob padronização por linha, o I de Moran é o coeficiente angular da regressão de <strong>Wz</strong> sobre <strong>z</strong>. O diagrama de dispersão correspondente, com <strong>z</strong> no eixo horizontal e <strong>Wz</strong> no vertical, particiona o espaço em quatro quadrantes que dão nome às tipologias de <em>cluster</em>.</p>
+<p><strong>Quadro 2 — Quadrantes do diagrama de dispersão de Moran</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 23%">
+<col style="width: 23%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Quadrante</th>
+<th style="text-align: center;"><span class="math inline">\(z_i\)</span></th>
+<th style="text-align: center;"><span class="math inline">\((\mathbf{W}\mathbf{z})_i\)</span></th>
+<th>Rótulo</th>
+<th>Interpretação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">I</td>
+<td style="text-align: center;">&gt; 0</td>
+<td style="text-align: center;">&gt; 0</td>
+<td>Alto-Alto (AA)</td>
+<td>Município forte cercado de fortes</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">II</td>
+<td style="text-align: center;">&lt; 0</td>
+<td style="text-align: center;">&gt; 0</td>
+<td>Baixo-Alto (BA)</td>
+<td>Fraco cercado de fortes (<em>outlier</em>)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">III</td>
+<td style="text-align: center;">&lt; 0</td>
+<td style="text-align: center;">&lt; 0</td>
+<td>Baixo-Baixo (BB)</td>
+<td>Fraco cercado de fracos</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">IV</td>
+<td style="text-align: center;">&gt; 0</td>
+<td style="text-align: center;">&lt; 0</td>
+<td>Alto-Baixo (AB)</td>
+<td>Forte cercado de fracos (<em>outlier</em>)</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: elaboração própria, a partir de Anselin (1995). AA e BB indicam associação positiva; BA e AB, <em>outliers</em> espaciais.</p>
+<hr>
+</section>
+</section>
+<section id="indicadores-locais-de-associação-espacial-lisa" class="level2">
+<h2 class="anchored" data-anchor-id="indicadores-locais-de-associação-espacial-lisa">6 INDICADORES LOCAIS DE ASSOCIAÇÃO ESPACIAL (LISA)</h2>
+<section id="o-i-de-moran-local" class="level3">
+<h3 class="anchored" data-anchor-id="o-i-de-moran-local">6.1 O I de Moran local</h3>
+<p>Anselin (1995) define, para cada município <em>i</em>:</p>
+<p><span class="math display">\[I_i \;=\; z_i \sum_j w_{ij}\, z_j \;=\; z_i \cdot (\mathbf{W}\mathbf{z})_i \tag{12}\]</span></p>
+<p>O indicador satisfaz a propriedade de decomposição que caracteriza a classe LISA: a soma dos indicadores locais é proporcional ao global, <span class="math inline">\(I = \dfrac{1}{n}\sum_i I_i\)</span>. O sinal de <span class="math inline">\(I_i\)</span> identifica o tipo de associação (positiva nos quadrantes AA/BB; negativa em AB/BA), e o quadrante específico é determinado pelos sinais de <span class="math inline">\(z_i\)</span> e de <span class="math inline">\((\mathbf{W}\mathbf{z})_i\)</span>.</p>
+</section>
+<section id="inferência-por-permutações-condicionais" class="level3">
+<h3 class="anchored" data-anchor-id="inferência-por-permutações-condicionais">6.2 Inferência por permutações condicionais</h3>
+<p>A distribuição amostral de <span class="math inline">\(I_i\)</span> sob a hipótese nula não é conhecida de forma fechada confiável para amostras finitas e distribuições assimétricas. Adota-se a <strong>aleatorização condicional</strong>: fixa-se o valor <span class="math inline">\(z_i\)</span> observado no município <em>i</em> e permutam-se aleatoriamente os <em>n</em> − 1 valores restantes entre as demais unidades, recalculando-se <span class="math inline">\(I_i\)</span> a cada permutação. Repetindo-se <em>M</em> vezes, obtém-se uma distribuição de referência empírica, e o pseudo-valor-p é:</p>
+<p><span class="math display">\[p_i \;=\; \frac{R_i + 1}{M + 1} \tag{13}\]</span></p>
+<p>em que <span class="math inline">\(R_i\)</span> é o número de estatísticas simuladas tão ou mais extremas que a observada. Na produção dos mapas e nas estatísticas de concordância adotou-se <strong>M = 999 permutações</strong> e semente aleatória fixada em <strong>42</strong>, garantindo reprodutibilidade exata; o menor pseudo-valor-p alcançável é 1/1000 = 0,001.</p>
+</section>
+<section id="critérios-de-significância-e-de-elegibilidade" class="level3">
+<h3 class="anchored" data-anchor-id="critérios-de-significância-e-de-elegibilidade">6.3 Critérios de significância e de elegibilidade</h3>
+<p>Considerou-se significativo o <em>cluster</em> local com <strong>p &lt; 0,05</strong>; municípios não significativos são representados como tal nos mapas, independentemente do quadrante. A estatística LISA perde sentido quando a variável é quase integralmente nula; por isso, somente subclasses presentes em <strong>pelo menos 10 municípios</strong> foram submetidas à avaliação univariada. Abaixo desse limiar, a variância é dominada pelo padrão de ausência, e os quadrantes tornam-se artefatos da esparsidade. O tratamento formal do risco de falsos positivos decorrente da aplicação do teste aos 224 municípios é objeto da seção 9.</p>
+<hr>
+</section>
+</section>
+<section id="associação-espacial-bivariada" class="level2">
+<h2 class="anchored" data-anchor-id="associação-espacial-bivariada">7 ASSOCIAÇÃO ESPACIAL BIVARIADA</h2>
+<section id="motivação-e-formulação" class="level3">
+<h3 class="anchored" data-anchor-id="motivação-e-formulação">7.1 Motivação e formulação</h3>
+<p>O interesse analítico não se esgota em saber <em>onde</em> uma subclasse se aglomera; interessa saber <em>quais atividades se atraem espacialmente</em> — se a presença intensa de uma subclasse <em>k</em> em um município está associada à presença intensa de outra subclasse <em>l</em> em seus <strong>vizinhos</strong>. Essa é a assinatura estatística de complementaridades produtivas e de economias de aglomeração de escopo regional. O I de Moran local bivariado (ANSELIN; SYABRI; SMIRNOV, 2002) é definido como:</p>
+<p><span class="math display">\[I_i^{kl} \;=\; z_i^{k} \sum_j w_{ij}\, z_j^{l} \;=\; z_i^{k} \cdot (\mathbf{W}\mathbf{z}^{l})_i \tag{14}\]</span></p>
+<p>e sua contrapartida global, <span class="math inline">\(I^{kl} = \dfrac{(\mathbf{z}^{k})^\top \mathbf{W}\mathbf{z}^{l}}{(\mathbf{z}^{k})^\top \mathbf{z}^{k}}\)</span>, em que <span class="math inline">\(\mathbf{z}^{k}\)</span> e <span class="math inline">\(\mathbf{z}^{l}\)</span> são os vetores padronizados (transformados) das subclasses <em>k</em> e <em>l</em>. Duas observações são essenciais à interpretação:</p>
+<ol type="a">
+<li><p><strong>a medida não é simétrica</strong>: em geral <span class="math inline">\(I^{kl} \neq I^{lk}\)</span>. A leitura é sempre “subclasse <em>k</em> no município <em>versus</em> subclasse <em>l</em> nos vizinhos”; a ordenação do par importa (os <em>tooltips</em> e textos do painel nomeiam ambas as variáveis e explicitam a direção do quadrante);</p></li>
+<li><p><strong>a medida não é uma correlação espacializada de Pearson</strong>: ela capta exclusivamente a componente cruzada e defasada, ignorando a correlação <em>in situ</em> entre <em>k</em> e <em>l</em> no mesmo município. Lee (2001) discute essa limitação; como o objetivo aqui é identificar transbordamentos de vizinhança, e não coexistência intramunicipal, a formulação de Anselin é a adequada.</p></li>
+</ol>
+</section>
+<section id="esquema-de-permutação-e-validação-da-rotina-vetorizada" class="level3">
+<h3 class="anchored" data-anchor-id="esquema-de-permutação-e-validação-da-rotina-vetorizada">7.2 Esquema de permutação e validação da rotina vetorizada</h3>
+<p>A inferência bivariada replica o esquema de permutação condicional da implementação de referência (<code>esda.Moran_BV</code>): a variável focal <span class="math inline">\(\mathbf{z}^{k}\)</span> é mantida fixa e a parceira <span class="math inline">\(\mathbf{z}^{l}\)</span> é permutada, com 999 permutações e semente 42. Dada a escala do problema (dezenas de milhares de pares ordenados), a rotina foi vetorizada para desempenho. Para assegurar que a otimização não introduziu viés, a implementação vetorizada foi <strong>validada contra o pacote <code>esda</code></strong>: a divergência máxima do <em>I</em> observado ficou na ordem de <span class="math inline">\(10^{-17}\)</span> (precisão de máquina) e as diferenças de pseudo-valor-p mostraram-se compatíveis com o ruído de Monte Carlo. Essa verificação é registrada por transparência, em coerência com o princípio de usar pacotes consagrados como referência e documentar explicitamente qualquer vetorização própria.</p>
+</section>
+<section id="quadrantes-e-critérios-operacionais" class="level3">
+<h3 class="anchored" data-anchor-id="quadrantes-e-critérios-operacionais">7.3 Quadrantes e critérios operacionais</h3>
+<p>A classificação em quadrantes é análoga à do caso univariado, combinando o valor de <em>k</em> no município com o valor médio de <em>l</em> nos vizinhos: os <em>clusters</em> Alto-Alto bivariados indicam <strong>complementaridade espacial positiva</strong> e constituem o principal insumo para a leitura de arranjos produtivos potenciais. A inferência é idêntica à univariada (999 permutações, semente 42, p &lt; 0,05), e exigiu-se um mínimo de <strong>5 municípios com copresença</strong> das duas subclasses do par para sua avaliação. No universo elegível, isso totaliza 92.020 pares ordenados (focal, parceira).</p>
+<hr>
+</section>
+</section>
+<section id="robustez-à-especificação-da-matriz-de-vizinhança" class="level2">
+<h2 class="anchored" data-anchor-id="robustez-à-especificação-da-matriz-de-vizinhança">8 ROBUSTEZ À ESPECIFICAÇÃO DA MATRIZ DE VIZINHANÇA</h2>
+<section id="motivação-e-métrica-de-concordância" class="level3">
+<h3 class="anchored" data-anchor-id="motivação-e-métrica-de-concordância">8.1 Motivação e métrica de concordância</h3>
+<p>Por ser a definição de vizinhança uma decisão do analista, a estabilidade dos aglomerados frente a especificações alternativas de <strong>W</strong> é condição de credibilidade. Recalcularam-se os indicadores locais e o Moran bivariado global sob as quatro matrizes alternativas descritas nas seções 4.4 a 4.6 (KNN-5, distância inversa, rede rodoviária e tempo de viagem), mantidos inalterados os demais parâmetros (999 permutações condicionais, semente 42, p &lt; 0,05). A concordância é medida sobre as observações significativas sob a linha de base <em>Queen</em>, adotando-se como critério de manutenção: no univariado, o mesmo quadrante e a significância sob a matriz alternativa; no bivariado global, a mesma significância e o mesmo sinal de <em>I</em>.</p>
+<p>Formalmente, para o conjunto <em>S</em> das observações significativas sob <em>Queen</em>, a taxa de manutenção sob a matriz alternativa <em>m</em> é:</p>
+<p><span class="math display">\[\tau_m \;=\; \frac{\bigl|\{\, o \in S : \text{classe}_m(o) = \text{classe}_{\text{Queen}}(o) \,\}\bigr|}{|S|} \tag{15}\]</span></p>
+<p>O <strong>núcleo robusto</strong> é definido como a interseção das observações mantidas simultaneamente sob todas as matrizes alternativas consideradas — o critério mais exigente disponível para leitura confirmatória.</p>
+</section>
+<section id="resultados-sob-cinco-especificações" class="level3">
+<h3 class="anchored" data-anchor-id="resultados-sob-cinco-especificações">8.2 Resultados sob cinco especificações</h3>
+<p>A Tabela 1 consolida as taxas de manutenção do recorte T1+T2 sob as quatro matrizes alternativas e sob a interseção das quatro. A leitura confirma dois pontos. Primeiro, a matriz rodoviária comporta-se de forma muito próxima à distância inversa euclidiana (por exemplo, 46,1% contra 45,5% no univariado de estoques), coerente com a correlação de 0,972 entre as métricas; ela não é redundante, porém, pois converte a hipótese de adjacência em medida empírica de acessibilidade. Segundo, a matriz de tempo é a mais exigente das quatro no univariado, coerente com sua vizinhança mais densa e com o fato de penalizar trechos lentos que a distância pura não captura.</p>
+<p><strong>Tabela 1 — Manutenção das observações significativas sob <em>Queen</em>, por especificação de W (recorte T1+T2)</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pipeline / análise</th>
+<th style="text-align: center;">Sig. <em>Queen</em></th>
+<th style="text-align: center;">KNN-5</th>
+<th style="text-align: center;">Dist. inversa</th>
+<th style="text-align: center;">Rede rodov.</th>
+<th style="text-align: center;">Tempo</th>
+<th style="text-align: center;">4 alt.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Estoque — univariado</td>
+<td style="text-align: center;">5.991</td>
+<td style="text-align: center;">57,7%</td>
+<td style="text-align: center;">45,5%</td>
+<td style="text-align: center;">46,1%</td>
+<td style="text-align: center;">40,7%</td>
+<td style="text-align: center;">20,9%</td>
+</tr>
+<tr class="even">
+<td>Estoque — bivariado</td>
+<td style="text-align: center;">3.857</td>
+<td style="text-align: center;">49,8%</td>
+<td style="text-align: center;">50,1%</td>
+<td style="text-align: center;">45,1%</td>
+<td style="text-align: center;">46,3%</td>
+<td style="text-align: center;">26,9%</td>
+</tr>
+<tr class="odd">
+<td>CE + RIE — univariado</td>
+<td style="text-align: center;">5.065</td>
+<td style="text-align: center;">67,4%</td>
+<td style="text-align: center;">37,2%</td>
+<td style="text-align: center;">39,5%</td>
+<td style="text-align: center;">32,0%</td>
+<td style="text-align: center;">14,3%</td>
+</tr>
+<tr class="even">
+<td>CE + RIE — bivariado</td>
+<td style="text-align: center;">2.061</td>
+<td style="text-align: center;">37,8%</td>
+<td style="text-align: center;">32,1%</td>
+<td style="text-align: center;">29,3%</td>
+<td style="text-align: center;">29,7%</td>
+<td style="text-align: center;">10,1%</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: elaboração própria. “4 alt.” = observações mantidas simultaneamente sob KNN-5, distância inversa, rede rodoviária e tempo de viagem. Concordância medida com 999 permutações e semente 42.</p>
+<p>A concordância global média por mapa (incluindo municípios não significativos) situa-se entre 76% e 89%, o que mostra que a divergência se concentra nas bordas dos aglomerados — onde a topologia de vizinhança mais importa. A leitura recomendada é, portanto, <strong>estratificada</strong>: um núcleo robusto, invariante à especificação de <strong>W</strong>, e uma camada sensível à topologia adotada, cuja interpretação exige cautela adicional. Com a incorporação do tempo de viagem, a ressalva estrutural fica restrita a fluxos efetivos de bens e pessoas e a vínculos funcionais não físicos, cuja modelagem demandaria dados de origem–destino.</p>
+<hr>
+</section>
+</section>
+<section id="controle-de-comparações-múltiplas-fdr" class="level2">
+<h2 class="anchored" data-anchor-id="controle-de-comparações-múltiplas-fdr">9 CONTROLE DE COMPARAÇÕES MÚLTIPLAS (FDR)</h2>
+<section id="o-problema-da-multiplicidade" class="level3">
+<h3 class="anchored" data-anchor-id="o-problema-da-multiplicidade">9.1 O problema da multiplicidade</h3>
+<p>Como cada mapa LISA aplica 224 testes locais e o universo bivariado avalia 92.020 pares, o número esperado de falsos positivos ao nível nominal de 5% não é desprezível mesmo na ausência completa de estrutura espacial: no universo bivariado, seriam esperados cerca de 4.601 pares espuriamente significativos. Impõe-se, pois, uma correção para multiplicidade.</p>
+</section>
+<section id="o-procedimento-de-benjaminihochberg" class="level3">
+<h3 class="anchored" data-anchor-id="o-procedimento-de-benjaminihochberg">9.2 O procedimento de Benjamini–Hochberg</h3>
+<p>Adotou-se o controle da <strong>Taxa de Falsas Descobertas</strong> (FDR) — a proporção esperada de falsos positivos entre as descobertas — pelo procedimento de Benjamini e Hochberg (1995), aplicado a estatísticas locais de associação espacial conforme Castro e Singer (2006) e Anselin (2019). Ordenados os <em>m</em> pseudo-valores-p em ordem crescente, <span class="math inline">\(p_{(1)} \leq p_{(2)} \leq \dots \leq p_{(m)}\)</span>, determina-se o maior índice <em>k</em> que satisfaz:</p>
+<p><span class="math display">\[p_{(k)} \;\leq\; \frac{k}{m}\,\alpha \tag{16}\]</span></p>
+<p>e rejeitam-se todas as hipóteses nulas associadas a <span class="math inline">\(p_{(1)}, \dots, p_{(k)}\)</span>. Adotou-se <span class="math inline">\(\alpha = 0{,}05\)</span>. O procedimento é uniformemente mais potente que a correção de Bonferroni (que controla a probabilidade de <em>qualquer</em> falso positivo, <span class="math inline">\(p_{(k)} \leq \alpha/m\)</span>), sendo adequado ao caráter exploratório da AEDE.</p>
+</section>
+<section id="resolução-de-permutações-exigida-pelo-fdr" class="level3">
+<h3 class="anchored" data-anchor-id="resolução-de-permutações-exigida-pelo-fdr">9.3 Resolução de permutações exigida pelo FDR</h3>
+<p>Há um aspecto operacional relevante: com 999 permutações, o menor pseudo-valor-p alcançável é 0,001, insuficiente para a resolução exigida pelos limiares <span class="math inline">\(\frac{k}{m}\alpha\)</span> nas caudas do procedimento de Benjamini–Hochberg. Por isso, os pseudo-valores-p destinados à correção foram <strong>recalculados com 9.999 permutações</strong> (menor p alcançável: 0,0001). Trata-se de decisão puramente numérica, sem alteração conceitual do teste.</p>
+</section>
+<section id="resultados" class="level3">
+<h3 class="anchored" data-anchor-id="resultados">9.4 Resultados</h3>
+<p>Aplicada em duas escalas — dentro de cada mapa LISA e através do universo de pares —, a correção produz efeitos fortemente assimétricos entre <em>pipelines</em>, resumidos na Tabela 2.</p>
+<p><strong>Tabela 2 — Sobrevivência à correção FDR de Benjamini–Hochberg (T1+T2, <em>Queen</em>, 9.999 permutações)</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 27%">
+<col style="width: 27%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Análise</th>
+<th style="text-align: center;">Sig. nominais</th>
+<th style="text-align: center;">Sobreviventes ao FDR</th>
+<th style="text-align: center;">Taxa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>LISA univariado — Estoque</td>
+<td style="text-align: center;">6.042</td>
+<td style="text-align: center;">4.032</td>
+<td style="text-align: center;">66,7%</td>
+</tr>
+<tr class="even">
+<td>LISA univariado — CE + RIE</td>
+<td style="text-align: center;">5.118</td>
+<td style="text-align: center;">3.870</td>
+<td style="text-align: center;">75,6%</td>
+</tr>
+<tr class="odd">
+<td>Moran bivariado global — Estoque</td>
+<td style="text-align: center;">3.915</td>
+<td style="text-align: center;">1.792 (937 com I &gt; 0)</td>
+<td style="text-align: center;">45,8%</td>
+</tr>
+<tr class="even">
+<td>Moran bivariado global — CE + RIE</td>
+<td style="text-align: center;">2.073</td>
+<td style="text-align: center;">552 (238 com I &gt; 0)</td>
+<td style="text-align: center;">26,6%</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: elaboração própria. Corte FDR do universo bivariado de estoques: p ≤ 0,00766. O recorte tipológico T1+T2 eleva substancialmente a sobrevivência em relação ao universo não classificado (10,3% e 4,2% nos casos correspondentes).</p>
+<p>A leitura conjunta das seções 8 e 9 converge: os resultados do <em>pipeline</em> de estoques são majoritariamente robustos tanto à especificação de <strong>W</strong> quanto à multiplicidade, ao passo que os do <em>pipeline</em> <em>shift-share</em> — e sobretudo a camada bivariada — comportam-se como evidência exploratória de primeira triagem. A assimetria é esperada, pois CE + RIE mede componentes de variação (mais voláteis e sujeitos a ruído de janela temporal) sobre suporte municipal mais esparso, enquanto o estoque mede níveis acumulados. Recomenda-se que o painel sinalize, para cada aglomerado e cada par, sua pertença ou não ao núcleo robusto (invariante a <strong>W</strong> e sobrevivente ao FDR), preservando o restante como material de exploração.</p>
+<hr>
+</section>
+</section>
+<section id="parâmetros-consolidados" class="level2">
+<h2 class="anchored" data-anchor-id="parâmetros-consolidados">10 PARÂMETROS CONSOLIDADOS</h2>
+<p><strong>Quadro 3 — Parâmetros consolidados do pipeline espacial</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parâmetro</th>
+<th>Valor adotado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Unidades espaciais</td>
+<td>224 municípios do Piauí</td>
+</tr>
+<tr class="even">
+<td>Malha territorial</td>
+<td>IBGE, Malha Municipal Digital 2025</td>
+</tr>
+<tr class="odd">
+<td>Sistema de referência</td>
+<td>SIRGAS 2000 (EPSG:4674); projeção métrica EPSG:5880</td>
+</tr>
+<tr class="even">
+<td>Variáveis de intensidade</td>
+<td>Estoque (<em>pipeline</em> de estoques); CE + RIE (<em>pipeline shift-share</em>)</td>
+</tr>
+<tr class="odd">
+<td>Deduplicação</td>
+<td>Máximo da intensidade entre janelas (2013, 2018, 2022)</td>
+</tr>
+<tr class="even">
+<td>Transformação — estoque</td>
+<td><em>log1p</em>, seguida de padronização (escore-z)</td>
+</tr>
+<tr class="odd">
+<td>Transformação — CE + RIE</td>
+<td>log sinalizado, <span class="math inline">\(\operatorname{sinal}(x)\cdot\ln(1+|x|)\)</span>, seguido de escore-z</td>
+</tr>
+<tr class="even">
+<td>Matrizes de pesos</td>
+<td><em>Queen</em> (referência); KNN-5; distância inversa; rede rodoviária; tempo (ORS)</td>
+</tr>
+<tr class="odd">
+<td>Padronização de W</td>
+<td>Por linha, em todas as matrizes</td>
+</tr>
+<tr class="even">
+<td>Permutações</td>
+<td>999 (mapas e concordância); 9.999 (FDR)</td>
+</tr>
+<tr class="odd">
+<td>Semente aleatória</td>
+<td>42</td>
+</tr>
+<tr class="even">
+<td>Significância nominal</td>
+<td>p &lt; 0,05</td>
+</tr>
+<tr class="odd">
+<td>Correção de multiplicidade</td>
+<td>FDR de Benjamini–Hochberg, <span class="math inline">\(\alpha = 0{,}05\)</span></td>
+</tr>
+<tr class="even">
+<td>Mínimo — LISA univariado</td>
+<td>10 municípios com presença da subclasse</td>
+</tr>
+<tr class="odd">
+<td>Mínimo — LISA bivariado</td>
+<td>5 municípios com copresença do par</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: elaboração própria.</p>
+<hr>
+</section>
+<section id="limitações" class="level2">
+<h2 class="anchored" data-anchor-id="limitações">11 LIMITAÇÕES</h2>
+<p><strong>Problema da Unidade de Área Modificável (MAUP).</strong> Os resultados são condicionados ao recorte municipal; agregações alternativas (microrregiões, territórios de desenvolvimento) poderiam produzir padrões distintos (OPENSHAW, 1984).</p>
+<p><strong>Sensibilidade à especificação de W.</strong> Conforme a seção 8, os aglomerados devem ser lidos em dois estratos: um núcleo robusto, invariante à especificação, e uma camada sensível à topologia de vizinhança. Para além das matrizes geométricas, testaram-se uma matriz rodoviária real e uma de tempo de viagem; os resultados sob a rodoviária aproximam-se dos da distância inversa (correlação de 0,972 entre as métricas; circuidade mediana de 1,40), indicando que, no Piauí, a topologia viária acompanha em larga medida a geografia — com exceções em municípios de acesso precário (onze sedes distam mais de 20 km de rodovia mapeada). Permanecem fora do escopo os fluxos efetivos de bens e pessoas e os vínculos funcionais não físicos, cuja modelagem demandaria dados de origem–destino.</p>
+<p><strong>Comparações múltiplas.</strong> Conforme a seção 9, o volume de testes torna o controle de multiplicidade indispensável. Os aglomerados e pares que sobrevivem ao FDR constituem o subconjunto sobre o qual a evidência é mais defensável; os demais devem ser tratados como hipóteses a validar com dados e desenhos complementares. Nenhum par bivariado satisfaz o critério de Bonferroni na resolução de permutação adotada.</p>
+<p><strong>Natureza dos dados de origem.</strong> As fontes primárias (PAM, PPM e PEVS do IBGE; RAIS do MTE) têm coberturas, unidades de medida e regimes de sigilo distintos; a comparabilidade entre subclasses de fontes diferentes exige cautela — em especial entre atividades agropecuárias (volume ou valor da produção) e atividades formais urbanas (vínculos de emprego).</p>
+<p><strong>Ausência ≠ zero.</strong> O tratamento de subclasses não observadas como valor zero confunde, potencialmente, ausência real de atividade com ausência de registro (por sigilo ou informalidade), o que tende a subestimar a presença de atividades em municípios de pequeno porte.</p>
+<p><strong>Tráfego não observado.</strong> Os tempos de viagem do OpenRouteService são modelados a partir de atributos viários do OpenStreetMap, não de tráfego real; quatro municípios tiveram tempos imputados por regressão (<span class="math inline">\(R^2 = 0{,}933\)</span>).</p>
+<hr>
+</section>
+<section id="referências" class="level2">
+<h2 class="anchored" data-anchor-id="referências">REFERÊNCIAS</h2>
+<p>ANSELIN, Luc. <strong>Spatial econometrics</strong>: methods and models. Dordrecht: Kluwer Academic Publishers, 1988.</p>
+<p>ANSELIN, Luc. Local indicators of spatial association — LISA. <strong>Geographical Analysis</strong>, Columbus, v. 27, n.&nbsp;2, p.&nbsp;93-115, 1995.</p>
+<p>ANSELIN, Luc. A local indicator of multivariate spatial association: extending Geary’s c.&nbsp;<strong>Geographical Analysis</strong>, Columbus, v. 51, n.&nbsp;2, p.&nbsp;133-150, 2019.</p>
+<p>ANSELIN, Luc; SYABRI, Ibnu; KHO, Youngihn. GeoDa: an introduction to spatial data analysis. <strong>Geographical Analysis</strong>, Columbus, v. 38, n.&nbsp;1, p.&nbsp;5-22, 2006.</p>
+<p>ANSELIN, Luc; SYABRI, Ibnu; SMIRNOV, Oleg. Visualizing multivariate spatial correlation with dynamically linked windows. In: ANSELIN, L.; REY, S. (org.). <strong>New tools for spatial data analysis</strong>. Santa Barbara: CSISS, University of California, 2002.</p>
+<p>BENJAMINI, Yoav; HOCHBERG, Yosef. Controlling the false discovery rate: a practical and powerful approach to multiple testing. <strong>Journal of the Royal Statistical Society</strong>: Series B (Methodological), Londres, v. 57, n.&nbsp;1, p.&nbsp;289-300, 1995.</p>
+<p>CASTRO, Marcia C.; SINGER, Burton H. Controlling the false discovery rate: a new application to account for multiple and dependent tests in local statistics of spatial association. <strong>Geographical Analysis</strong>, Columbus, v. 38, n.&nbsp;2, p.&nbsp;180-208, 2006.</p>
+<p>CLIFF, Andrew D.; ORD, J. Keith. <strong>Spatial autocorrelation</strong>. Londres: Pion, 1973.</p>
+<p>DIJKSTRA, Edsger W. A note on two problems in connexion with graphs. <strong>Numerische Mathematik</strong>, v. 1, n.&nbsp;1, p.&nbsp;269-271, 1959.</p>
+<p>DUNN, Edgar S. A statistical and analytical technique for regional analysis. <strong>Papers of the Regional Science Association</strong>, v. 6, n.&nbsp;1, p.&nbsp;97-112, 1960.</p>
+<p>ESTEBAN-MARQUILLAS, José M. A reinterpretation of shift-share analysis. <strong>Regional and Urban Economics</strong>, v. 2, n.&nbsp;3, p.&nbsp;249-255, 1972.</p>
+<p>HADDAD, Paulo Roberto (org.). <strong>Economia regional</strong>: teorias e métodos de análise. Fortaleza: BNB/ETENE, 1989.</p>
+<p>INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA (IBGE). <strong>Malha municipal digital do Brasil</strong>: 2025. Rio de Janeiro: IBGE, 2025.</p>
+<p>LEE, Sang-Il. Developing a bivariate spatial association measure: an integration of Pearson’s r and Moran’s I. <strong>Journal of Geographical Systems</strong>, v. 3, n.&nbsp;4, p.&nbsp;369-385, 2001.</p>
+<p>MORAN, Patrick A. P. Notes on continuous stochastic phenomena. <strong>Biometrika</strong>, Oxford, v. 37, n.&nbsp;1-2, p.&nbsp;17-23, 1950.</p>
+<p>OPENSHAW, Stan. <strong>The modifiable areal unit problem</strong>. Norwich: Geo Books, 1984. (Concepts and Techniques in Modern Geography, 38).</p>
+<p>REY, Sergio J.; ANSELIN, Luc. PySAL: a Python library of spatial analytical methods. <strong>The Review of Regional Studies</strong>, v. 37, n.&nbsp;1, p.&nbsp;5-27, 2007.</p>
+<p>TOBLER, Waldo R. A computer movie simulating urban growth in the Detroit region. <strong>Economic Geography</strong>, v. 46, p.&nbsp;234-240, 1970.</p>
+<p>MONTANÍA, Claudia V. <em>et al.</em> [Título do trabalho]. [Periódico], [v.], [n.], [p.], 2024. <em>(referência a completar conforme a fonte primária adotada no projeto)</em></p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

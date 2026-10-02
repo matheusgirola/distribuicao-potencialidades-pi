@@ -1,0 +1,20 @@
+secao_nome;0 - Sem vínculo ativo (estoque = 0);A - 1 a 4 vínculos;B - 5 a 9 vínculos;C - 10 a 49 vínculos;D - 50 ou mais vínculos
+A - Agricultura, pecuária, produção florestal, pesca e aquicultura;0;288;69;71;18
+B - Indústrias extrativas;0;20;9;13;2
+C - Indústrias de transformação;9;325;119;128;23
+D - Eletricidade e gás;0;17;2;9;5
+E - Água, esgoto, resíduos e descontaminação;0;31;13;12;4
+F - Construção;0;257;87;100;17
+"G - Comércio; reparação de veículos";149;1304;295;226;30
+H - Transporte, armazenagem e correio;1;116;21;33;9
+I - Alojamento e alimentação;14;135;46;35;4
+J - Informação e comunicação;8;91;37;51;15
+K - Atividades financeiras e de seguros;0;68;14;8;0
+L - Atividades imobiliárias;0;35;3;7;0
+M - Atividades profissionais, científicas e técnicas;0;203;58;54;8
+N - Atividades administrativas e serviços complementares;2;154;37;55;22
+O - Administração pública, defesa e seguridade social;0;17;3;11;41
+P - Educação;0;75;37;31;19
+Q - Saúde humana e serviços sociais;0;193;39;63;54
+R - Artes, cultura, esporte e recreação;0;157;10;14;2
+S - Outras atividades de serviços;6;184;34;17;8

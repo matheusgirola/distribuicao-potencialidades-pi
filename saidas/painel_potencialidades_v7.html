@@ -3,33 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mapa de Especialização Produtiva do Piauí</title>
+<title>Mapa de Potencialidades do Piauí — Painel Shift-Share</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  /* CIET — paleta institucional (Nota Técnica 16/2026) */
-  --azul-medio:#1C70B8;
-  --azul-royal:#034DA2;
-  --azul-marinho:#294C93;
-  --verde-lima:#7CC24F;
-  --bg:#F1F5FB;
+  --bg:#F4F2EC;
   --paper:#FFFFFF;
-  --ink:#152238;
-  --muted:#4F6180;
-  --faint:#8493AC;
-  --line:#DCE4F0;
-  --line-soft:#EAF0F8;
-  --primary:#1C70B8;
-  --primary-ink:#034DA2;
-  --accent:#7CC24F;
-  --accent-soft:#EDF6E5;
-  --accent-ink:#3D6B24;
-  /* typology ramp: CE/RIE/RSE diagnostic, green(strong)->red(weak) — mantida por codificar significado estatístico */
+  --ink:#172220;
+  --muted:#5F6F6B;
+  --faint:#8A9793;
+  --line:#E4E0D5;
+  --line-soft:#EDEAE1;
+  --primary:#0E5450;
+  --primary-ink:#0A3E3B;
+  --accent:#C8741E;
+  --accent-soft:#FBEFE0;
+  /* typology ramp: CE/RIE/RSE diagnostic, green(strong)->red(weak) */
   --t1:#0E7A4F; --t2:#3F8C3C; --t3:#6E9633; --t4:#9C8F22;
   --t5:#C8741E; --t6:#C2561D; --t7:#B83F22; --t8:#9E2B20; --tm1:#5A6B78;
-  --shadow:0 1px 2px rgba(21,34,56,.04), 0 8px 24px rgba(21,34,56,.06);
+  --shadow:0 1px 2px rgba(23,34,32,.04), 0 8px 24px rgba(23,34,32,.05);
   --radius:14px;
 }
 *{box-sizing:border-box}
@@ -45,8 +39,8 @@ body{
 
 /* ---------- Header ---------- */
 header.top{
-  border-bottom:1px solid rgba(255,255,255,.14);
-  background:linear-gradient(165deg,var(--primary-ink),var(--azul-marinho));
+  border-bottom:1px solid var(--line);
+  background:linear-gradient(180deg,#FBFAF6,var(--bg));
 }
 .top-inner{max-width:1320px;margin:0 auto;padding:24px 22px 22px;
   display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
@@ -59,26 +53,25 @@ header.top{
 h1{
   font-family:"Space Grotesk",sans-serif;font-weight:600;
   font-size:clamp(24px,3vw,34px);line-height:1.05;margin:0;letter-spacing:-.01em;
-  color:#FFFFFF;
+  color:var(--primary-ink);
 }
 h1 span{color:var(--accent)}
-.sub{color:rgba(255,255,255,.82);margin-top:9px;max-width:560px;font-size:13.5px}
+.sub{color:var(--muted);margin-top:9px;max-width:560px;font-size:13.5px}
 .scope{
-  text-align:right;font-size:12px;color:rgba(255,255,255,.72);
+  text-align:right;font-size:12px;color:var(--faint);
   font-family:"JetBrains Mono",monospace;line-height:1.7;
 }
-.scope b{color:var(--accent);font-weight:600}
-.brand-logo{height:65px;width:auto;display:block;margin:0 0 12px auto}
+.scope b{color:var(--primary);font-weight:600}
 
 /* ---------- Filter bar ---------- */
 .filters{
   position:sticky;top:0;z-index:40;
-  background:rgba(241,245,251,.86);backdrop-filter:blur(10px);
+  background:rgba(244,242,236,.86);backdrop-filter:blur(10px);
   border-bottom:1px solid var(--line);
   margin-top:0;
 }
 .filters-inner{max-width:1320px;margin:0 auto;padding:14px 22px;
-  display:grid;grid-template-columns:150px 150px 190px 1fr 1.3fr auto;gap:12px;align-items:end}
+  display:grid;grid-template-columns:150px 150px 1fr 1.3fr auto;gap:12px;align-items:end}
 .field{display:flex;flex-direction:column;gap:6px;min-width:0;position:relative}
 .field label{
   font-size:10.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;
@@ -90,10 +83,10 @@ h1 span{color:var(--accent)}
   font-family:"Inter",sans-serif;outline:none;transition:border-color .15s,box-shadow .15s;
 }
 select{appearance:none;cursor:pointer;
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path d='M2 4l4 4 4-4' stroke='%234F6180' stroke-width='1.6' fill='none' stroke-linecap='round'/></svg>");
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path d='M2 4l4 4 4-4' stroke='%235F6F6B' stroke-width='1.6' fill='none' stroke-linecap='round'/></svg>");
   background-repeat:no-repeat;background-position:right 12px center;padding-right:30px}
 .control:focus,select:focus,input[type=text]:focus{
-  border-color:var(--primary);box-shadow:0 0 0 3px rgba(28,112,184,.14)}
+  border-color:var(--primary);box-shadow:0 0 0 3px rgba(14,84,80,.12)}
 .search-wrap{position:relative}
 .search-wrap input{padding-left:34px}
 .search-wrap svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);pointer-events:none}
@@ -177,7 +170,7 @@ thead th.num{text-align:right}
 thead th .arr{opacity:0;margin-left:4px;font-size:9px}
 thead th.sorted .arr{opacity:1;color:var(--accent)}
 tbody td{padding:11px 16px;border-bottom:1px solid var(--line-soft);vertical-align:top}
-tbody tr:hover{background:#F3F7FC}
+tbody tr:hover{background:#FBFAF6}
 td.subc{max-width:380px;font-weight:500;color:var(--ink)}
 td.num{text-align:right;font-family:"JetBrains Mono",monospace;font-weight:500}
 td.muted{color:var(--muted)}
@@ -219,7 +212,6 @@ footer{margin-top:30px;text-align:center;color:var(--faint);font-size:11.5px;
   .kpis{grid-template-columns:1fr 1fr}
   .panels{grid-template-columns:1fr}
   .scope{text-align:left}
-  .brand-logo{margin:0 0 12px 0}
 }
 @media(max-width:560px){
   .filters-inner{grid-template-columns:1fr}
@@ -257,7 +249,7 @@ footer{margin-top:30px;text-align:center;color:var(--faint);font-size:11.5px;
 .lisa-main{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);min-height:400px}
 .lisa-main .mtit{font-size:16px;font-weight:700;color:var(--primary-ink);margin:0 0 2px}
 .lisa-main .msub{font-size:12.5px;color:var(--muted);margin:0 0 10px}
-.lisa-intro{background:var(--accent-soft);border-left:3px solid var(--accent);padding:12px 14px;border-radius:8px;font-size:13px;color:var(--accent-ink);line-height:1.5;margin-bottom:14px}
+.lisa-intro{background:var(--accent-soft);border-left:3px solid var(--accent);padding:12px 14px;border-radius:8px;font-size:13px;color:#6a4a1e;line-height:1.5;margin-bottom:14px}
 
 </style>
 </head>
@@ -270,7 +262,6 @@ footer{margin-top:30px;text-align:center;color:var(--faint);font-size:11.5px;
       <p class="sub">Diagnóstico de competitividade setorial dos municípios do Piauí, classificado pela tipologia regional de Montanía et al. (2024). Filtre por ano de comparação, classificação, município e subclasse.</p>
     </div>
     <div class="scope" id="scope">
-      <img class="brand-logo" src="data:image/png;base64,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" alt="CIET — Centro de Inteligência em Economia e Estratégia Territorial">
       <div><b id="scope-rows">—</b> registros</div>
       <div><b>224</b> municípios · <b>1.122</b> subclasses</div>
       <div>fontes: PAM · PEVS · PPM · RAIS</div>
@@ -280,12 +271,12 @@ footer{margin-top:30px;text-align:center;color:var(--faint);font-size:11.5px;
 
 <div style="max-width:1180px;margin:0 auto;padding:0 22px">
   <div class="tabbar">
-    <button class="tab" data-view="shiftshare">Resultados Shift-Share</button>
-    <button class="tab active" data-view="clusters">Clusters Espaciais (LISA)</button>
+    <button class="tab active" data-view="shiftshare">Resultados Shift-Share</button>
+    <button class="tab" data-view="clusters">Clusters Espaciais (LISA)</button>
   </div>
 </div>
 
-<div class="view" id="view-shiftshare">
+<div class="view active" id="view-shiftshare">
 <div class="filters">
   <div class="filters-inner">
     <div class="field">
@@ -296,14 +287,6 @@ footer{margin-top:30px;text-align:center;color:var(--faint);font-size:11.5px;
       <label for="f-cls">Classificação</label>
       <select id="f-cls"><option value="all">Todas</option></select>
     </div>
-    <div class="field">
-      <label for="f-periodo">Período</label>
-      <select id="f-periodo">
-        <option value="maior" selected>Período de maior destaque</option>
-        <option value="menor">Período de menor destaque</option>
-        <option value="all">Todos os períodos</option>
-      </select>
-    </div>
     <div class="field combo" id="combo">
       <label for="f-mun">Município</label>
       <input type="text" id="f-mun" autocomplete="off" placeholder="Todos os municípios">
@@ -313,7 +296,7 @@ footer{margin-top:30px;text-align:center;color:var(--faint);font-size:11.5px;
     <div class="field">
       <label for="f-sub">Buscar subclasse</label>
       <div class="search-wrap">
-        <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><circle cx="7" cy="7" r="5" stroke="#8493AC" stroke-width="1.6"/><path d="M11 11l3 3" stroke="#8493AC" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><circle cx="7" cy="7" r="5" stroke="#8A9793" stroke-width="1.6"/><path d="M11 11l3 3" stroke="#8A9793" stroke-width="1.6" stroke-linecap="round"/></svg>
         <input type="text" id="f-sub" autocomplete="off" placeholder="ex.: soja, frigorífico, energia solar…">
       </div>
     </div>
@@ -394,7 +377,7 @@ footer{margin-top:30px;text-align:center;color:var(--faint);font-size:11.5px;
 </div>
 </div><!--/view-shiftshare-->
 
-<div class="view active" id="view-clusters">
+<div class="view" id="view-clusters">
   <div style="max-width:1180px;margin:0 auto;padding:8px 22px 40px">
     <div class="lisa-intro">
       <b>Análise de autocorrelação espacial (LISA / I de Moran)</b> em seis escopos: <b>Emergentes (T-1)</b> — setores que emergem onde antes não existiam — e <b>T1+T2 · Estoques</b> — magnitude (estoque físico e de emprego) dos setores com vantagem competitiva nacional e municipal na decomposição shift-share (T1: economia municipal dinâmica; T2: mais lenta) — e <b>T1+T2 · CE+RIE</b> — a dinâmica competitiva desses mesmos setores (soma dos componentes CE e RIE do emprego formal RAIS). Os escopos <b>Todos</b> repetem a análise univariada para todas as subclasses, de qualquer tipologia (T1 a T8 e T-1), presentes em pelo menos 10 municípios: <b>Todos · Estoques</b> (estoque final) e, para o emprego formal, <b>Todos · Ganhos CE+RIE</b> (onde CE+RIE é positivo) e <b>Todos · Perdas CE+RIE</b> (onde é negativo, em módulo; Alto-Alto = aglomerado de perda competitiva). Ganhos e perdas são mapeados separadamente para que municípios sem o setor não apareçam como Alto. Entram as subclasses com I de Moran global significativo ou ao menos 3 núcleos Alto-Alto robustos às 4 matrizes alternativas. Nesses escopos o bivariado não foi calculado. Nos escopos T1+T2, ★ indica pares que sobrevivem à correção FDR (Benjamini–Hochberg, 9.999 permutações); os subtítulos informam também a robustez a três matrizes de vizinhança alternativas, incluindo uma matriz de <b>distância rodoviária</b> (malha estadual e federal, 13,9 mil km) e uma de <b>tempo de viagem</b> entre sedes municipais (OpenRouteService/OpenStreetMap).
@@ -405,7 +388,7 @@ footer{margin-top:30px;text-align:center;color:var(--faint);font-size:11.5px;
       <aside class="lisa-side">
         <h3>Mapas disponíveis</h3>
         <p class="hint">Ordenados pela força da autocorrelação (I de Moran). Selecione um setor para ver seus clusters.</p>
-        <div class="seg seg-esc"> <button data-esc="tm1">Emergentes (T-1)</button> <button data-esc="t1t2">T1+T2 · Estoques</button> <button data-esc="cerie">T1+T2 · CE+RIE</button> <button class="on" data-esc="todest">Todos · Estoques</button> <button data-esc="todganho" title="Univariado de CE+RIE positivo">Todos · Ganhos CE+RIE</button> <button data-esc="todperda" title="Univariado de |CE+RIE| negativo">Todos · Perdas CE+RIE</button> </div>
+        <div class="seg seg-esc"> <button class="on" data-esc="tm1">Emergentes (T-1)</button> <button data-esc="t1t2">T1+T2 · Estoques</button> <button data-esc="cerie">T1+T2 · CE+RIE</button> <button data-esc="todest">Todos · Estoques</button> <button data-esc="todganho" title="Univariado de CE+RIE positivo">Todos · Ganhos CE+RIE</button> <button data-esc="todperda" title="Univariado de |CE+RIE| negativo">Todos · Perdas CE+RIE</button> </div>
 <div class="seg">
           <button class="on" data-seg="uni">Univariado</button>
           <button data-seg="biv">Bivariado</button>
@@ -438,8 +421,6 @@ const TINFO = {
   'T-1':{c:'var(--tm1)',s:'n/d',d:'Sem comparação: surgiu apenas no ano final (estoque inicial zero).'}
 };
 const CLS_ORDER = ['T1','T2','T3','T4','T5','T6','T7','T8','T-1'];
-// rank of each class index (0=T1..best, 8=T-1..last), same hierarchy used to sort the Classif. column
-const CLS_RANK = DB.classes.map(name=>CLS_ORDER.indexOf(name));
 const RAIS_IDX = DB.fontes.indexOf('RAIS');
 const subLower = DB.subclasses.map(s=>s.toLowerCase());
 
@@ -448,26 +429,8 @@ const COL={SUB:0,CLS:1,MUN:2,EST:3,FON:4,UNI:5,ANO:6};
 const anoFinal = r => DB.fontes[r[COL.FON]]==='RAIS' ? 2025 : 2024;
 
 // ---- state ----
-let state={ano:'all',cls:'all',mun:'all',sub:'',periodo:'maior',sortKey:'EST',sortDir:-1,page:1,pageSize:50};
+let state={ano:'all',cls:'all',mun:'all',sub:'',sortKey:'EST',sortDir:-1,page:1,pageSize:50};
 let filtered=DB.rows;
-
-// ---- período de destaque: 1 linha por (subclasse, município), pelo melhor/pior CLS_RANK ----
-// empate -> ano_inicial mais antigo (menor índice em DB.anos)
-let _destaqueMaior=null, _destaqueMenor=null;
-function computeDestaque(){
-  if(_destaqueMaior)return;
-  const bestMap=new Map(), worstMap=new Map();
-  for(const r of DB.rows){
-    const key=r[COL.SUB]+'_'+r[COL.MUN];
-    const rank=CLS_RANK[r[COL.CLS]], ano=r[COL.ANO];
-    const b=bestMap.get(key);
-    if(!b||rank<b.rank||(rank===b.rank&&ano<b.ano))bestMap.set(key,{row:r,rank,ano});
-    const w=worstMap.get(key);
-    if(!w||rank>w.rank||(rank===w.rank&&ano<w.ano))worstMap.set(key,{row:r,rank,ano});
-  }
-  _destaqueMaior=[...bestMap.values()].map(v=>v.row);
-  _destaqueMenor=[...worstMap.values()].map(v=>v.row);
-}
 
 // ---- helpers ----
 const fmt=n=>n.toLocaleString('pt-BR');
@@ -549,9 +512,7 @@ function apply(){
   if(q!==''){subMatch=new Uint8Array(DB.subclasses.length);
     for(let i=0;i<subLower.length;i++)if(subLower[i].includes(q))subMatch[i]=1;}
   const out=[];
-  let rows=DB.rows;
-  if(state.periodo==='maior'){computeDestaque();rows=_destaqueMaior;}
-  else if(state.periodo==='menor'){computeDestaque();rows=_destaqueMenor;}
+  const rows=DB.rows;
   for(let i=0;i<rows.length;i++){
     const r=rows[i];
     if(ano!=='all'&&r[COL.ANO]!==ano)continue;
@@ -669,13 +630,12 @@ function renderTable(){
 // ---- events ----
 $('f-ano').addEventListener('change',e=>{state.ano=e.target.value==='all'?'all':+e.target.value;state.page=1;apply();});
 $('f-cls').addEventListener('change',e=>{state.cls=e.target.value==='all'?'all':+e.target.value;state.page=1;apply();});
-$('f-periodo').addEventListener('change',e=>{state.periodo=e.target.value;state.page=1;apply();});
 let subTimer;
 $('f-sub').addEventListener('input',e=>{clearTimeout(subTimer);subTimer=setTimeout(()=>{state.sub=e.target.value;state.page=1;apply();},170);});
 $('page-size').addEventListener('change',e=>{state.pageSize=+e.target.value;state.page=1;renderTable();});
 $('btn-clear').addEventListener('click',()=>{
-  state={ano:'all',cls:'all',mun:'all',sub:'',periodo:'maior',sortKey:'EST',sortDir:-1,page:1,pageSize:state.pageSize};
-  $('f-ano').value='all';$('f-cls').value='all';$('f-sub').value='';$('f-periodo').value='maior';
+  state={ano:'all',cls:'all',mun:'all',sub:'',sortKey:'EST',sortDir:-1,page:1,pageSize:state.pageSize};
+  $('f-ano').value='all';$('f-cls').value='all';$('f-sub').value='';
   $('f-mun').value='';$('combo').classList.remove('has-val');$('f-mun').placeholder='Todos os municípios';
   apply();
 });
@@ -706,44 +666,16 @@ const LISA = {"W":420,"H":470,"paths":["M279.2,328.3 278.1,325.7 275.6,325.0 275
     if(t.dataset.view==='clusters'&&!window.__lisaInit){window.__lisaInit=1;initLisa();}
   }));
 
-  let seg='uni', esc='todest', sel=null;
+  let seg='uni', esc='tm1', sel=null;
   const list=()=>document.getElementById('lisa-list');
   const W=LISA.W,H=LISA.H,paths=LISA.paths,names=LISA.names,cores=LISA.cores,rc=LISA.rotulos_cat;
-
-  function stockIndex(){
-    if(window.__lisaStockIdx) return window.__lisaStockIdx;
-    const subIdx={};
-    DB.subclasses.forEach((n,i)=>{ subIdx[n]=i; });
-    const byKey={};
-    DB.rows.forEach(r=>{
-      const key=r[COL.SUB]+'_'+r[COL.MUN];
-      const cur=byKey[key];
-      if(!cur||r[COL.ANO]>cur.ano){
-        byKey[key]={est:r[COL.EST],ano:r[COL.ANO],uni:r[COL.UNI]};
-      }
-    });
-    window.__lisaStockIdx={subIdx:subIdx,byKey:byKey};
-    return window.__lisaStockIdx;
-  }
-  function varPrincipal(rotulo){ return rotulo.split(' × ')[0]; }
-  function escXml(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 
   function drawMap(m){
     const legendKeys=[...new Set(m.cats)].filter(c=>c!==4).sort();
     if(!legendKeys.includes(4))legendKeys.push(4);
-    const {subIdx,byKey}=stockIndex();
-    const si=subIdx[varPrincipal(m.rotulo)];
     let sv='<svg viewBox="0 0 '+W+' '+H+'" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;max-height:74vh">';
     for(let i=0;i<paths.length;i++){
-      let tip=names[i];
-      if(si!==undefined){
-        const rec=byKey[si+'_'+i];
-        if(rec){
-          const uniLabel=DB.unidades[rec.uni];
-          tip+=' — Estoque (ano final): '+rec.est.toLocaleString('pt-BR')+(uniLabel?' '+uniLabel:'');
-        }
-      }
-      sv+='<path d="'+paths[i]+'" fill="'+cores[m.cats[i]]+'" stroke="#fff" stroke-width="0.4"><title>'+escXml(tip)+'</title></path>';
+      sv+='<path d="'+paths[i]+'" fill="'+cores[m.cats[i]]+'" stroke="#fff" stroke-width="0.4"><title>'+names[i]+'</title></path>';
     }
     const lx=W-122; let ly=H-20-legendKeys.length*19;
     sv+='<rect x="'+(lx-8)+'" y="'+(ly-8)+'" width="126" height="'+(legendKeys.length*19+14)+'" fill="#ffffff" opacity="0.85" rx="4"/>';
@@ -792,13 +724,9 @@ const LISA = {"W":420,"H":470,"paths":["M279.2,328.3 278.1,325.7 275.6,325.0 275
       sel=first?LISA.mapas.indexOf(first):null; render(); if(first)drawMap(first);
     }));
     document.getElementById('lisa-q').addEventListener('input',render);
-    if(!LISA.mapas.some(m=>m.tipo==='biv'&&(m.esc||'tm1')===esc)){
-      const bBiv=document.querySelector('.seg button[data-seg="biv"]');
-      bBiv.disabled=true; bBiv.title='Bivariado não calculado para este escopo';}
     const first=LISA.mapas.find(m=>m.tipo==='uni'&&(m.esc||'tm1')===esc);
     sel=LISA.mapas.indexOf(first); render(); drawMap(first);
   }
-  if(document.querySelector('.tab.active').dataset.view==='clusters'&&!window.__lisaInit){window.__lisaInit=1;initLisa();}
 })();
 
 </script>

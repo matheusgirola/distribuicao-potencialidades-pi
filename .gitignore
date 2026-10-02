@@ -1,3 +1,30 @@
+# sistema / editores
 .DS_Store
 Thumbs.db
 *.swp
+
+# ambiente
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+node_modules/
+
+# dados brutos e pesados (guardar fora do git; ver README, seção Insumos)
+dados/shift-share-consolidado-Brasil.csv
+dados/ors_progresso.npz
+dados/geo/Localidades_UFs_gpkg.zip
+
+# intermediários regeneráveis pelo pipeline
+robustez/*.pkl
+logs/
+saidas/tab/
+saidas/fig/
+
+# temporários do Office
+~$*
+~WRL*.tmp
+
+# segredos (chave do OpenRouteService vai em variável de ambiente)
+.env

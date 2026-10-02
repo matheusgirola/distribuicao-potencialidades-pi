@@ -1,0 +1,208 @@
+﻿pipeline;subclasse;n_sig_queen;mantidos_knn5;mantidos_invdist;mantidos_rede;mantidos_tempo;nucleo_robusto_4W
+estoque;Administração pública em geral;27;13;8;10;12;2
+estoque;Alimentícios;28;18;15;14;8;5
+estoque;Aparelhamento de placas e execução de trabalhos em mármore, granito, ardósia e outras pedras;55;42;12;10;11;4
+estoque;Arroz em casca;94;75;88;85;85;70
+estoque;Atividade médica ambulatorial com recursos para realização de exames complementares;57;14;12;12;11;7
+estoque;Atividade médica ambulatorial restrita a consultas;112;96;43;47;21;11
+estoque;Atividade odontológica com recursos para realização de procedimentos cirúrgicos;25;14;12;9;10;4
+estoque;Atividades de apoio à agricultura não especificadas anteriormente;65;12;15;21;14;2
+estoque;Atividades de associações de defesa de direitos sociais;28;16;12;8;12;6
+estoque;Atividades de atendimento hospitalar, exceto pronto-socorro e unidades para atendimento a urgências;38;14;14;17;12;8
+estoque;Atividades de cobrança e informações cadastrais;79;6;21;22;14;2
+estoque;Atividades de condicionamento físico;26;16;13;11;16;9
+estoque;Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica;26;14;11;9;8;7
+estoque;Atividades de contabilidade;104;88;49;57;48;27
+estoque;Atividades de organizações religiosas;108;84;42;50;37;18
+estoque;Atividades do Correio Nacional;63;43;28;33;30;24
+estoque;Babaçu amêndoa;30;22;25;28;26;19
+estoque;Banana cacho;27;14;14;12;14;7
+estoque;Bancos múltiplos, com carteira comercial;37;12;19;14;13;6
+estoque;Bovino;21;14;18;11;16;8
+estoque;Caixas econômicas;93;79;33;43;31;13
+estoque;Cana de açúcar;41;12;14;9;11;5
+estoque;Caprino;67;36;61;56;55;30
+estoque;Carnaúba pó;28;20;19;17;17;11
+estoque;Cartórios;22;8;7;5;2;1
+estoque;Carvão vegetal;33;18;26;20;23;12
+estoque;Casas lotéricas;38;20;20;20;21;10
+estoque;Castanha de caju;88;66;64;55;60;45
+estoque;Ceras;28;20;19;17;17;11
+estoque;Coleta de resíduos não-perigosos;20;10;6;8;8;4
+estoque;Comercio varejista de artigos de armarinho;20;10;6;9;8;4
+estoque;Comercio varejista de artigos de cama, mesa e banho;33;21;20;24;22;13
+estoque;Comércio a varejo de motocicletas e motonetas novas;46;38;9;12;8;3
+estoque;Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;26;12;8;11;8;4
+estoque;Comércio a varejo de peças e acessórios novos para veículos automotores;42;9;15;17;8;0
+estoque;Comércio a varejo de pneumáticos e câmaras-de-ar;26;16;11;14;5;3
+estoque;Comércio atacadista de cereais e leguminosas beneficiados;37;16;8;13;13;6
+estoque;Comércio atacadista de mercadorias em geral, com predominância de produtos alimentícios;35;11;15;15;12;4
+estoque;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;20;8;13;14;17;7
+estoque;Comércio varejista de artigos de papelaria;20;10;13;14;12;7
+estoque;Comércio varejista de artigos de óptica;51;13;16;20;22;7
+estoque;Comércio varejista de artigos do vestuário e acessórios;25;14;15;16;11;7
+estoque;Comércio varejista de bebidas;95;72;25;36;22;8
+estoque;Comércio varejista de calçados;28;14;6;5;5;2
+estoque;Comércio varejista de carnes - açougues;107;95;30;40;32;12
+estoque;Comércio varejista de combustíveis para veículos automotores;26;9;13;14;14;5
+estoque;Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal;35;15;20;12;15;4
+estoque;Comércio varejista de ferragens e ferramentas;16;6;3;3;4;2
+estoque;Comércio varejista de gás liqüefeito de petróleo (GLP);31;12;16;18;16;5
+estoque;Comércio varejista de hortifrutigranjeiros;29;11;4;5;7;1
+estoque;Comércio varejista de madeira e artefatos;113;91;49;54;40;24
+estoque;Comércio varejista de materiais de construção em geral;25;7;13;13;11;3
+estoque;Comércio varejista de materiais de construção não especificados anteriormente;26;7;13;9;5;2
+estoque;Comércio varejista de medicamentos veterinários;23;9;5;8;6;2
+estoque;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - hipermercados;131;117;62;74;53;27
+estoque;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns;24;14;11;9;10;3
+estoque;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - supermercados;28;14;14;13;14;8
+estoque;Comércio varejista de mercadorias em lojas de conveniência;137;8;56;59;49;3
+estoque;Comércio varejista de móveis;34;11;11;13;9;4
+estoque;Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente;26;15;10;10;9;5
+estoque;Comércio varejista de produtos farmacêuticos, com manipulação de fórmulas;154;138;66;74;56;28
+estoque;Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas;35;13;11;13;10;5
+estoque;Comércio varejista de suvenires, bijuterias e artesanatos;141;126;75;78;54;43
+estoque;Comércio varejista de tecidos;78;17;10;14;18;6
+estoque;Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo;32;14;19;18;20;8
+estoque;Comércio varejista especializado de equipamentos de telefonia e comunicação;51;14;13;13;14;6
+estoque;Comércio varejista especializado de equipamentos e suprimentos de informática;44;14;15;17;17;5
+estoque;Construção de edifícios;26;10;7;8;10;4
+estoque;Construção de rodovias e ferrovias;57;14;11;14;10;6
+estoque;Criação de bovinos para corte;28;16;13;10;9;3
+estoque;Criação de frangos para corte;19;10;13;14;14;6
+estoque;Cultivo de arroz;17;12;11;10;10;7
+estoque;Cultivo de soja;63;51;18;16;22;4
+estoque;Educação infantil - pré-escola;35;16;19;19;20;10
+estoque;Ensino fundamental;74;13;15;21;19;6
+estoque;Equino;59;22;25;23;25;15
+estoque;Fabricação de alimentos para animais;63;7;20;24;11;4
+estoque;Fabricação de artefatos de cerâmica e barro cozido para uso na construção, exceto azulejos e pisos;18;11;11;11;9;4
+estoque;Fabricação de móveis com predominância de madeira;112;104;64;73;43;26
+estoque;Fabricação de produtos de padaria e confeitaria com predominância de produção própria;27;11;13;11;12;6
+estoque;Fabricação de produtos de panificação industrial;79;11;30;33;29;3
+estoque;Fabricação de águas envasadas;23;10;7;7;8;3
+estoque;Fava em grão;37;20;20;19;9;6
+estoque;Feijão em grão;38;19;24;18;21;12
+estoque;Formação de condutores;26;17;13;16;12;7
+estoque;Galináceos total;41;22;29;28;31;15
+estoque;Hotéis;53;47;14;10;7;3
+estoque;Laboratórios clínicos;20;11;3;6;4;1
+estoque;Lanchonetes, casas de chá, de sucos e similares;21;9;13;14;14;4
+estoque;Leite;49;19;34;33;32;12
+estoque;Lenha;24;13;10;10;11;5
+estoque;Lojas de departamentos ou magazines, exceto lojas francas (Duty free);42;11;16;18;16;3
+estoque;Lojas de variedades, exceto lojas de departamentos ou magazines;28;17;12;16;12;7
+estoque;Madeira em tora;20;12;14;12;8;5
+estoque;Mandioca;43;22;35;26;31;15
+estoque;Manga;70;12;21;16;16;6
+estoque;Mel de abelha;113;103;108;100;108;98
+estoque;Melancia;30;12;21;21;21;9
+estoque;Milho em grão;49;32;32;28;27;19
+estoque;Obras de urbanização - ruas, praças e calçadas;27;11;10;13;15;7
+estoque;Oleaginosos;34;22;28;28;25;19
+estoque;Outros peixes;76;69;20;25;13;5
+estoque;Ovino;72;51;62;63;58;43
+estoque;Ovos de galinha;34;16;16;17;16;8
+estoque;Padaria e confeitaria com predominância de revenda;27;13;13;14;14;6
+estoque;Provedores de acesso às redes de comunicações;193;170;93;111;79;42
+estoque;Restaurantes e similares;65;51;27;18;16;6
+estoque;Serviços advocatícios;30;13;7;9;8;3
+estoque;Serviços combinados de escritório e apoio administrativo;28;10;6;7;7;3
+estoque;Serviços de comunicação multimídia - SCM;27;7;6;5;5;1
+estoque;Serviços de engenharia;129;115;51;62;31;23
+estoque;Serviços de funerárias;47;10;6;5;4;1
+estoque;Serviços de manutenção e reparação mecânica de veículos automotores;75;7;34;35;24;3
+estoque;Soja em grão;61;54;33;24;27;13
+estoque;Suíno total;44;15;36;24;33;7
+estoque;Tambacu tambatinga;100;86;55;52;57;36
+estoque;Tambaqui;34;15;9;16;11;2
+estoque;Tilápia;43;16;16;17;14;8
+estoque;Transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional;28;14;7;11;6;0
+estoque;Tucum amêndoa;55;18;30;28;32;16
+ce_rie;Administração pública em geral;32;19;14;13;14;6
+ce_rie;Aparelhamento de placas e execução de trabalhos em mármore, granito, ardósia e outras pedras;53;12;12;16;9;3
+ce_rie;Atividade médica ambulatorial com recursos para realização de exames complementares;25;16;11;11;8;5
+ce_rie;Atividade médica ambulatorial restrita a consultas;131;110;47;55;29;20
+ce_rie;Atividade odontológica com recursos para realização de procedimentos cirúrgicos;27;16;12;11;12;5
+ce_rie;Atividades de apoio à agricultura não especificadas anteriormente;15;8;4;6;3;2
+ce_rie;Atividades de associações de defesa de direitos sociais;57;17;18;14;17;7
+ce_rie;Atividades de atendimento hospitalar, exceto pronto-socorro e unidades para atendimento a urgências;23;13;10;10;11;8
+ce_rie;Atividades de cobrança e informações cadastrais;26;8;11;13;11;3
+ce_rie;Atividades de condicionamento físico;92;83;42;42;33;19
+ce_rie;Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica;37;12;7;11;7;3
+ce_rie;Atividades de contabilidade;34;16;17;18;10;5
+ce_rie;Atividades de organizações religiosas;117;94;40;43;40;18
+ce_rie;Atividades do Correio Nacional;24;14;6;9;8;2
+ce_rie;Bancos múltiplos, com carteira comercial;169;153;82;93;63;38
+ce_rie;Caixas econômicas;26;15;14;15;7;5
+ce_rie;Cartórios;25;8;8;8;2;0
+ce_rie;Casas lotéricas;34;18;17;22;24;10
+ce_rie;Coleta de resíduos não-perigosos;127;113;46;60;32;13
+ce_rie;Comercio varejista de artigos de armarinho;23;15;10;15;6;3
+ce_rie;Comercio varejista de artigos de cama, mesa e banho;165;150;80;81;64;30
+ce_rie;Comércio a varejo de motocicletas e motonetas novas;25;17;12;14;9;4
+ce_rie;Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;109;94;28;36;19;6
+ce_rie;Comércio a varejo de peças e acessórios novos para veículos automotores;19;7;6;7;4;0
+ce_rie;Comércio a varejo de pneumáticos e câmaras-de-ar;49;13;11;14;8;3
+ce_rie;Comércio atacadista de cereais e leguminosas beneficiados;28;11;9;11;11;4
+ce_rie;Comércio atacadista de mercadorias em geral, com predominância de produtos alimentícios;25;15;15;15;13;7
+ce_rie;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;53;18;21;20;26;10
+ce_rie;Comércio varejista de artigos de papelaria;88;75;30;35;30;8
+ce_rie;Comércio varejista de artigos de óptica;101;77;30;35;32;15
+ce_rie;Comércio varejista de artigos do vestuário e acessórios;30;20;19;18;13;8
+ce_rie;Comércio varejista de bebidas;28;12;14;12;16;6
+ce_rie;Comércio varejista de calçados;27;13;7;8;5;2
+ce_rie;Comércio varejista de carnes - açougues;37;13;10;12;11;4
+ce_rie;Comércio varejista de combustíveis para veículos automotores;24;8;11;11;9;3
+ce_rie;Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal;49;18;16;16;15;5
+ce_rie;Comércio varejista de ferragens e ferramentas;105;94;23;34;21;4
+ce_rie;Comércio varejista de gás liqüefeito de petróleo (GLP);47;10;29;22;24;4
+ce_rie;Comércio varejista de hortifrutigranjeiros;29;9;7;8;7;2
+ce_rie;Comércio varejista de madeira e artefatos;25;10;7;8;7;2
+ce_rie;Comércio varejista de materiais de construção em geral;27;6;14;16;17;2
+ce_rie;Comércio varejista de materiais de construção não especificados anteriormente;95;77;30;24;25;7
+ce_rie;Comércio varejista de medicamentos veterinários;98;85;27;23;11;1
+ce_rie;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - hipermercados;24;15;13;15;10;6
+ce_rie;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns;22;12;12;10;11;4
+ce_rie;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - supermercados;36;22;16;18;14;10
+ce_rie;Comércio varejista de mercadorias em lojas de conveniência;179;160;73;92;79;46
+ce_rie;Comércio varejista de móveis;27;15;10;11;12;2
+ce_rie;Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente;29;15;10;11;8;5
+ce_rie;Comércio varejista de produtos farmacêuticos, com manipulação de fórmulas;73;61;32;25;28;11
+ce_rie;Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas;28;12;9;8;9;4
+ce_rie;Comércio varejista de suvenires, bijuterias e artesanatos;160;147;76;76;53;33
+ce_rie;Comércio varejista de tecidos;138;120;71;77;63;45
+ce_rie;Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo;34;22;22;19;20;11
+ce_rie;Comércio varejista especializado de equipamentos de telefonia e comunicação;88;77;26;17;19;8
+ce_rie;Comércio varejista especializado de equipamentos e suprimentos de informática;53;17;19;24;19;6
+ce_rie;Construção de edifícios;26;12;9;8;12;2
+ce_rie;Construção de rodovias e ferrovias;37;14;10;12;10;6
+ce_rie;Criação de bovinos para corte;129;107;75;66;64;43
+ce_rie;Criação de frangos para corte;23;11;11;12;13;4
+ce_rie;Cultivo de arroz;35;13;16;11;17;9
+ce_rie;Cultivo de soja;24;12;13;10;13;6
+ce_rie;Educação infantil - pré-escola;23;12;15;15;14;9
+ce_rie;Ensino fundamental;23;12;9;10;9;6
+ce_rie;Fabricação de alimentos para animais;87;77;20;23;18;1
+ce_rie;Fabricação de artefatos de cerâmica e barro cozido para uso na construção, exceto azulejos e pisos;58;48;10;16;11;3
+ce_rie;Fabricação de móveis com predominância de madeira;36;12;14;17;17;9
+ce_rie;Fabricação de produtos de padaria e confeitaria com predominância de produção própria;96;81;28;32;25;10
+ce_rie;Fabricação de produtos de panificação industrial;55;12;16;15;11;2
+ce_rie;Fabricação de águas envasadas;24;14;8;7;8;3
+ce_rie;Formação de condutores;27;18;13;13;10;8
+ce_rie;Hotéis;127;118;37;45;22;16
+ce_rie;Laboratórios clínicos;42;23;9;11;4;3
+ce_rie;Lanchonetes, casas de chá, de sucos e similares;21;11;15;16;14;6
+ce_rie;Lojas de departamentos ou magazines, exceto lojas francas (Duty free);28;13;13;16;12;5
+ce_rie;Lojas de variedades, exceto lojas de departamentos ou magazines;140;126;58;65;45;34
+ce_rie;Obras de urbanização - ruas, praças e calçadas;76;14;21;19;21;5
+ce_rie;Padaria e confeitaria com predominância de revenda;50;35;16;12;14;5
+ce_rie;Provedores de acesso às redes de comunicações;44;7;13;17;17;5
+ce_rie;Restaurantes e similares;50;13;21;19;15;6
+ce_rie;Serviços advocatícios;31;15;8;11;7;2
+ce_rie;Serviços combinados de escritório e apoio administrativo;93;15;32;30;19;3
+ce_rie;Serviços de comunicação multimídia - SCM;23;9;7;5;9;3
+ce_rie;Serviços de engenharia;51;14;13;14;13;8
+ce_rie;Serviços de funerárias;53;14;6;10;5;2
+ce_rie;Serviços de manutenção e reparação mecânica de veículos automotores;132;119;39;39;32;6
+ce_rie;Transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional;120;105;41;45;27;15

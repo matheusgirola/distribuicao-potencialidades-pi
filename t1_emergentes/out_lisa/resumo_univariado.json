@@ -1,0 +1,48 @@
+{
+ "n_subclasses_avaliadas": 177,
+ "n_I_significativo": 50,
+ "I_medio": 0.0187,
+ "I_medio_sig": 0.062,
+ "total_clusters_locais_relevantes": 3996,
+ "clusters_por_quadrante": {
+  "Baixo-Alto": 2383,
+  "Alto-Baixo": 1211,
+  "Alto-Alto": 401,
+  "Baixo-Baixo": 1
+ },
+ "n_clusters_AA": 401,
+ "top_AA_municipios": {
+  "Barras": 18,
+  "José de Freitas": 15,
+  "Batalha": 12,
+  "Baixa Grande do Ribeiro": 12,
+  "Altos": 11,
+  "Ribeiro Gonçalves": 9,
+  "Inhuma": 7,
+  "Gilbués": 7,
+  "Cajueiro da Praia": 7,
+  "Campo Maior": 6,
+  "Capitão de Campos": 5,
+  "Piripiri": 5,
+  "Lagoa de São Francisco": 5,
+  "Santa Filomena": 5,
+  "Uruçuí": 5
+ },
+ "top_AA_subclasses": {
+  "Mandioca": 27,
+  "Milho em grão": 27,
+  "Tambacu tambatinga": 20,
+  "Outros peixes": 16,
+  "Serviços de comunicação multimídia - SCM": 11,
+  "Fava em grão": 10,
+  "Tambaqui": 8,
+  "Atividades de apoio à agricultura não especificadas anteriormente": 7,
+  "Comércio varejista de materiais de construção em geral": 7,
+  "Cultivo de milho": 7,
+  "Obras de urbanização - ruas, praças e calçadas": 7,
+  "Atividades de organizações religiosas": 6,
+  "Comércio varejista de hortifrutigranjeiros": 6,
+  "Construção de rodovias e ferrovias": 6,
+  "Cartórios": 5
+ }
+}

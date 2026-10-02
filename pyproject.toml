@@ -1,0 +1,61 @@
+[project]
+name = "analise-espacial-shift-share"
+version = "0.1.0"
+description = "Clusters espaciais (Moran/LISA) dos resultados shift-share dos setores produtivos do Piauí"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+
+# Versões fixadas nas do ambiente em que a análise original foi produzida
+# (Python 3.12 · esda 2.10.0 · libpysal 4.15.0 · geopandas 1.1.4). O LISA
+# depende do gerador de permutações do esda: trocar a versão pode mudar
+# p-valores na margem. Rode `uv run pytest` depois de qualquer atualização.
+dependencies = [
+    # estatística espacial
+    "esda==2.10.0",
+    "libpysal==4.15.0",
+    "geopandas==1.1.4",
+    "shapely>=2.0",
+    "scipy>=1.13",          # rede rodoviária (Dijkstra, KD-tree)
+    # dados
+    "numpy>=1.26",
+    "pandas>=2.2,<3",       # pandas 3 muda dtype de texto e copy-on-write
+    "pyogrio>=0.9",         # leitura de shapefile/gpkg pelo geopandas
+    # saídas
+    "matplotlib>=3.9",
+    "pillow>=10",           # figuras.py mede as figuras do relatório
+    "openpyxl>=3.1",        # gerar_planilha.py
+    # extrair_matriz_ors.py (só para regerar as matrizes do OpenRouteService)
+    "requests>=2.32",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff>=0.16.10",
+]
+
+[tool.uv]
+package = false
+
+# Lint só de bugs (nada de estilo): `uv run ruff check`.
+[tool.ruff]
+target-version = "py312"
+extend-exclude = ["legado", "esda_aulas", "robustez", "saidas"]
+
+[tool.ruff.lint]
+select = [
+    "E9",    # erro de sintaxe / de compilação
+    "F63",   # comparação inválida (is com literal, assert em tupla…)
+    "F7",    # break/continue/return/yield fora de lugar
+    "F82",   # nome indefinido
+    "F811",  # redefinição de nome não usado (função sobrescrita sem querer)
+    "B",     # flake8-bugbear: armadilhas prováveis
+]
+ignore = [
+    "B008",  # chamada em valor padrão de argumento (idioma comum, não bug)
+    "B905",  # zip() sem strict= (estilo)
+    "B007",  # variável de laço não usada (estilo)
+]
+
+[tool.pytest.ini_options]
+testpaths = ["testes"]

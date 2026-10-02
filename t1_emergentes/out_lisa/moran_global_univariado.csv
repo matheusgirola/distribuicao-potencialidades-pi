@@ -1,0 +1,178 @@
+subclasse;secao;municipios_presentes;I;p_norm;p_sim;n_sig;AA;AB;BA;BB
+Milho em grão;IBGE/PAM;42;0,475;0,0;0,001;92;27;2;9;54
+Mandioca;IBGE/PAM;37;0,4683;0,0;0,001;74;27;4;10;33
+Cultivo de milho;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;23;0,4516;0,0;0,001;140;7;6;5;122
+Tambacu tambatinga;IBGE/PPM;74;0,2194;0,0;0,001;38;20;6;12;0
+Fava em grão;IBGE/PAM;32;0,1853;0,0;0,001;136;10;1;10;115
+Outros peixes;IBGE/PPM;64;0,1708;0,0;0,001;40;16;4;13;7
+Castanha de caju;IBGE/PAM;18;0,1667;0,0;0,003;25;5;2;14;4
+Obras de terraplenagem;F - Construção;22;0,1614;0,0001;0,006;44;3;9;9;23
+Cultivo de outras plantas de lavoura temporária não especificadas anteriormente;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;10;0,1353;0,0008;0,012;21;3;3;12;3
+Outras atividades de atenção à saúde humana não especificadas anteriormente;Q - Saúde humana e serviços sociais;12;0,1337;0,001;0,01;17;2;5;10;0
+Cultivo de arroz;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;12;0,1304;0,0013;0,008;16;2;1;11;2
+Outros;IBGE/PEVS;11;0,1259;0,0018;0,007;188;3;7;12;166
+Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal;"G - Comércio; reparação de veículos";11;0,1247;0,002;0,01;170;2;4;13;151
+Atividades de contabilidade;M - Atividades profissionais, científicas e técnicas;17;0,124;0,0021;0,01;19;3;4;11;1
+Soja em grão;IBGE/PAM;17;0,1172;0,0036;0,006;156;2;3;14;137
+Corretagem na compra e venda e avaliação de imóveis;L - Atividades imobiliárias;13;0,1095;0,0064;0,023;63;3;4;11;45
+Serviços de assistência social sem alojamento;Q - Saúde humana e serviços sociais;15;0,108;0,0071;0,016;34;4;6;12;12
+Treinamento em desenvolvimento profissional e gerencial;P - Educação;21;0,1071;0,0076;0,016;24;4;6;13;1
+Construção de rodovias e ferrovias;F - Construção;53;0,1059;0,0083;0,013;67;6;11;9;41
+Comércio varejista especializado de equipamentos de telefonia e comunicação;"G - Comércio; reparação de veículos";24;0,1053;0,0087;0,015;29;4;9;16;0
+Serviço de preparação de terreno, cultivo e colheita;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;17;0,1043;0,0093;0,015;52;4;6;11;31
+Fornecimento de alimentos preparados preponderantemente para empresas;I - Alojamento e alimentação;11;0,1013;0,0114;0,02;107;3;6;18;80
+Comercio varejista de artigos de cama, mesa e banho;"G - Comércio; reparação de veículos";11;0,0877;0,0275;0,032;20;1;2;17;0
+Atividade médica ambulatorial com recursos para realização de procedimentos cirúrgicos;Q - Saúde humana e serviços sociais;12;0,0831;0,0363;0,032;16;2;3;11;0
+Criação de caprinos;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;14;0,0824;0,0377;0,035;32;2;2;11;17
+Criação de bovinos para corte;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;46;0,0808;0,0415;0,037;26;5;6;15;0
+Cultivo de soja;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;28;0,077;0,0513;0,034;124;4;2;13;105
+Comércio varejista de calçados;"G - Comércio; reparação de veículos";14;0,0728;0,0646;0,057;15;1;4;9;1
+Atividades de organizações religiosas;S - Outras atividades de serviços;57;0,0691;0,0785;0,038;19;6;6;7;0
+Arroz em casca;IBGE/PAM;15;0,0689;0,0794;0,042;26;2;4;12;8
+Comércio varejista de hortifrutigranjeiros;"G - Comércio; reparação de veículos";33;0,0681;0,0825;0,066;25;6;1;15;3
+Comércio varejista de ferragens e ferramentas;"G - Comércio; reparação de veículos";18;0,0678;0,0838;0,06;34;4;2;22;6
+Comércio varejista de medicamentos veterinários;"G - Comércio; reparação de veículos";29;0,0674;0,0856;0,057;17;1;7;9;0
+Coleta de produtos não-madeireiros não especificados anteriormente em florestas nativas;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;15;0,0648;0,0976;0,052;17;3;3;10;1
+Perfuração e construção de poços de água;F - Construção;11;0,0606;0,1199;0,086;22;0;2;18;2
+Atividades de apoio à gestão de saúde;Q - Saúde humana e serviços sociais;16;0,0594;0,1264;0,078;28;2;5;15;6
+Casas lotéricas;R - Artes, cultura, esporte e recreação;89;0,0583;0,133;0,08;28;4;6;5;13
+Obras de alvenaria;F - Construção;24;0,0579;0,1357;0,07;21;2;3;10;6
+Tambaqui;IBGE/PPM;70;0,0571;0,1412;0,082;51;8;4;5;34
+Serviço de manejo de animais;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;11;0,0558;0,1495;0,07;20;2;3;14;1
+Fabricação de alimentos para animais;C - Indústrias de transformação;24;0,0548;0,1565;0,088;72;3;8;14;47
+Fornecimento de alimentos preparados preponderantemente para consumo domiciliar;I - Alojamento e alimentação;11;0,0548;0,1566;0,074;67;3;7;17;40
+Comércio varejista de cal, areia, pedra britada, tijolos e telhas;"G - Comércio; reparação de veículos";13;0,0527;0,1714;0,083;27;2;6;14;5
+Comércio varejista de artigos de óptica;"G - Comércio; reparação de veículos";34;0,0521;0,176;0,083;80;2;3;13;62
+Seguridade social obrigatória;O - Administração pública, defesa e seguridade social;23;0,0521;0,1759;0,09;26;3;8;10;5
+Coleta de resíduos não-perigosos;E - Água, esgoto, resíduos e descontaminação;26;0,0495;0,1966;0,097;23;4;5;11;3
+Comércio varejista de materiais de construção em geral;"G - Comércio; reparação de veículos";76;0,0473;0,2156;0,116;35;7;15;7;6
+Comércio varejista de madeira e artefatos;"G - Comércio; reparação de veículos";20;0,0449;0,2374;0,128;19;2;9;7;1
+Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;"G - Comércio; reparação de veículos";42;0,0428;0,2578;0,129;96;4;12;10;70
+Provedores de acesso às redes de comunicações;J - Informação e comunicação;18;0,0425;0,2608;0,125;29;1;7;14;7
+Comércio varejista de combustíveis para veículos automotores;"G - Comércio; reparação de veículos";69;0,0418;0,2682;0,126;28;4;19;5;0
+Atividades de apoio à agricultura não especificadas anteriormente;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;43;0,0417;0,2691;0,139;28;7;2;16;3
+Promoção de vendas;M - Atividades profissionais, científicas e técnicas;19;0,0394;0,2943;0,132;18;4;6;8;0
+Comércio varejista especializado de equipamentos e suprimentos de informática;"G - Comércio; reparação de veículos";19;0,0382;0,3072;0,142;25;4;4;17;0
+Comércio varejista de mercadorias em lojas de conveniência;"G - Comércio; reparação de veículos";34;0,0359;0,3341;0,191;25;5;8;12;0
+Comércio varejista de bicicletas e triciclos, peças e acessórios;"G - Comércio; reparação de veículos";10;0,034;0,3571;0,161;78;2;6;19;51
+Fabricação de águas envasadas;C - Indústrias de transformação;15;0,0331;0,3682;0,163;21;3;4;14;0
+Lanchonetes, casas de chá, de sucos e similares;I - Alojamento e alimentação;30;0,0326;0,3752;0,158;110;1;6;13;90
+Atividade médica ambulatorial restrita a consultas;Q - Saúde humana e serviços sociais;23;0,0317;0,3871;0,17;33;2;6;20;5
+Melancia;IBGE/PAM;31;0,0317;0,3868;0,187;20;0;4;16;0
+Serviços especializados para construção não especificados anteriormente;F - Construção;10;0,0266;0,4577;0,182;19;1;4;13;1
+Atividades de associações de defesa de direitos sociais;S - Outras atividades de serviços;24;0,0262;0,4625;0,213;16;2;4;10;0
+Atividades de apoio à pecuária não especificadas anteriormente;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;19;0,0231;0,5088;0,213;24;2;8;14;0
+Construção de edifícios;F - Construção;110;0,0186;0,5814;0,289;21;4;7;6;4
+Banana cacho;IBGE/PAM;21;0,0176;0,5982;0,274;116;1;7;12;96
+Comércio a varejo de peças e acessórios novos para veículos automotores;"G - Comércio; reparação de veículos";37;0,0168;0,6115;0,269;28;1;11;10;6
+Serviços de lavagem, lubrificação e polimento de veículos automotores;"G - Comércio; reparação de veículos";12;0,0151;0,6396;0,235;34;2;7;18;7
+Seleção e agenciamento de mão-de-obra;N - Atividades administrativas e serviços complementares;27;0,015;0,6412;0,284;54;5;7;13;29
+Atividade médica ambulatorial com recursos para realização de exames complementares;Q - Saúde humana e serviços sociais;23;0,0145;0,6497;0,307;27;3;7;17;0
+Padaria e confeitaria com predominância de revenda;I - Alojamento e alimentação;32;0,0138;0,6615;0,294;20;1;5;14;0
+Comércio varejista de vidros;"G - Comércio; reparação de veículos";17;0,0113;0,7063;0,323;84;1;8;20;55
+Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo;"G - Comércio; reparação de veículos";36;0,0105;0,7206;0,339;25;1;9;15;0
+Comércio varejista de doces, balas, bombons e semelhantes;"G - Comércio; reparação de veículos";16;0,0095;0,7373;0,304;20;2;2;16;0
+Serviços de manutenção e reparação mecânica de veículos automotores;"G - Comércio; reparação de veículos";26;0,0091;0,7461;0,322;61;4;7;19;31
+Transporte escolar;H - Transporte, armazenagem e correio;11;0,0074;0,7754;0,296;22;0;1;21;0
+Ensino fundamental;P - Educação;22;0,007;0,7844;0,337;22;0;4;14;4
+Comércio varejista de móveis;"G - Comércio; reparação de veículos";56;0,0067;0,7892;0,35;26;2;11;13;0
+Criação de bovinos para leite;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;18;0,0048;0,8244;0,35;27;1;11;15;0
+Transporte rodoviário de produtos perigosos;H - Transporte, armazenagem e correio;11;0,0045;0,8306;0,34;31;0;6;18;7
+Cabeleireiros;S - Outras atividades de serviços;12;0,0034;0,85;0,292;28;0;5;22;1
+Produção de ovos;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;16;0,0033;0,8531;0,319;113;2;5;10;96
+Comércio varejista de outros produtos não especificados anteriormente;"G - Comércio; reparação de veículos";14;0,0032;0,8535;0,315;76;2;6;14;54
+Transporte rodoviário de carga, exceto produtos perigosos e mudanças, municipal;H - Transporte, armazenagem e correio;13;0,0019;0,8786;0,357;105;2;6;17;80
+Outras atividades de ensino não especificadas anteriormente;P - Educação;11;0,0014;0,8874;0,248;14;0;4;10;0
+Atividades de condicionamento físico;R - Artes, cultura, esporte e recreação;42;0,0012;0,892;0,387;26;2;8;16;0
+Serviços de comunicação multimídia - SCM;J - Informação e comunicação;111;0,0001;0,9127;0,438;27;11;4;10;2
+Atividades de fisioterapia;Q - Saúde humana e serviços sociais;11;-0,0019;0,9503;0,349;20;2;4;14;0
+Educação profissional de nível técnico;P - Educação;13;-0,0022;0,9573;0,375;58;1;6;13;38
+Alimentícios;IBGE/PEVS;11;-0,0022;0,9557;0,297;20;1;6;11;2
+Serviços combinados de escritório e apoio administrativo;N - Atividades administrativas e serviços complementares;32;-0,0034;0,9791;0,459;52;2;10;11;29
+Oleaginosos;IBGE/PEVS;11;-0,0037;0,9848;0,359;32;0;5;10;17
+Restaurantes e similares;I - Alojamento e alimentação;47;-0,004;0,9917;0,465;52;0;10;7;35
+Representantes comerciais e agentes do comércio de mercadorias em geral não especializado;"G - Comércio; reparação de veículos";13;-0,0046;0,9971;0,44;42;0;3;15;24
+Tilápia;IBGE/PPM;73;-0,0046;0,9984;0,494;30;4;11;13;2
+Comercio varejista de artigos de armarinho;"G - Comércio; reparação de veículos";26;-0,0064;0,9635;0,477;22;1;10;11;0
+Atividades de organizações sindicais;S - Outras atividades de serviços;11;-0,0065;0,9616;0,436;57;1;7;24;25
+Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;"G - Comércio; reparação de veículos";40;-0,0067;0,9572;0,5;31;5;8;18;0
+Comércio a varejo de pneumáticos e câmaras-de-ar;"G - Comércio; reparação de veículos";10;-0,0084;0,926;0,416;37;1;3;13;20
+Serviços de funerárias;S - Outras atividades de serviços;36;-0,0085;0,9234;0,486;91;1;7;17;66
+Educação infantil - pré-escola;P - Educação;22;-0,0091;0,9125;0,491;18;0;7;11;0
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - supermercados;"G - Comércio; reparação de veículos";53;-0,0093;0,9081;0,469;36;3;13;8;12
+Instalação e manutenção elétrica;F - Construção;26;-0,0096;0,9023;0,493;23;1;9;13;0
+Manutenção e reparação de motocicletas e motonetas;"G - Comércio; reparação de veículos";16;-0,0096;0,9029;0,495;163;1;11;19;132
+Incorporação de empreendimentos imobiliários;F - Construção;12;-0,0097;0,9013;0,443;151;2;7;10;132
+Comércio atacadista de embalagens;"G - Comércio; reparação de veículos";11;-0,0101;0,8938;0,417;37;1;6;18;12
+Atividades de cobrança e informações cadastrais;K - Atividades financeiras e de seguros;18;-0,0102;0,8912;0,497;15;1;2;12;0
+Babaçu amêndoa;IBGE/PEVS;10;-0,0105;0,885;0,427;20;0;2;12;6
+Lojas de variedades, exceto lojas de departamentos ou magazines;"G - Comércio; reparação de veículos";19;-0,012;0,8583;0,462;40;0;4;10;26
+Fabricação de estruturas pré-moldadas de concreto armado, em série e sob encomenda;C - Indústrias de transformação;14;-0,0124;0,8505;0,49;21;0;7;13;1
+Comércio varejista de bebidas;"G - Comércio; reparação de veículos";37;-0,0125;0,8487;0,458;21;1;9;10;1
+Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas;"G - Comércio; reparação de veículos";57;-0,0128;0,8417;0,431;10;0;7;3;0
+Atividades de atenção ambulatorial não especificadas anteriormente;Q - Saúde humana e serviços sociais;10;-0,0129;0,8412;0,422;27;0;5;16;6
+Mel de abelha;IBGE/PPM;27;-0,0131;0,8372;0,459;40;0;14;10;16
+Comércio atacadista de produtos de higiene, limpeza e conservação domiciliar;"G - Comércio; reparação de veículos";10;-0,0137;0,8247;0,48;38;0;8;14;16
+Hotéis;I - Alojamento e alimentação;24;-0,0142;0,8156;0,431;30;2;7;10;11
+Fabricação de móveis com predominância de madeira;C - Indústrias de transformação;15;-0,0148;0,8047;0,482;46;1;7;10;28
+Construção de redes de abastecimento de água, coleta de esgoto e construções correlatas, exceto obras de irrigação;F - Construção;17;-0,015;0,8022;0,456;14;1;7;6;0
+Outras atividades auxiliares dos serviços financeiros não especificadas anteriormente;K - Atividades financeiras e de seguros;14;-0,0152;0,7982;0,469;79;1;4;23;51
+Comércio atacadista de medicamentos e drogas de uso humano;"G - Comércio; reparação de veículos";12;-0,016;0,7824;0,465;120;0;3;8;109
+Lojas de departamentos ou magazines, exceto lojas francas (Duty free);"G - Comércio; reparação de veículos";13;-0,0175;0,7551;0,438;22;0;5;17;0
+Aparelhamento de placas e execução de trabalhos em mármore, granito, ardósia e outras pedras;C - Indústrias de transformação;18;-0,0191;0,7261;0,372;121;0;5;14;102
+Obras de urbanização - ruas, praças e calçadas;F - Construção;56;-0,0191;0,7276;0,384;65;7;5;12;41
+Fabricação de letras, letreiros e placas de qualquer material, exceto luminosos;C - Indústrias de transformação;11;-0,0204;0,7031;0,403;119;1;8;20;90
+Criação de bovinos, exceto para corte e leite;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;21;-0,0211;0,6914;0,392;46;0;7;13;26
+Instalação e manutenção de sistemas centrais de ar condicionado, de ventilação e refrigeração;F - Construção;15;-0,0234;0,6509;0,376;54;0;7;11;36
+Atividade odontológica com recursos para realização de procedimentos cirúrgicos;Q - Saúde humana e serviços sociais;61;-0,0243;0,6355;0,338;21;3;8;9;1
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - hipermercados;"G - Comércio; reparação de veículos";16;-0,0245;0,6315;0,363;21;1;6;14;0
+Serviços de engenharia;M - Atividades profissionais, científicas e técnicas;50;-0,0258;0,6103;0,332;27;4;10;13;0
+Serviços de organização de feiras, congressos, exposições e festas;N - Atividades administrativas e serviços complementares;10;-0,0267;0,5952;0,363;19;0;4;13;2
+Locação de automóveis sem condutor;N - Atividades administrativas e serviços complementares;17;-0,0267;0,5947;0,347;19;1;10;7;1
+Aluguel de máquinas e equipamentos para construção sem operador, exceto andaimes;N - Atividades administrativas e serviços complementares;13;-0,0284;0,5666;0,305;76;1;5;13;57
+Atividades de intermediação e agenciamento de serviços e negócios em geral, exceto imobiliários;L - Atividades imobiliárias;11;-0,0286;0,5642;0,344;30;1;2;27;0
+Outras atividades de serviços prestados principalmente às empresas não especificadas anteriormente;N - Atividades administrativas e serviços complementares;11;-0,0289;0,559;0,327;22;0;6;14;2
+Serviços de cartografia, topografia e geodésia;M - Atividades profissionais, científicas e técnicas;10;-0,03;0,5414;0,346;131;0;4;18;109
+Comércio varejista de gás liqüefeito de petróleo (GLP);"G - Comércio; reparação de veículos";40;-0,0306;0,5317;0,264;64;1;3;8;52
+Portais, provedores de conteúdo e outros serviços de informação na internet;J - Informação e comunicação;10;-0,032;0,5103;0,054;23;0;10;13;0
+Comércio atacadista de cereais e leguminosas beneficiados;"G - Comércio; reparação de veículos";14;-0,0325;0,5035;0,279;29;1;6;15;7
+Regulação das atividades de saúde, educação, serviços culturais e outros serviços sociais;O - Administração pública, defesa e seguridade social;41;-0,033;0,4953;0,256;24;0;12;12;0
+Cartórios;M - Atividades profissionais, científicas e técnicas;86;-0,0338;0,4833;0,257;29;5;9;13;2
+Comércio atacadista de produtos alimentícios em geral;"G - Comércio; reparação de veículos";14;-0,0339;0,482;0,267;55;0;8;18;29
+Transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional;H - Transporte, armazenagem e correio;33;-0,0386;0,4152;0,189;26;2;4;18;2
+Fabricação de artefatos de cerâmica e barro cozido para uso na construção, exceto azulejos e pisos;C - Indústrias de transformação;26;-0,0387;0,4129;0,192;108;0;10;11;87
+Comércio varejista de suvenires, bijuterias e artesanatos;"G - Comércio; reparação de veículos";19;-0,0388;0,4121;0,164;31;1;11;19;0
+Atividades de organizações políticas;S - Outras atividades de serviços;11;-0,0407;0,3869;0,096;123;0;9;13;101
+Serviços de agronomia e de consultoria às atividades agrícolas e pecuárias;M - Atividades profissionais, científicas e técnicas;16;-0,0425;0,3636;0,098;64;0;8;18;38
+Comércio atacadista de mercadorias em geral, com predominância de insumos agropecuários;"G - Comércio; reparação de veículos";10;-0,0426;0,3624;0,012;28;0;4;22;2
+Transporte rodoviário coletivo de passageiros, sob regime de fretamento, intermunicipal, interestadual e internacional;H - Transporte, armazenagem e correio;20;-0,043;0,3567;0,16;31;1;5;25;0
+Montagem e instalação de sistemas e equipamentos de iluminação e sinalização em vias públicas, portos e aeroportos;F - Construção;10;-0,0437;0,348;0,081;140;0;6;22;112
+Transporte rodoviário coletivo de passageiros, sob regime de fretamento, municipal;H - Transporte, armazenagem e correio;12;-0,0445;0,3387;0,023;26;0;10;16;0
+Correspondentes de instituições financeiras;K - Atividades financeiras e de seguros;25;-0,0449;0,3341;0,147;25;0;7;18;0
+Comércio varejista de artigos de papelaria;"G - Comércio; reparação de veículos";13;-0,0454;0,328;0,09;163;0;10;16;137
+Comércio varejista de carnes - açougues;"G - Comércio; reparação de veículos";31;-0,0458;0,3237;0,155;45;1;15;19;10
+Atividades associativas não especificadas anteriormente;S - Outras atividades de serviços;14;-0,0459;0,3221;0,153;134;0;8;13;113
+Obras de acabamento em gesso e estuque;F - Construção;10;-0,0463;0,3173;0,008;86;0;7;16;63
+Limpeza em prédios e em domicílios;N - Atividades administrativas e serviços complementares;11;-0,0474;0,3045;0,019;149;0;8;19;122
+Atividades de práticas integrativas e complementares em saúde humana;Q - Saúde humana e serviços sociais;19;-0,0477;0,3012;0,145;26;0;11;13;2
+Atividades de estética e outros serviços de cuidados com a beleza;S - Outras atividades de serviços;12;-0,0503;0,2735;0,027;32;0;9;17;6
+Comércio atacadista de alimentos para animais;"G - Comércio; reparação de veículos";10;-0,0509;0,2671;0,001;33;0;10;21;2
+Serviços de alimentação para eventos e recepções - bufê;I - Alojamento e alimentação;11;-0,0513;0,2629;0,033;133;0;4;25;104
+Agências de viagens;N - Atividades administrativas e serviços complementares;12;-0,0516;0,2597;0,027;17;0;6;11;0
+Comércio atacadista de mercadorias em geral, com predominância de produtos alimentícios;"G - Comércio; reparação de veículos";16;-0,0522;0,2536;0,023;25;0;10;14;1
+Laboratórios clínicos;Q - Saúde humana e serviços sociais;31;-0,0525;0,2511;0,095;22;1;6;15;0
+Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente;"G - Comércio; reparação de veículos";31;-0,058;0,2007;0,076;33;2;18;13;0
+Impressão de material para uso publicitário;C - Indústrias de transformação;13;-0,0605;0,1806;0,009;23;0;5;18;0
+Fabricação de artigos de serralheria, exceto esquadrias;C - Indústrias de transformação;11;-0,0608;0,1784;0,001;18;0;2;11;5
+Extração e britamento de pedras e outros materiais para construção e beneficiamento associado;B - Indústrias extrativas;15;-0,0612;0,1751;0,051;21;0;13;6;2
+Fabricação de produtos de padaria e confeitaria com predominância de produção própria;C - Indústrias de transformação;31;-0,0627;0,164;0,052;32;1;15;14;2
+Comércio varejista de material elétrico;"G - Comércio; reparação de veículos";15;-0,0636;0,1577;0,005;122;0;12;15;95
+Fabricação de produtos de panificação industrial;C - Indústrias de transformação;20;-0,066;0,1413;0,01;36;0;15;19;2
+Comércio varejista de produtos farmacêuticos, com manipulação de fórmulas;"G - Comércio; reparação de veículos";12;-0,0661;0,1406;0,001;75;0;9;18;48
+Atividades de atendimento hospitalar, exceto pronto-socorro e unidades para atendimento a urgências;Q - Saúde humana e serviços sociais;24;-0,0679;0,1293;0,025;23;2;8;12;1
+Outras obras de engenharia civil não especificadas anteriormente;F - Construção;23;-0,0732;0,1005;0,005;43;0;9;12;22
+Comércio varejista de artigos do vestuário e acessórios;"G - Comércio; reparação de veículos";36;-0,0742;0,0953;0,027;33;0;11;6;16
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns;"G - Comércio; reparação de veículos";44;-0,0766;0,0845;0,021;30;0;24;6;0
+Serviços advocatícios;M - Atividades profissionais, científicas e técnicas;35;-0,0867;0,0493;0,007;47;0;13;12;22
+Formação de condutores;P - Educação;17;-0,0939;0,0324;0,001;23;0;8;15;0
+Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica;M - Atividades profissionais, científicas e técnicas;30;-0,152;0,0004;0,001;30;0;19;11;0

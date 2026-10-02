@@ -1,0 +1,101 @@
+ancora;X;Y;secao_Y;copresentes;I_BV;p_sim;n_AA;n_sig
+Cerâmica;Fabricação de artefatos de cerâmica e barro cozido para uso na construção, exceto azulejos e pisos;Comércio varejista de mercadorias em lojas de conveniência;"G - Comércio; reparação de veículos";6;0,1476;0,0;6;51
+Cerâmica;Fabricação de artefatos de cerâmica e barro cozido para uso na construção, exceto azulejos e pisos;Serviços de engenharia;M - Atividades profissionais, científicas e técnicas;7;0,1255;0,0002;5;22
+Cerâmica;Fabricação de artefatos de cerâmica e barro cozido para uso na construção, exceto azulejos e pisos;Correspondentes de instituições financeiras;K - Atividades financeiras e de seguros;5;0,0624;0,0396;5;24
+Cerâmica;Fabricação de artefatos de cerâmica e barro cozido para uso na construção, exceto azulejos e pisos;Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;"G - Comércio; reparação de veículos";5;-0,0672;0,0298;1;93
+Milho;Milho em grão;Mandioca;IBGE/PAM;17;0,2714;0,0;15;81
+Milho;Milho em grão;Serviços de assistência social sem alojamento;Q - Saúde humana e serviços sociais;6;0,1755;0,0001;11;47
+Milho;Milho em grão;Locação de automóveis sem condutor;N - Atividades administrativas e serviços complementares;5;0,1497;0,0016;5;78
+Milho;Milho em grão;Regulação das atividades de saúde, educação, serviços culturais e outros serviços sociais;O - Administração pública, defesa e seguridade social;12;0,0934;0,0354;4;35
+Milho;Milho em grão;Comércio varejista de artigos de óptica;"G - Comércio; reparação de veículos";9;0,0922;0,032;6;108
+SCM;Serviços de comunicação multimídia - SCM;Coleta de produtos não-madeireiros não especificados anteriormente em florestas nativas;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;12;0,0963;0,0007;9;44
+SCM;Serviços de comunicação multimídia - SCM;Corretagem na compra e venda e avaliação de imóveis;L - Atividades imobiliárias;11;0,0866;0,0018;6;82
+SCM;Serviços de comunicação multimídia - SCM;Educação profissional de nível técnico;P - Educação;10;0,0783;0,0059;8;131
+SCM;Serviços de comunicação multimídia - SCM;Serviços de organização de feiras, congressos, exposições e festas;N - Atividades administrativas e serviços complementares;8;0,0781;0,0032;4;112
+SCM;Serviços de comunicação multimídia - SCM;Comércio varejista de calçados;"G - Comércio; reparação de veículos";13;0,078;0,0035;5;73
+SCM;Serviços de comunicação multimídia - SCM;Produção de ovos;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;12;0,0744;0,0051;6;43
+SCM;Serviços de comunicação multimídia - SCM;Fornecimento de alimentos preparados preponderantemente para consumo domiciliar;I - Alojamento e alimentação;11;0,0729;0,007;7;94
+SCM;Serviços de comunicação multimídia - SCM;Atividades de apoio à pecuária não especificadas anteriormente;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;10;0,0728;0,0065;9;121
+SCM;Serviços de comunicação multimídia - SCM;Outras atividades auxiliares dos serviços financeiros não especificadas anteriormente;K - Atividades financeiras e de seguros;9;0,0684;0,0119;13;87
+SCM;Serviços de comunicação multimídia - SCM;Comércio varejista de mercadorias em lojas de conveniência;"G - Comércio; reparação de veículos";25;0,0652;0,0173;7;61
+SCM;Serviços de comunicação multimídia - SCM;Serviços de engenharia;M - Atividades profissionais, científicas e técnicas;33;0,058;0,0295;10;35
+SCM;Serviços de comunicação multimídia - SCM;Promoção de vendas;M - Atividades profissionais, científicas e técnicas;17;0,0572;0,0302;7;47
+SCM;Serviços de comunicação multimídia - SCM;Tambacu tambatinga;IBGE/PPM;46;0,0551;0,0321;14;41
+SCM;Serviços de comunicação multimídia - SCM;Comércio varejista de artigos do vestuário e acessórios;"G - Comércio; reparação de veículos";18;0,0537;0,035;2;82
+SCM;Serviços de comunicação multimídia - SCM;Incorporação de empreendimentos imobiliários;F - Construção;11;0,0503;0,0443;9;115
+SCM;Serviços de comunicação multimídia - SCM;Fabricação de artefatos de cerâmica e barro cozido para uso na construção, exceto azulejos e pisos;C - Indústrias de transformação;17;0,049;0,0477;5;89
+SCM;Serviços de comunicação multimídia - SCM;Mel de abelha;IBGE/PPM;15;-0,048;0,0469;3;44
+SCM;Serviços de comunicação multimídia - SCM;Comércio varejista de produtos farmacêuticos, com manipulação de fórmulas;"G - Comércio; reparação de veículos";8;-0,0484;0,0491;5;97
+SCM;Serviços de comunicação multimídia - SCM;Obras de terraplenagem;F - Construção;16;-0,0506;0,0467;3;56
+SCM;Serviços de comunicação multimídia - SCM;Comércio varejista de material elétrico;"G - Comércio; reparação de veículos";12;-0,0552;0,0389;4;92
+SCM;Serviços de comunicação multimídia - SCM;Comércio varejista de ferragens e ferramentas;"G - Comércio; reparação de veículos";13;-0,0554;0,0286;6;101
+SCM;Serviços de comunicação multimídia - SCM;Fabricação de produtos de panificação industrial;C - Indústrias de transformação;17;-0,0565;0,0291;4;109
+SCM;Serviços de comunicação multimídia - SCM;Mandioca;IBGE/PAM;17;-0,0565;0,0306;13;96
+SCM;Serviços de comunicação multimídia - SCM;Comércio atacadista de mercadorias em geral, com predominância de insumos agropecuários;"G - Comércio; reparação de veículos";10;-0,0579;0,0309;4;60
+SCM;Serviços de comunicação multimídia - SCM;Serviços de lavagem, lubrificação e polimento de veículos automotores;"G - Comércio; reparação de veículos";11;-0,0584;0,0234;4;71
+SCM;Serviços de comunicação multimídia - SCM;Atividades de associações de defesa de direitos sociais;S - Outras atividades de serviços;16;-0,0588;0,0253;2;114
+SCM;Serviços de comunicação multimídia - SCM;Serviços de agronomia e de consultoria às atividades agrícolas e pecuárias;M - Atividades profissionais, científicas e técnicas;10;-0,0631;0,0203;3;103
+SCM;Serviços de comunicação multimídia - SCM;Serviços de alimentação para eventos e recepções - bufê;I - Alojamento e alimentação;11;-0,066;0,0144;6;127
+SCM;Serviços de comunicação multimídia - SCM;Comércio a varejo de pneumáticos e câmaras-de-ar;"G - Comércio; reparação de veículos";8;-0,0675;0,0112;3;69
+SCM;Serviços de comunicação multimídia - SCM;Cultivo de milho;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;12;-0,0695;0,0117;4;57
+SCM;Serviços de comunicação multimídia - SCM;Obras de acabamento em gesso e estuque;F - Construção;8;-0,0695;0,01;4;79
+SCM;Serviços de comunicação multimídia - SCM;Atividades de estética e outros serviços de cuidados com a beleza;S - Outras atividades de serviços;10;-0,0726;0,0083;4;66
+SCM;Serviços de comunicação multimídia - SCM;Correspondentes de instituições financeiras;K - Atividades financeiras e de seguros;19;-0,0732;0,0081;3;88
+SCM;Serviços de comunicação multimídia - SCM;Formação de condutores;P - Educação;16;-0,0763;0,0048;4;79
+SCM;Serviços de comunicação multimídia - SCM;Comércio atacadista de cereais e leguminosas beneficiados;"G - Comércio; reparação de veículos";11;-0,0793;0,0068;4;128
+SCM;Serviços de comunicação multimídia - SCM;Impressão de material para uso publicitário;C - Indústrias de transformação;12;-0,0829;0,0038;5;105
+SCM;Serviços de comunicação multimídia - SCM;Fornecimento de alimentos preparados preponderantemente para empresas;I - Alojamento e alimentação;9;-0,0839;0,0024;5;131
+SCM;Serviços de comunicação multimídia - SCM;Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica;M - Atividades profissionais, científicas e técnicas;26;-0,0881;0,0019;4;48
+SCM;Serviços de comunicação multimídia - SCM;Comercio varejista de artigos de armarinho;"G - Comércio; reparação de veículos";15;-0,0917;0,0012;2;59
+Soja;Soja em grão;Cultivo de soja;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;10;0,117;0,0003;5;31
+Soja;Soja em grão;Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo;"G - Comércio; reparação de veículos";5;0,1093;0,0014;3;17
+Soja;Soja em grão;Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;"G - Comércio; reparação de veículos";5;0,0711;0,0237;3;37
+Tambacu;Tambacu tambatinga;Corretagem na compra e venda e avaliação de imóveis;L - Atividades imobiliárias;5;0,1872;0,0;9;44
+Tambacu;Tambacu tambatinga;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - hipermercados;"G - Comércio; reparação de veículos";8;0,1615;0,0001;11;27
+Tambacu;Tambacu tambatinga;Produção de ovos;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;9;0,1514;0,0002;10;48
+Tambacu;Tambacu tambatinga;Comércio atacadista de embalagens;"G - Comércio; reparação de veículos";6;0,1365;0,0008;10;54
+Tambacu;Tambacu tambatinga;Serviço de manejo de animais;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;5;0,1335;0,0008;8;42
+Tambacu;Tambacu tambatinga;Educação profissional de nível técnico;P - Educação;7;0,1285;0,0019;9;33
+Tambacu;Tambacu tambatinga;Serviços de funerárias;S - Outras atividades de serviços;20;0,1139;0,0029;11;61
+Tambacu;Tambacu tambatinga;Fabricação de alimentos para animais;C - Indústrias de transformação;10;0,1109;0,0048;11;81
+Tambacu;Tambacu tambatinga;Coleta de produtos não-madeireiros não especificados anteriormente em florestas nativas;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;8;0,1089;0,0045;8;41
+Tambacu;Tambacu tambatinga;Serviços de manutenção e reparação mecânica de veículos automotores;"G - Comércio; reparação de veículos";14;0,1017;0,0077;11;66
+Tambacu;Tambacu tambatinga;Atividades de apoio à pecuária não especificadas anteriormente;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;7;0,0992;0,0101;7;64
+Tambacu;Tambacu tambatinga;Comercio varejista de artigos de cama, mesa e banho;"G - Comércio; reparação de veículos";6;0,0941;0,015;7;89
+Tambacu;Tambacu tambatinga;Outras atividades auxiliares dos serviços financeiros não especificadas anteriormente;K - Atividades financeiras e de seguros;5;0,0928;0,0148;10;54
+Tambacu;Tambacu tambatinga;Serviços de organização de feiras, congressos, exposições e festas;N - Atividades administrativas e serviços complementares;6;0,0926;0,0177;3;40
+Tambacu;Tambacu tambatinga;Cultivo de soja;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;12;0,092;0,0182;5;42
+Tambacu;Tambacu tambatinga;Comércio varejista especializado de equipamentos de telefonia e comunicação;"G - Comércio; reparação de veículos";10;0,0825;0,0281;12;130
+Tambacu;Tambacu tambatinga;Cartórios;M - Atividades profissionais, científicas e técnicas;32;0,0818;0,0321;9;38
+Tambacu;Tambacu tambatinga;Seleção e agenciamento de mão-de-obra;N - Atividades administrativas e serviços complementares;15;0,0789;0,0282;7;57
+Tambacu;Tambacu tambatinga;Comércio varejista de outros produtos não especificados anteriormente;"G - Comércio; reparação de veículos";8;0,0753;0,0357;12;94
+Tambacu;Tambacu tambatinga;Tilápia;IBGE/PPM;28;0,0743;0,0456;10;27
+Tambacu;Tambacu tambatinga;Comércio varejista de mercadorias em lojas de conveniência;"G - Comércio; reparação de veículos";16;0,0741;0,0429;9;48
+Tambacu;Tambacu tambatinga;Oleaginosos;IBGE/PEVS;5;0,0706;0,0495;2;81
+Tambacu;Tambacu tambatinga;Obras de urbanização - ruas, praças e calçadas;F - Construção;23;0,0688;0,0499;8;68
+Tambacu;Tambacu tambatinga;Construção de rodovias e ferrovias;F - Construção;21;-0,0751;0,0343;3;28
+Tambacu;Tambacu tambatinga;Comércio atacadista de mercadorias em geral, com predominância de insumos agropecuários;"G - Comércio; reparação de veículos";7;-0,0764;0,0408;2;55
+Tambacu;Tambacu tambatinga;Manutenção e reparação de motocicletas e motonetas;"G - Comércio; reparação de veículos";5;-0,0773;0,0366;3;57
+Tambacu;Tambacu tambatinga;Casas lotéricas;R - Artes, cultura, esporte e recreação;18;-0,0775;0,0442;4;16
+Tambacu;Tambacu tambatinga;Mel de abelha;IBGE/PPM;5;-0,0787;0,0365;1;45
+Tambacu;Tambacu tambatinga;Fornecimento de alimentos preparados preponderantemente para empresas;I - Alojamento e alimentação;6;-0,0789;0,0333;3;167
+Tambacu;Tambacu tambatinga;Correspondentes de instituições financeiras;K - Atividades financeiras e de seguros;13;-0,0822;0,0284;1;36
+Tambacu;Tambacu tambatinga;Transporte rodoviário de carga, exceto produtos perigosos e mudanças, municipal;H - Transporte, armazenagem e correio;5;-0,0825;0,0258;3;150
+Tambacu;Tambacu tambatinga;Formação de condutores;P - Educação;10;-0,0876;0,0175;2;30
+Tambacu;Tambacu tambatinga;Comércio varejista de produtos farmacêuticos, com manipulação de fórmulas;"G - Comércio; reparação de veículos";5;-0,0898;0,0184;1;95
+Tambacu;Tambacu tambatinga;Transporte rodoviário coletivo de passageiros, sob regime de fretamento, intermunicipal, interestadual e internacional;H - Transporte, armazenagem e correio;12;-0,0935;0,0156;5;125
+Tambacu;Tambacu tambatinga;Comércio varejista de material elétrico;"G - Comércio; reparação de veículos";8;-0,1211;0,0015;1;117
+Tilápia;Tilápia;Tambacu tambatinga;IBGE/PPM;28;0,0885;0,0117;12;67
+Tilápia;Tilápia;Comércio varejista especializado de equipamentos e suprimentos de informática;"G - Comércio; reparação de veículos";10;-0,0636;0,046;3;51
+Tilápia;Tilápia;Comércio varejista de produtos farmacêuticos, com manipulação de fórmulas;"G - Comércio; reparação de veículos";5;-0,0644;0,0456;2;95
+Tilápia;Tilápia;Mandioca;IBGE/PAM;12;-0,0679;0,0382;10;67
+Tilápia;Tilápia;Padaria e confeitaria com predominância de revenda;I - Alojamento e alimentação;11;-0,0689;0,0295;1;108
+Tilápia;Tilápia;Obras de acabamento em gesso e estuque;F - Construção;7;-0,0695;0,0393;2;54
+Tilápia;Tilápia;Atividade médica ambulatorial com recursos para realização de exames complementares;Q - Saúde humana e serviços sociais;8;-0,0712;0,0329;6;48
+Tilápia;Tilápia;Castanha de caju;IBGE/PAM;5;-0,0741;0,0219;5;51
+Tilápia;Tilápia;Comércio varejista de vidros;"G - Comércio; reparação de veículos";8;-0,0768;0,0202;3;79
+Tilápia;Tilápia;Cultivo de milho;A - Agricultura, pecuária, produção florestal, pesca e aquicultura;7;-0,0795;0,0203;2;125
+Tilápia;Tilápia;Serviços combinados de escritório e apoio administrativo;N - Atividades administrativas e serviços complementares;13;-0,0797;0,0207;4;56
+Tilápia;Tilápia;Comércio varejista de ferragens e ferramentas;"G - Comércio; reparação de veículos";6;-0,0811;0,016;3;44
+Tilápia;Tilápia;Transporte rodoviário coletivo de passageiros, sob regime de fretamento, intermunicipal, interestadual e internacional;H - Transporte, armazenagem e correio;8;-0,0917;0,0088;5;117
+Tilápia;Tilápia;Atividades de associações de defesa de direitos sociais;S - Outras atividades de serviços;9;-0,092;0,0078;2;39
